@@ -162,6 +162,9 @@ body{
 #website-container>div{
     padding-bottom: 20px;
 }
+#website-container .mdui-col{
+    height: 36px;
+}
 /* 底部提示 */
 #bottom-tip{
     position: relative;
