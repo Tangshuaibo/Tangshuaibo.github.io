@@ -4,8 +4,7 @@ var musicPlayerList = [];
 
 // 创建音乐播放器
 function createMusicPlayer(musicPlayerContainer) {
-    var listMaxHeight;
-    listMaxHeight = window.screen.availHeight * 0.5;
+    var listMaxHeight = window.screen.availHeight * 0.5;
     var ap = new APlayer({
         container: musicPlayerContainer,
         listMaxHeight: listMaxHeight + 'px',
