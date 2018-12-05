@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/drawer.css">
     <script src="./dep/mdui-v0.4.1/js/mdui.min.js"></script>
     <script src="./js/navigation.js"></script>
-    <script src="./js/vue.min.js"></script>
+    <script src="./js/vue.js"></script>
 </head>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-appbar-with-toolbar mdui-drawer-body-left">
     <!-- 应用栏 -->
@@ -123,9 +123,16 @@
     </div>
     <!-- 网格布局容器 -->
     <div class="mdui-container" id="main">
-        <div class="article-card-container">
-            
+        <div class="article-cards-container mdui-row">
+            <article-card
+                v-for="item in articlesInfo"
+                :key="item.id"
+                :img-src="item.imgSrc"
+                :article-title="item.articleTitle"
+                :article-subtitle="item.articleSubtitle"
+            ></article-card>
         </div>
     </div>
+    <script src="./js/article.js"></script>
 </body>
 </html>

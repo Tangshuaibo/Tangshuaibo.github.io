@@ -125,23 +125,25 @@ function setDrawerListItemLink() {
     $$('#left-drawer-list-home').on('click', function () {
         location.assign('./home.html');
     });
-    $$('#left-drawer-list-article').one('click', function () {
-        // location.assign('./article.html');
-        mdui.alert('文章功能开发中<( _ _ )>', function () {
-            var thisSnackbar = mdui.snackbar({
-                message: '(oﾟvﾟ)ノ李姐万岁！',
-                buttonText: '好的',
-                onButtonClick: function(){
-                    thisSnackbar.close();
-                },
-            });
-        });
-    });
+    // $$('#left-drawer-list-article').one('click', function () {
+    //     mdui.alert('文章功能开发中<( _ _ )>', function () {
+    //         var thisSnackbar = mdui.snackbar({
+    //             message: '(oﾟvﾟ)ノ李姐万岁！',
+    //             buttonText: '好的',
+    //             onButtonClick: function(){
+    //                 thisSnackbar.close();
+    //             },
+    //         });
+    //     });
+    // });
     $$('#left-drawer-list-video').on('click', function () {
         location.assign('./video.html');
     });
     $$('#left-drawer-list-music').on('click', function () {
         location.assign('./music.html');
+    });
+    $$('#left-drawer-list-article>ul>li').eq(0).on('click',function () {
+        location.assign('./article.html');
     });
 }
 
