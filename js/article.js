@@ -37,7 +37,7 @@ new Vue({
     created: function () {
         var thisVM = this;
         $$.ajax({
-            method: 'POST',
+            method: 'GET',
             url: './content/article/demo/demo.json',
             data: {
                 key1: 'val1',
