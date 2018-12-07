@@ -110,7 +110,7 @@ function activeDrawerListItem() {
     if (pathName.search('/home.html') !== -1) {
         $$('#left-drawer-list-home').addClass('mdui-list-item-active');
     } else if (pathName.search('/article.html') !== -1) {
-        $$('#left-drawer-list-article').addClass('mdui-list-item-active');
+        $$('#left-drawer-list-article').addClass('mdui-list-item-active mdui-collapse-item-open');
     } else if (pathName.search('/video.html') !== -1) {
         $$('#left-drawer-list-video').addClass('mdui-list-item-active');
     } else if (pathName.search('/music.html') !== -1) {

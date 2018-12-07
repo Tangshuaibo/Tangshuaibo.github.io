@@ -39,10 +39,6 @@ new Vue({
         $$.ajax({
             method: 'GET',
             url: './content/article/demo/demo.json',
-            data: {
-                key1: 'val1',
-                key2: 'val2'
-            },
             success: function (articleInfo) {
                 var item = JSON.parse(articleInfo);
                 thisVM.articlesInfo.push(item);

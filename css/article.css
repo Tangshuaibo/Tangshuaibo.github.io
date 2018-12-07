@@ -1,0 +1,5 @@
+.mdui-card-primary-title, .mdui-card-primary-subtitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
