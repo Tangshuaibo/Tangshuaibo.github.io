@@ -1,0 +1,132 @@
+[
+    {
+        "group": "动漫",
+        "icon": "personal_video",
+        "list": [
+            {
+                "name": "Acfun",
+                "src": "http://www.acfun.cn/"
+            },
+            {
+                "name": "哔哩哔哩",
+                "src": "https://www.bilibili.com/"
+            },
+            {
+                "name": "嘀哩嘀哩",
+                "src": "http://www.dilidili.name/"
+            },
+            {
+                "name": "樱花动漫",
+                "src": "http://www.imomoe.jp/"
+            },
+            {
+                "name": "青梅动漫",
+                "src": "https://qinmei.video/index"
+            }
+        ]
+    },
+    {
+        "group": "音乐",
+        "icon": "music_note",
+        "list": [
+            {
+                "name": "网易云音乐",
+                "src": "https://music.163.com/"
+            },
+            {
+                "name": "虾米音乐",
+                "src": "https://www.xiami.com/"
+            },
+            {
+                "name": "QQ音乐",
+                "src": "https://y.qq.com/"
+            },
+            {
+                "name": "酷狗音乐",
+                "src": "http://www.kugou.com"
+            },
+            {
+                "name": "MS摩声",
+                "src": "http://moresound.tk/music/"
+            }
+        ]
+    },
+    {
+        "group": "游戏",
+        "icon": "videogame_asset",
+        "list": [
+            {
+                "name": "游民星空",
+                "src": "https://www.gamersky.com/"
+            },
+            {
+                "name": "A9VG",
+                "src": "http://www.a9vg.com/"
+            },
+            {
+                "name": "机核网",
+                "src": "https://www.g-cores.com/"
+            },
+            {
+                "name": "游戏时光",
+                "src": "http://www.vgtime.com/"
+            },
+            {
+                "name": "游研社",
+                "src": "http://www.yystv.cn/"
+            }
+        ]
+    },
+    {
+        "group": "小说",
+        "icon": "book",
+        "list": [
+            {
+                "name": "SF轻小说",
+                "src": "http://book.sfacg.com/"
+            },
+            {
+                "name": "轻文轻小说",
+                "src": "https://www.iqing.com/"
+            },
+            {
+                "name": "QC轻小说",
+                "src": "https://www.qcacg.com/"
+            },
+            {
+                "name": "8号文库",
+                "src": "https://www.8wenku.com/book"
+            },
+            {
+                "name": "轻之文库",
+                "src": "https://www.linovel.net/"
+            }
+        ]
+    },
+    {
+        "group": "漫画",
+        "icon": "chrome_reader_mode",
+        "list": [
+            {
+                "name": "动漫之家",
+                "src": "https://www.dmzj.com/"
+            },
+            {
+                "name": "百年漫画",
+                "src": "https://www.bnmanhua.com/"
+            },
+            {
+                "name": "土豪漫画",
+                "src": "https://www.tohomh123.com/"
+            },
+            {
+                "name": "CC漫画",
+                "src": "http://www.ccdm9.com"
+            },
+            {
+                "name": "57漫画",
+                "src": "http://www.wuqimh.com/"
+            }
+        ]
+    }
+]
