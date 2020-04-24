@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O(∩_∩)O</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./dep/aplayer-v1.10.1/APlayer.min.css">
+    <link rel="stylesheet" href="./dep/mdui-v0.4.1/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/toolbar.css">
+    <link rel="stylesheet" href="./css/drawer.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <script src="./dep/aplayer-v1.10.1/APlayer.min.js"></script>
+    <script src="./dep/mdui-v0.4.1/js/mdui.min.js"></script>
+    <script src="./js/color-thief.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/music.js"></script>
+    <script src="./js/canvas-evan-you.js"></script>
+</head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-appbar-with-toolbar mdui-drawer-body-left">
+    <!-- 应用栏 -->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide" id="appbar">
+        <!-- 工具栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <!-- 抽屉按钮 -->
+            <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}">
+                <i class="mdui-icon material-icons">menu</i>
+            </button>
+            <!-- 工具栏标题 -->
+            <span class="mdui-typo-title" id="toolbar-title"></span>
+            <div class="mdui-toolbar-spacer"></div>
+            <!-- 搜索按钮 -->
+            <button class="mdui-btn mdui-btn-icon" id="toobar-search-button">
+                <i class="mdui-icon material-icons">search</i>
+            </button>
+            <!-- 可展开文本框 -->
+            <div class="mdui-textfield mdui-textfield-expandable mdui-hidden" id="toobar-textfield-expandable">
+                <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" id="toobar-textfield-expandable-search-button">
+                    <i class="mdui-icon material-icons">search</i>
+                </button>
+                <input class="mdui-textfield-input" type="text" placeholder="Search" maxlength="30" id="toobar-textfield-expandable-input-box"/>
+                <button class="mdui-textfield-close mdui-btn mdui-btn-icon" id="toobar-textfield-expandable-close-button">
+                    <i class="mdui-icon material-icons">close</i>
+                </button>
+            </div>
+            <!-- 启动页按钮 -->
+            <a href="./index.html" target="_blank" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">exposure_plus_1</i>
+            </a>
+        </div>
+    </div>
+    <!-- 抽屉式导航 -->
+    <div class="mdui-drawer mdui-color-white" id="left-drawer">
+        <div id="left-drawer-top">
+            <!-- 抽屉式导航头部 -->
+            <div id="left-drawer-header">
+                <img src="./img/drawer_cover.jpg" alt="cover.jpg" class="mdui-img-fluid">
+                <div id="left-drawer-avatar">
+                    <a href="https://github.com/tangshuaibo/tangshuaibo.github.io" target="_blank" title="仓库地址">
+                        <img src="./img/avatar.png" alt="avatar.png" class="mdui-img-circle" id="left-drawer-avatar-image">
+                    </a>
+                    <div class="mdui-typo-title mdui-text-color-white" id="left-drawer-avatar-title">唐帅博</div>
+                </div>
+                <div class="mdui-typo-subheading mdui-text-color-theme-accent mdui-text-center mdui-m-t-1">
+                    我们的征途是🦑异次元空间
+                </div>
+            </div>
+            <!-- 抽屉式导航主体 -->
+            <div id="left-drawer-main">
+                <ul class="mdui-list" mdui-collapse="{accordion: true}" id="left-drawer-list">
+                    <div class="mdui-divider"></div>
+                    <li class="mdui-list-item mdui-ripple" id="left-drawer-list-home">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                        <div class="mdui-list-item-content">首页</div>
+                    </li>
+                    <li class="mdui-collapse-item" id="left-drawer-list-article">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+                            <div class="mdui-list-item-content">文章</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                            <li class="mdui-list-item mdui-ripple">全部</li>
+                            <li class="mdui-list-item mdui-ripple">红色</li>
+                            <li class="mdui-list-item mdui-ripple">蓝色</li>
+                            <li class="mdui-list-item mdui-ripple">其它</li>
+                        </ul>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="left-drawer-list-video">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">video_library</i>
+                        <div class="mdui-list-item-content">视频</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple" id="left-drawer-list-music">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+                        <div class="mdui-list-item-content">音乐</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="left-drawer-bottom">
+            <!-- 抽屉式导航脚部 -->
+            <div id="left-drawer-footer">
+                <ul class="mdui-list mdui-list-dense">
+                    <div class="mdui-divider"></div>
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">contact_phone</i>
+                        <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title mdui-list-item-one-line">电话</div>
+                        <div class="mdui-list-item-text mdui-list-item-one-line">23333333333</div>
+                        </div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">contact_mail</i>
+                        <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title mdui-list-item-one-line">邮箱</div>
+                        <div class="mdui-list-item-text mdui-list-item-one-line">clear.lz@foxmail.com</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdui-typo-caption mdui-text-center mdui-color-grey-900 mdui-text-color-white" id="framework-based-on">
+                <a href="https://www.mdui.org/" target="_blank">Theme - MDUI</a>
+            </div>
+        </div>
+    </div>
+    <!-- 网格布局容器 -->
+    <div class="mdui-container" id="main">
+        <!-- 容器上部播放器与按钮 -->
+        <div class="mdui-p-t-5 mdui-p-b-2" id="main-top">
+            <!-- 音乐播放器容器 -->
+            <div  id="music-player-container">
+                <div class="mdui-hoverable music-player" data-name="原始列表" id="music-player-primary"></div>
+                <div class="mdui-hoverable music-player" data-name="收藏列表"></div>
+            </div>
+            <!-- 音乐播放器底部按钮容器 -->
+            <div class="animated fadeInUp" id="music-player-bottom-button-container">
+                <div id="music-player-remove-list-container"></div>
+                <div id="music-player-change-list-container"></div>
+                <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-btn-raised mdui-ripple mdui-color-theme-accent music-player-bottom-button"
+                    id="button-change-music-player-list" mdui-tooltip="{content: '点击/长按子项'}">
+                    <i class="mdui-icon material-icons">playlist_play</i>
+                </button>
+                <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-btn-raised mdui-ripple mdui-color-theme-accent music-player-bottom-button"
+                    id="button-new-music-player-list" mdui-tooltip="{content: '新建列表'}">
+                    <i class="mdui-icon material-icons">add</i>
+                </button>
+                <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-btn-raised mdui-ripple mdui-color-theme-accent music-player-bottom-button"
+                    id="button-remove-music-player-list" mdui-tooltip="{content: '移除列表'}">
+                    <i class="mdui-icon material-icons">remove</i>
+                </button>
+                <a class="mdui-float-right music-player-bottom-button mdui-btn mdui-btn-dense mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+                    href="https://aplayer.js.org" target="_blank" id="aplayer-link">
+                    Aplayer🍭
+                </a>
+                <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-float-right music-player-bottom-button"
+                    id="button-repaint-canvas">
+                    <i class="mdui-icon material-icons">format_paint</i>
+                </button>
+            </div>
+        </div>
+        <!-- 底部提示文字 -->
+        <div class="mdui-typo-caption-opacity mdui-text-center mdui-m-b-5" id="bottom-tip">
+            (～o￣3￣)～下面什么都没有了
+        </div>
+    </div>
+    <!-- 背景特效 -->
+    <canvas id="canvas-evan-you"></canvas>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* 隐藏的文本框 */
+#temp-video-link-container{
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+/* 视频卡片移动过渡 */
+#video-card-container{
+    position: relative;
+}
+.video-card{
+    transition: all 1s;
+}
+/* 原站链接按钮 */
+.mdui-card-actions a{
+    text-decoration: none;
+}
+/* 视频卡片宽度过渡*/
+.video-card-fold{
+    width: 50%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.video-card-unfold{
+    width: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+/* 自动截断的文本 */
+.video-card-text-truncate-container{
+    overflow: hidden;
+}
+.video-card-text-truncate{
+    cursor: pointer;
+    transition: all 1s;
+}
+/* 视频框架 */
+.iframe-video{
+    background-image: url('../img/video_card_cover.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+/* 回到顶部按钮 */
+#button-back-to-top{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
