@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dep/swiper-4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./dep/icon-footer/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./dep/swiper-4.4.2/js/swiper.min.js"></script>
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./dep/zeptio-1.2.0/fx.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <span id="header-text">券小二</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 轮播图 -->
+                <div id="carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carousel-img-container">
+                                    <img src="./temp-img/index/banner_1.png" alt="轮播图">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-img-container">
+                                    <img src="./temp-img/index/banner_2.jpg" alt="轮播图">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- 最新揭晓 -->
+                <div id="revealed">
+                    <a id="revealed-header" href="./unveil.html">
+                        <div id="revealed-header-img">
+                            <img src="./img/index/recently_revealed.png" alt="最新揭晓">
+                        </div>
+                        <div id="revealed-header-winner">
+                            <ul id="revealed-header-winner-list">
+                                <li>
+                                    恭喜<span>天生欧皇1号</span>获得<span>最不想要的东西1</span>
+                                </li>
+                                <li>
+                                    恭喜<span>天生欧皇2号</span>获得<span>最不想要的东西2</span>
+                                </li>
+                                <li>
+                                    恭喜<span>天生欧皇3号</span>获得<span>最不想要的东西3</span>
+                                </li>
+                                <li>
+                                    恭喜<span>天生欧皇4号</span>获得<span>最不想要的东西4</span>
+                                </li>
+                                <li>
+                                    恭喜<span>天生欧皇5号</span>获得<span>最不想要的东西5</span>
+                                </li>
+                                <li>
+                                    恭喜<span>天生欧皇6号</span>获得<span>最不想要的东西6</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="revealed-header-arrow">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <div id="revealed-preview">
+                        <ul id="revealed-preview-list">
+                            <li>
+                                <a class="revealed-preview-card" href="./unveil-detail.html">
+                                    <div class="revealed-preview-card-img">
+                                        <img src="./temp-img/index/pot.jpg" alt="商品缩略图">
+                                    </div>
+                                    <div class="revealed-preview-card-winner">
+                                        <span>获得者</span>
+                                        <span class="name">亚洲五秒男</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="revealed-preview-card" href="./unveil-detail.html">
+                                    <div class="revealed-preview-card-img">
+                                        <img src="./temp-img/index/pot.jpg" alt="商品缩略图">
+                                    </div>
+                                    <div class="revealed-preview-card-winner">
+                                        <span>获得者</span>
+                                        <span class="name">亚洲五秒男</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="revealed-preview-card" href="./unveil-detail.html">
+                                    <div class="revealed-preview-card-img">
+                                        <img src="./temp-img/index/pot.jpg" alt="商品缩略图">
+                                    </div>
+                                    <div class="revealed-preview-card-winner">
+                                        <span>获得者</span>
+                                        <span class="name">亚洲五秒男</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="revealed-preview-card" href="./unveil-detail.html">
+                                    <div class="revealed-preview-card-img">
+                                        <img src="./temp-img/index/pot.jpg" alt="商品缩略图">
+                                    </div>
+                                    <div class="revealed-preview-card-winner">
+                                        <span>获得者</span>
+                                        <span class="name">亚洲五秒男</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 推荐商品 -->
+                <div id="recommended">
+                    <div id="recommended-header">
+                        <div id="recommended-header-text">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <span>猜你喜欢</span>
+                        </div>
+                    </div>
+                    <div id="recommended-goods">
+                        <ul id="recommended-goods-list">
+                            <li>
+                                <div class="recommended-goods-card">
+                                    <a class="recommended-goods-card-link" href="./goods-detail.html">
+                                        <div class="recommended-goods-card-link-img">
+                                            <img src="./temp-img/index/notebook.jpg" alt="商品缩略图">
+                                        </div>
+                                        <div class="recommended-goods-card-link-title">
+                                            200斤大码女裤夏季新款胖mm宽松高腰小脚裤棉麻休闲九分哈伦裤潮
+                                        </div>
+                                        <div class="recommended-goods-card-link-coupon">
+                                            优惠券：
+                                            ￥满<span class="reach">11</span>元
+                                            减<span class="minus">10</span>元
+                                        </div>
+                                        <div class="recommended-goods-card-link-gift">
+                                            送抽奖：<span>微软（Microsoft）Surface Book 2 二合一平板笔记本 15英寸（Intel i7 16G内存 256G存储）银色</span>
+                                        </div>
+                                        <div class="recommended-goods-card-link-progress">
+                                            <div class="recommended-goods-card-link-progress-total"></div>
+                                            <div class="recommended-goods-card-link-progress-current" style="width: 30%"></div>
+                                        </div>
+                                        <div class="recommended-goods-card-link-number">
+                                            <ul class="recommended-goods-card-link-number-list">
+                                                <li class="sold">
+                                                    <span class="colored">1500</span>
+                                                    <span>已赠送</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span class="colored">2500</span>
+                                                    <span>总个数</span>
+                                                </li>
+                                                <li class="remain">
+                                                    <span class="colored">1000</span>
+                                                    <span>剩余</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="recommended-goods-card-link-decoration">
+                                            送奖
+                                        </div>
+                                    </a>
+                                    <div class="recommended-goods-card-button">
+                                        <a class="recommended-goods-card-button-link" href="./cart.html">
+                                            立即购买
+                                        </a>
+                                        <span class="recommended-goods-card-button-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="recommended-goods-more">
+                            <a id="recommended-goods-more-link" href="./goods.html">
+                                <img src="./img/index/check_more.png" alt="查看更多">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+                <ul id="footer-menu">
+                    <li class="active">
+                        <a href="./index.html">
+                            <i class="iconfont icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./goods.html">
+                            <i class="iconfont icon-goods"></i>
+                            <span>所有商品</span>
+                        </a>
+                    </li>
+                    <li class="cart">
+                        <a href="./cart.html">
+                            <i class="iconfont icon-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./unveil.html">
+                            <i class="iconfont icon-trophy"></i>
+                            <span>最新揭晓</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class="iconfont icon-person"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

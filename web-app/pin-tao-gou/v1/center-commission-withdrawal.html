@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-commission-withdrawal.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/iconfont-banks/iconfont.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">佣金提现</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--tab选项卡-->
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab-operation" class="mdui-ripple">提现操作</a>
+            <a href="#main-tab-record" class="mdui-ripple">提现记录</a>
+        </div>
+        <!--提现操作选项卡-->
+        <div class="mdui-m-a-2" id="main-tab-operation">
+            <div class="mdui-card mdui-p-y-2 mdui-color-white card-withdrawal">
+                <div class="card-withdrawal-bank">
+                    <div class="mdui-typo-subheading mdui-m-x-2">
+                        选择银行卡
+                    </div>
+                    <ul class="mdui-list mdui-list-dense">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-avatar mdui-color-white">
+                                <svg class="icon-bank" aria-hidden="true">
+                                    <use xlink:href="#icon-gongshangyinhang-"></use>
+                                </svg>
+                            </div>
+                            <div class="mdui-list-item-content">
+                                <div class="mdui-list-item-title">
+                                    工商银行(2323)
+                                </div>
+                                <div class="mdui-list-item-text">
+                                    2小时到账
+                                </div>
+                            </div>
+                            <label class="mdui-radio">
+                                <input type="radio" name="group-bank-list" checked>
+                                <i class="mdui-radio-icon"></i>
+                            </label>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-avatar mdui-color-white">
+                                <svg class="icon-bank" aria-hidden="true">
+                                    <use xlink:href="#icon-yinhang-zhongguojianshe-"></use>
+                                </svg>
+                            </div>
+                            <div class="mdui-list-item-content">
+                                <div class="mdui-list-item-title">
+                                    建设银行(8789)
+                                </div>
+                                <div class="mdui-list-item-text">
+                                    2小时到账
+                                </div>
+                            </div>
+                            <label class="mdui-radio">
+                                <input type="radio" name="group-bank-list">
+                                <i class="mdui-radio-icon"></i>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-m-t-2 card-withdrawal-input">
+                    <div class="mdui-typo-subheading mdui-m-x-2">
+                        输入提现金额
+                    </div>
+                    <div class="mdui-textfield mdui-textfield-floating-label mdui-m-r-2">
+                        <i class="mdui-icon material-icons">attach_money</i>
+                        <label class="mdui-textfield-label">
+                            单次提现最少<span>100</span>元
+                        </label>
+                        <input class="mdui-textfield-input" type="number">
+                        <div class="mdui-textfield-helper">
+                            当前佣金总额<span>1000000</span>元
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-divider mdui-m-y-2"></div>
+                <div class="mdui-m-x-2 card-withdrawal-btn-group">
+                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提现</button>
+                </div>
+            </div>
+        </div>
+        <!--提现记录选项卡-->
+        <div class="mdui-p-a-2" id="main-tab-record">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="mdui-table-col-numeric">提现金额（元）</th>
+                            <th>提现至银行卡</th>
+                            <th>佣金提现时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="mdui-table-col-numeric">100.09</td>
+                            <td>交通银行(2333)</td>
+                            <td>2016-09-08 12:09:08</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="mdui-table-col-numeric">5.00</td>
+                            <td>兴业银行(8848)</td>
+                            <td>2013-01-01 07:34:15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.page-link-item{
+    display: block;
+    position: relative;
+    line-height: 1rem;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-link-item>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.32rem;
+    color: #666;
+}
+.page-link-item-icon{
+    margin: 0 0.3rem;
+}
+.page-link-item-icon>i.iconfont{
+    font-size: 0.4rem;
+}
+.page-link-item-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 1rem;
+    text-align: center;
+}
+.page-link-item-arrow>i.iconfont{
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #999;
+}
+#page-link-item-icon-invite{
+    color: #03a9f4;
+}
+#page-link-item-icon-commission{
+    color: #e51c23;
+}

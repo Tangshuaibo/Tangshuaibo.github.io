@@ -1,0 +1,61 @@
+#main-content{
+    width: 1000px;
+    text-align: center;
+}
+#page-form-title{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+    background-color: #f00582;
+}
+#page-form-content{
+    width: 600px;
+    margin: 30px auto;
+}
+#page-form-content>form>input{
+    padding: 0 15px;
+    width: 600px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 40px;
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 1px #f2f2f2 inset;
+}
+#page-form-content>form>button{
+    margin-top: 10px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    background-color: #f00582;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+#page-tutorial-title{
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+    background-color: #f00582;
+}
+#page-tutorial-content-row{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+#page-tutorial-content-row>a{
+    color: #2af;
+    text-decoration: none;
+}
+#page-tutorial-content-row>span{
+    color: #f00582;
+}
+#footer{
+    margin-top: 40px;
+}

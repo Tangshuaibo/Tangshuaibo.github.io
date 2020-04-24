@@ -1,0 +1,28 @@
+#list-farmer-detail{
+    margin: 8px 0;
+    border-top: 1px solid #ddd;
+}
+
+#list-farmer-detail .nothing{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+
+#list-farmer-detail .content>.number{
+    float: right;
+    line-height: 32px;
+}
+
+#list-farmer-detail .panel-collapse-body>*+*{
+    margin-top: 8px;
+}
+
+#list-farmer-detail .panel-collapse-body>div{
+    overflow: hidden;
+}
+
+#list-farmer-detail .panel-collapse-body>div>span{
+    float: right;
+}

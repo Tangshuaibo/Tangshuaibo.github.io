@@ -1,0 +1,23 @@
+#list-reward-detail{
+    margin: 8px 0;
+    border-top: 1px solid #ddd;
+}
+#list-reward-detail .nothing{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: calc(100vh - 150px);
+}
+#list-reward-detail .content>.number{
+    float: right;
+    line-height: 32px;
+}
+#list-reward-detail .panel-collapse-body>*+*{
+    margin-top: 8px;
+}
+#list-reward-detail .panel-collapse-body>div{
+    overflow: hidden;
+}
+#list-reward-detail .panel-collapse-body>div>span{
+    float: right;
+}

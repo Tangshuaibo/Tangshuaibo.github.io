@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./dep/icon-footer/iconfont.css">
+    <link rel="stylesheet" href="./dep/icon-others-3/iconfont.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <span id="header-text">个人中心</span>
+                <a id="header-setting" href="./center-setting.html">
+                    <i class="iconfont icon-mzicon-setting"></i>
+                </a>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 用户信息 -->
+                <div id="page-user">
+                    <div id="page-user-top">
+                        <div id="page-user-top-avatar">
+                            <img src="./temp-img/center/avatar.jpeg" alt="用户头像">
+                            <span id="page-user-top-avatar-gender">
+                                <i class="iconfont icon-gender-male-female"></i>
+                                <!-- <i class="iconfont icon-gender-male"></i>
+                                <i class="iconfont icon-gender-female"></i> -->
+                            </span>
+                        </div>
+                        <div id="page-user-top-id">
+                            用户ID：<span>1000001723</span>
+                        </div>
+                        <div id="page-user-top-class">
+                            <span class="class">专享小将</span>
+                            <span>经验值：</span>
+                            <span class="experience">10</span>
+                        </div>
+                    </div>
+                    <div id="page-user-bottom">
+                        <a class="page-user-bottom-item" id="page-user-number-balance" href="./center-recharge.html">
+                            <div class="text">余额</div>
+                            <div class="number">
+                                <span class="symbol">￥</span>
+                                <span class="number">0.0</span>
+                            </div>
+                        </a>
+                        <div class="page-user-bottom-item" id="page-user-number-balance">
+                            <div class="text">积分</div>
+                            <div class="number">
+                                <span class="number">2</span>
+                            </div>
+                        </div>
+                        <a class="page-user-bottom-item" id="page-user-number-balance" href="./center-envelope.html">
+                            <div class="text">红包</div>
+                            <div class="number">
+                                <span class="number">0</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 主要内容 -->
+                <div id="page-content">
+                    <ul id="page-content-list">
+                        <li>
+                            <a class="link-card" href="./center-record-bought.html">
+                                <div class="link-card-icon" id="link-card-icon-record-bought">
+                                    <i class="iconfont icon-record"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    购买记录
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-record-gift.html">
+                                <div class="link-card-icon" id="link-card-icon-record-gift">
+                                    <i class="iconfont icon-gift"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    赠奖记录
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-bought.html">
+                                <div class="link-card-icon" id="link-card-icon-record-proxy">
+                                    <i class="iconfont icon-yunshuguanli"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    专享订单
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-bill.html">
+                                <div class="link-card-icon" id="link-card-icon-record-bill">
+                                    <i class="iconfont icon-recharge"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    账户明细
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-record-commission.html">
+                                <div class="link-card-icon" id="link-card-icon-record-commission">
+                                    <i class="iconfont icon-619"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    佣金记录
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-prize.html">
+                                <div class="link-card-icon" id="link-card-icon-management-prize">
+                                    <i class="iconfont icon-Prize"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    中奖管理
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-unbox.html">
+                                <div class="link-card-icon" id="link-card-icon-management-unbox">
+                                    <i class="iconfont icon-unboxing"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    晒单管理
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-invite.html">
+                                <div class="link-card-icon" id="link-card-icon-management-invite">
+                                    <i class="iconfont icon-invite"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    邀请赚钱
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-address.html">
+                                <div class="link-card-icon" id="link-card-icon-management-address">
+                                    <i class="iconfont icon-address"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    地址管理
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-data.html">
+                                <div class="link-card-icon" id="link-card-icon-management-info">
+                                    <i class="iconfont icon-profile"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    个人资料
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-card" href="./center-lottery.html">
+                                <div class="link-card-icon" id="link-card-icon-lottery">
+                                    <i class="iconfont icon-lotterydraw"></i>
+                                </div>
+                                <div class="link-card-text">
+                                    砸蛋抽奖
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+                <ul id="footer-menu">
+                    <li>
+                        <a href="./index.html">
+                            <i class="iconfont icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./goods.html">
+                            <i class="iconfont icon-goods"></i>
+                            <span>所有商品</span>
+                        </a>
+                    </li>
+                    <li class="cart">
+                        <a href="./cart.html">
+                            <i class="iconfont icon-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./unveil.html">
+                            <i class="iconfont icon-trophy"></i>
+                            <span>最新揭晓</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="./login.html">
+                            <i class="iconfont icon-person"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

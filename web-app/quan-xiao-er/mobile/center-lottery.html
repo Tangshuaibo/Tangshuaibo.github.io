@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>砸蛋抽奖</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-lottery.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./dep/zeptio-1.2.0/fx.js"></script>
+    <script src="./dep/zeptio-1.2.0/fx_methods.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-lottery.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">砸蛋抽奖</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-game">
+                    <div id="page-game-stationary">
+                        <img src="./img/center-lottery/egg_1.png" alt="整蛋">
+                        <img src="./img/center-lottery/egg_2.png" alt="碎蛋" style="display: none;">
+                        <img src="./img/center-lottery/egg_light.png" alt="光芒" style="display: none;">
+                    </div>
+                    <div id="page-game-movable">
+                        <img src="./img/center-lottery/hammer.png" alt="锤子">
+                    </div>
+                </div>
+                <div id="page-result" style="display: none;">
+                    <div id="page-result-title">
+                        抽奖结果
+                    </div>
+                    <div id="page-result-loading">
+                        计算中……
+                    </div>
+                    <div id="page-result-detail" style="display: none;">
+                        <div id="page-result-detail-header">
+                            恭喜您获得
+                        </div>
+                        <a id="page-result-detail-content" href="./goods-detail.html">
+                            <div id="page-result-detail-content-img">
+                                <img src="./temp-img/center-lottery/goods.jpg" alt="商品缩略图">
+                            </div>
+                            <div id="page-result-detail-content-info">
+                                <div id="page-result-detail-content-info-title">
+                                    (第2790期)美宝莲（MAYBELLINE）飞箭睫毛膏 蓝胖子10ml（浓密 卷翘 不结块 防水不晕染）
+                                </div>
+                                <div id="page-result-detail-content-info-price">
+                                    <span>价值：</span>
+                                    <span class="symbol">￥</span>
+                                    <span class="price">107.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="page-snackbar" style="display: none;">
+                    没有更多机会了
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

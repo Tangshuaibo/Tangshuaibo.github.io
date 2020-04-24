@@ -1,0 +1,35 @@
+/* 页面整体 */
+#page{
+    height: 100vh;
+    background-image: url(../img/common/yungou_background.png);
+    background-size: 100% auto;
+    overflow-y: auto;
+}
+/* 页面主体 */
+#page-content{
+    padding: 0.2rem 0.4rem;
+}
+#page-content>*{
+    margin-bottom: 0.2rem;
+}
+#page-content p{
+    max-height: 100%;
+    font-size: 0.28rem;
+    line-height: 1.5;
+    color: #999;
+}
+#page-content span{
+    font-size: 0.3rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: #777;
+}
+#page-content p.style-1{
+    text-indent: 2em;
+}
+#page-content p.style-2{
+    margin-top: -0.2rem;
+    margin-bottom: 0;
+    padding-left: 0.4rem;
+    font-size: 0.24rem;
+}

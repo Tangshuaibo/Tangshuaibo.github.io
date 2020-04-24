@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">任务列表</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table mdui-table-hoverable">
+                <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>商品链接</th>
+                    <th>任务类型</th>
+                    <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                    <th class="mdui-table-col-numeric">剩余/总数</th>
+                    <th>任务发布时间</th>
+                    <th>任务相关操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>MissCandy指甲油</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="http://www.huituhb.net">
+                            跳转到商品
+                        </a>
+                    </td>
+                    <td>淘宝精刷任务</td>
+                    <td class="mdui-table-col-numeric">230</td>
+                    <td class="mdui-table-col-numeric">10/5000</td>
+                    <td>2019-09-08 10:46:09</td>
+                    <td>
+                        <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple">
+                            领取任务
+                        </button>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-teal mdui-ripple mdui-m-t-1"
+                           href="./receive-list-detail.html">
+                            查看详情
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>小鱿鱼仔 烧烤墨鱼仔 即食海鲜零食 舟山碳烤鱿鱼 500克</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="http://www.huituhb.net">
+                            跳转到商品
+                        </a>
+                    </td>
+                    <td>淘宝精刷任务</td>
+                    <td class="mdui-table-col-numeric">110</td>
+                    <td class="mdui-table-col-numeric">19/1000</td>
+                    <td>2019-09-08 03:12:37</td>
+                    <td>
+                        <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple">
+                            领取任务
+                        </button>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-teal mdui-ripple mdui-m-t-1"
+                           href="./receive-list-detail.html">
+                            查看详情
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

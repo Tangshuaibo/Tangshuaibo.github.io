@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/task-canceled.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">已撤销</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>商品名称</th>
+                    <th>任务类型</th>
+                    <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                    <th>任务撤销原因</th>
+                    <th>任务领取时间</th>
+                    <th>任务撤销时间</th>
+                    <th>查看任务详情</th>
+                    <th>任务相关操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>快乐消除器</td>
+                    <td>淘宝精刷任务</td>
+                    <td class="mdui-table-col-numeric">100</td>
+                    <td>不想做了</td>
+                    <td>2010-09-13 10:09:12</td>
+                    <td>2010-09-13 11:10:22</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="./receive-list-detail.html">
+                            查看详情
+                        </a>
+                    </td>
+                    <td>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="./complaint-initiate.html">
+                            发起申诉
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>痛苦增强器</td>
+                    <td>京东精刷任务</td>
+                    <td class="mdui-table-col-numeric">100</td>
+                    <td class="mdui-text-color-theme-accent table-data-reason" data-reason="地球已经沦陷，死守下去没有意义">
+                        其他原因
+                    </td>
+                    <td>2007-01-01 18:10:09</td>
+                    <td>2007-01-01 18:12:11</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="./receive-list-detail.html">
+                            查看详情
+                        </a>
+                    </td>
+                    <td>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="./complaint-initiate.html">
+                            发起申诉
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>感官抑制器</td>
+                    <td>拼多多精刷任务</td>
+                    <td class="mdui-table-col-numeric">100</td>
+                    <td class="mdui-text-color-theme-accent table-data-reason" data-reason="万物皆虚，万事皆允">
+                        其他原因
+                    </td>
+                    <td>2017-01-03 18:09:10</td>
+                    <td>2017-01-03 18:10:11</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="./receive-list-detail.html">
+                            查看详情
+                        </a>
+                    </td>
+                    <td>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="./complaint-initiate.html">
+                            发起申诉
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

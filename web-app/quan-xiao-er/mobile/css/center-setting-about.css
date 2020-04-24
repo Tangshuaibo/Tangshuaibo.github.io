@@ -1,0 +1,25 @@
+#page {
+    height: 100vh;
+    background-image: url(../img/common/yungou_background.png);
+    background-size: 100% auto;
+    overflow-y: auto;
+}
+#page-content{
+    padding: 0.4rem;
+    color: #999;
+}
+#page-content p{
+    margin-bottom: 0.2rem;
+    max-height: 100%;
+    font-size: 0.24rem;
+    line-height: 1.5;
+}
+#page-content p.bolder{
+    font-weight: bolder;
+}
+#page-content span{
+    margin-bottom: 0.2rem;
+    font-size: 0.28rem;
+    line-height: 1.5;
+    color: #f00582;
+}

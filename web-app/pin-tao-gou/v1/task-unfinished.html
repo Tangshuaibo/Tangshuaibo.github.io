@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/task-unfinished.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/task-unfinished.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">未完成</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab1" class="mdui-ripple">待操作</a>
+            <a href="#main-tab2" class="mdui-ripple">已发货</a>
+            <a href="#main-tab3" class="mdui-ripple">待确认</a>
+            <a href="#main-tab4" class="mdui-ripple">等返款</a>
+        </div>
+        <!--待操作-->
+        <div id="main-tab1">
+            <div class="mdui-table-fluid">
+                <!--待操作任务列表-->
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                        <th>任务领取时间</th>
+                        <th>任务相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>快乐消除器</td>
+                        <td>淘宝精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-09-01 12:09:08</td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./task-unfinished-operation.html">
+                                前去完成
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1 btn-apply-cancellation">
+                                申请撤销
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>痛苦增强器</td>
+                        <td>京东精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-12-12 08:05:14</td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./task-unfinished-operation.html">
+                                前去完成
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1 btn-apply-cancellation">
+                                申请撤销
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--申请撤销对话框-->
+                <div class="mdui-dialog" id="dialog-apply-cancellation">
+                    <div class="mdui-dialog-title">请选择撤销原因</div>
+                    <div class="mdui-dialog-content">
+                        <div class="mdui-container-fluid">
+                            <div class="mdui-row-xs-2">
+                                <div class="mdui-col">
+                                    <label class="mdui-radio">
+                                        <input type="radio" name="group-reason-cancellation" value="没有时间">
+                                        <i class="mdui-radio-icon"></i>
+                                        没有时间
+                                    </label>
+                                </div>
+                                <div class="mdui-col">
+                                    <label class="mdui-radio">
+                                        <input type="radio" name="group-reason-cancellation" value="赏金太少">
+                                        <i class="mdui-radio-icon"></i>
+                                        赏金太少
+                                    </label>
+                                </div>
+                                <div class="mdui-col">
+                                    <label class="mdui-radio">
+                                        <input type="radio" name="group-reason-cancellation" value="任务太难">
+                                        <i class="mdui-radio-icon"></i>
+                                        任务太难
+                                    </label>
+                                </div>
+                                <div class="mdui-col">
+                                    <label class="mdui-radio">
+                                        <input type="radio" name="group-reason-cancellation" value="其他原因">
+                                        <i class="mdui-radio-icon"></i>
+                                        其他原因
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-textfield" id="textarea-cancellation-reason" style="display: none;">
+                            <textarea class="mdui-textfield-input" maxlength="100" placeholder="请填写申请撤销任务的原因"></textarea>
+                        </div>
+                    </div>
+                    <div class="mdui-dialog-actions">
+                        <button class="mdui-btn mdui-ripple" id="btn-dialog-cancellation-cancel">取消</button>
+                        <button class="mdui-btn mdui-ripple" id="btn-dialog-cancellation-confirm">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--已发货-->
+        <div id="main-tab2">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                        <th>任务领取时间</th>
+                        <th>查看任务详情</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>快乐消除器</td>
+                        <td>淘宝精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-09-01 12:09:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>痛苦增强器</td>
+                        <td>拼多多精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-09-11 13:29:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--待确认-->
+        <div id="main-tab3">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                        <th>任务领取时间</th>
+                        <th>查看任务详情</th>
+                        <th>任务相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>快乐消除器</td>
+                        <td>淘宝精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-09-01 12:09:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple">确认到货</button>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">拒绝收货</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>痛苦增强器</td>
+                        <td>拼多多精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-09-11 13:29:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple">确认到货</button>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">拒绝收货</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--待返款-->
+        <div id="main-tab4">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th class="mdui-table-col-numeric">任务金豆（个）</th>
+                        <th>任务领取时间</th>
+                        <th>查看任务详情</th>
+                        <th>任务相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>快乐消除器</td>
+                        <td>淘宝精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-02-01 10:19:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-initiate.html">
+                                发起申诉
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>痛苦增强器</td>
+                        <td>京东精刷任务</td>
+                        <td class="mdui-table-col-numeric">100</td>
+                        <td>2019-01-13 13:04:08</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-initiate.html">
+                                发起申诉
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

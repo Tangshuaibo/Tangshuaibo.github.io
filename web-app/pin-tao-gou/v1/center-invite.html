@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./deps/sharejs-1.1.0/css/share.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-invite.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/sharejs-1.1.0/js/social-share.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-invite.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">推广赚钱</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <ul class="mdui-list main-list">
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        我的邀请码
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        123456
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        推广总数
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        <span class="mdui-text-color-theme-accent">2</span>人
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        累计奖励
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        <span class="mdui-text-color-theme-accent">20</span>金豆
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="mdui-textfield mdui-m-x-2">
+            <label class="mdui-textfield-label">我的推广链接</label>
+            <textarea class="mdui-textfield-input" readonly>http://lizhe.huituhb.com/pintaogou/register.html#123456</textarea>
+        </div>
+        <ul class="mdui-list main-list">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">info_outline</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-text">
+                        邀请人可得受邀者半年佣金的<span>10%</span>作为奖励（从受邀者注册之日算起）。<br>
+                        例如，A邀请B，B完成一单任务获得10金豆，A获得奖励1金豆。
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="mdui-list main-list">
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left" id="list-share-title">分享到</div>
+                    <div class="mdui-float-right" id="list-share-btn-group"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

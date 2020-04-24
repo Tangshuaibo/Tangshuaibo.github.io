@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客服中心</title>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-setting-service.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-setting-service.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back-sub">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">客服中心</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 页面上部 -->
+                <div id="page-top">
+                    <div id="page-top-card">
+                        <div id="page-top-card-img">
+                            <span>券</span>
+                        </div>
+                        <div id="page-top-card-info">
+                            <div class="page-top-card-info-row">
+                                <span class="title title-1">服务时间：</span>
+                                <span class="detail detail-1">周一至周五 9:00-18:00/周六日 19:00-22:00</span>
+                            </div>
+                            <div class="page-top-card-info-row">
+                                <span class="title title-1">温馨提醒：</span>
+                                <span class="detail detail-1">请认准以上官方服务号，其他号码均不代表官方，请务必小心欺诈信息。</span>
+                            </div>
+                            <div class="page-top-card-info-row">
+                                <span class="title">官方QQ客服：</span>
+                                <span class="detail">123456789</span>
+                                <span class="btn" id="page-top-card-info-row-btn-qq">
+                                    <i class="fa fa-qq" aria-hidden="true"></i>
+                                    QQ二维码
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 页面内容 -->
+                <div id="page-content">
+                    <ul id="page-content-list">
+                        <li class="page-content-list-item" style="display: none;">
+                            <div class="page-content-list-item-title">
+                                <div class="page-content-list-item-title-text">活动福利</div>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <ul class="page-content-list-item-list">
+                                <li class="page-content-list-item-list-item proto" style="display: none;">
+                                    什么是红包？
+                                </li>
+                                <li class="page-content-list-item-list-item proto" style="display: none;">
+                                    积分怎么玩？
+                                </li>
+                                <li class="page-content-list-item-list-item proto" style="display: none;">
+                                    各种各样的商品活动？
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 内容详情 -->
+                <div id="page-content-detail" style="display: none;">
+                    <div id="page-content-detail-card">
+                        <div id="page-content-detail-card-title">
+                            什么是红包？
+                        </div>
+                        <div id="page-content-detail-card-detail">
+                            红包是为了帮助用户全面了解1元专享过程，方便用户参与1元专享的抵用券。红包形式为“满额减免”形式。<br>
+                            满额减免：例如满10减2红包，就是单笔支付满10元，支付时立减2元。<br>
+                            客服强烈建议：请在有效期内及时使用红包，否则过期作废。
+                        </div>
+                    </div>
+                </div>
+                <!-- 二维码层 -->
+                <div id="page-layer" style="display: none;">
+                    <div id="page-layer-close">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <div id="page-layer-code">
+                        <img src="./temp-img/center-setting-service/QR_code_android.png" alt="客服QQ二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

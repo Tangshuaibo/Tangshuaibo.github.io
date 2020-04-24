@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./dep/icon-others-4/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-data.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-data.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">个人资料</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-link-list">
+                    <a class="page-link-item" href="./center-data-avatar.html">
+                        <div class="page-link-item-icon" id="page-link-item-icon-avatar">
+                            <i class="iconfont icon-avatar"></i>
+                        </div>
+                        <div class="page-link-item-text">
+                            头像
+                        </div>
+                        <div class="page-link-item-avatar">
+                            <img src="./temp-img/center-data/avatar.jpeg" alt="用户头像">
+                        </div>
+                        <div class="page-link-item-arrow">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                    </a>
+                    <a class="page-link-item" id="page-link-item-nickname">
+                        <div class="page-link-item-icon" id="page-link-item-icon-nickname">
+                            <i class="iconfont icon-nickname"></i>
+                        </div>
+                        <div class="page-link-item-text">
+                            昵称
+                        </div>
+                        <div class="page-link-item-detail">
+                            龙王与萝莉的传说
+                        </div>
+                        <div class="page-link-item-arrow">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                    </a>
+                    <a class="page-link-item" href="./center-data-number.html">
+                        <div class="page-link-item-icon" id="page-link-item-icon-number">
+                            <i class="iconfont icon-mobile"></i>
+                        </div>
+                        <div class="page-link-item-text">
+                            手机号
+                        </div>
+                        <div class="page-link-item-detail">
+                            12332100123
+                        </div>
+                        <div class="page-link-item-arrow">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                    </a>
+                    <a class="page-link-item" id="page-item-signature">
+                        <div class="page-link-item-icon" id="page-link-item-icon-signature">
+                            <i class="iconfont icon-signature"></i>
+                        </div>
+                        <div class="page-link-item-text">
+                            个性签名
+                        </div>
+                        <div class="page-link-item-detail">
+                            啊！我的王之力！
+                        </div>
+                        <div class="page-link-item-arrow">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                    </a>
+                    <a class="page-link-item" href="./center-data-password.html">
+                        <div class="page-link-item-icon" id="page-link-item-icon-password">
+                            <i class="iconfont icon-password"></i>
+                        </div>
+                        <div class="page-link-item-text">
+                            修改密码
+                        </div>
+                        <div class="page-link-item-arrow">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div id="page-modal-layer" style="display: none;">
+                    <div class="page-modal" id="page-modal-nickname" style="display: none;">
+                        <div class="page-modal-header">
+                            修改昵称
+                        </div>
+                        <div class="page-modal-input">
+                            <input type="text" maxlength="30">
+                        </div>
+                        <div class="page-modal-btn">
+                            <span class="page-modal-btn-cancel">取消</span>
+                            <span class="page-modal-btn-confirm">确认</span>
+                        </div>
+                    </div>
+                    <div class="page-modal" id="page-modal-signature" style="display: none;">
+                        <div class="page-modal-header">
+                            修改签名
+                        </div>
+                        <div class="page-modal-input">
+                            <input type="text" maxlength="30">
+                        </div>
+                        <div class="page-modal-btn">
+                            <span class="page-modal-btn-cancel">取消</span>
+                            <span class="page-modal-btn-confirm">确认</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-snackbar" id="page-snackbar-nothing" style="display: none;">
+                    您输入了空值
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

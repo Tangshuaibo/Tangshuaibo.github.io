@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0" id="app-header">
+        <!--应用栏一级选项器-->
+        <div class="mdui-tab mdui-tab-full-width mdui-color-theme" mdui-tab>
+            <a href="#tab-taobao" class="mdui-ripple">淘宝</a>
+            <a href="#tab-jingdong" class="mdui-ripple">京东</a>
+            <a href="#tab-pinduoduo" class="mdui-ripple">拼多多</a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-divider mdui-m-y-0"></div>
+        <!--淘宝选项卡-->
+        <div id="tab-taobao">
+            <!--二级选择器-->
+            <div class="mdui-tab mdui-tab-full-width mdui-color-theme-accent tab-secondary" mdui-tab>
+                <a href="#tab-taobao-promotion" class="mdui-ripple">地推单</a>
+                <a href="#tab-taobao-label" class="mdui-ripple">标签单</a>
+            </div>
+            <!--淘宝递推单选项卡-->
+            <div id="tab-taobao-promotion">
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>40</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+            <!--淘宝标签单选项卡-->
+            <div id="tab-taobao-label">
+                <!--账号选择-->
+                <div class="mdui-divider mdui-m-y-0"></div>
+                <div class="mdui-color-white mdui-text-center">
+                    <label for="selector-account-taobao-label"></label>
+                    <select class="mdui-select" mdui-select="{position: 'bottom'}"
+                            id="selector-account-taobao-label">
+                        <option value="淘宝账号选择">淘宝账号选择</option>
+                        <option value="添加新账号">添加新账号</option>
+                        <option value="0987654321">0987654321/20天后失效/本月可接单数（15）</option>
+                        <option value="1234567890">1234567890/5天后失效/本月可接单数（2）</option>
+                    </select>
+                </div>
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>2</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+        </div>
+        <!--京东选项卡-->
+        <div id="tab-jingdong">
+            <!--二级选择器-->
+            <div class="mdui-tab mdui-tab-full-width mdui-color-theme-accent tab-secondary" mdui-tab>
+                <a href="#tab-jingdong-fine" class="mdui-ripple">精刷单</a>
+                <a href="#tab-jingdong-label" class="mdui-ripple">标签单</a>
+            </div>
+            <!--京东精刷单选项卡-->
+            <div id="tab-jingdong-fine">
+                <!--账号选择-->
+                <div class="mdui-divider mdui-m-y-0"></div>
+                <div class="mdui-color-white mdui-text-center">
+                    <label for="selector-account-jingdong-fine"></label>
+                    <select class="mdui-select" mdui-select="{position: 'bottom'}"
+                            id="selector-account-jingdong-fine">
+                        <option value="京东账号选择">京东账号选择</option>
+                        <option value="0987654321">0987654321/本月可接单数（15）</option>
+                        <option value="1234567890">1234567890/本月可接单数（20）</option>
+                    </select>
+                </div>
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>当天</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>当天</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+            <!--京东标签单选项卡-->
+            <div id="tab-jingdong-label">
+                <!--账号选择-->
+                <div class="mdui-divider mdui-m-y-0"></div>
+                <div class="mdui-color-white mdui-text-center">
+                    <label for="selector-account-jingdong-label"></label>
+                    <select class="mdui-select" mdui-select="{position: 'bottom'}"
+                            id="selector-account-jingdong-label">
+                        <option value="京东账号选择">京东账号选择</option>
+                        <option value="0987654321">0987654321/本月可接单数（15）</option>
+                        <option value="1234567890">1234567890/本月可接单数（10）</option>
+                    </select>
+                </div>
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+        </div>
+        <!--拼多多选项卡-->
+        <div id="tab-pinduoduo">
+            <!--二级选择器-->
+            <div class="mdui-tab mdui-tab-full-width mdui-color-theme-accent tab-secondary" mdui-tab>
+                <a href="#tab-pinduoduo-fine" class="mdui-ripple">精刷单</a>
+                <a href="#tab-pinduoduo-label" class="mdui-ripple">标签单</a>
+            </div>
+            <!--拼多多精刷单选项卡-->
+            <div id="tab-pinduoduo-fine">
+                <!--账号选择-->
+                <div class="mdui-divider mdui-m-y-0"></div>
+                <div class="mdui-color-white mdui-text-center">
+                    <label for="selector-account-pinduoduo-fine"></label>
+                    <select class="mdui-select" mdui-select="{position: 'bottom'}"
+                            id="selector-account-pinduoduo-fine">
+                        <option value="拼多多账号选择">拼多多账号选择</option>
+                        <option value="0987654321">0987654321/本月可接单数（15）</option>
+                        <option value="1234567890">1234567890/本月可接单数（12）</option>
+                    </select>
+                </div>
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>当天</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>订单状态：</span>
+                                <span>单独购买</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>当天</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>订单状态：</span>
+                                <span>拼团</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+            <!--拼多多标签单选项卡-->
+            <div id="tab-pinduoduo-label">
+                <!--账号选择-->
+                <div class="mdui-divider mdui-m-y-0"></div>
+                <div class="mdui-color-white mdui-text-center">
+                    <label for="selector-account-pinduoduo-label"></label>
+                    <select class="mdui-select" mdui-select="{position: 'bottom'}"
+                            id="selector-account-pinduoduo-label">
+                        <option value="拼多多账号选择">拼多多账号选择</option>
+                        <option value="0987654321">0987654321/本月可接单数（15）</option>
+                        <option value="1234567890">1234567890/本月可接单数（10）</option>
+                    </select>
+                </div>
+                <!--任务列表-->
+                <div class="mdui-list mdui-p-y-0">
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>1000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>1</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>20</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>2</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>订单状态：</span>
+                                <span>拼团</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                    <div class="mdui-list-item mdui-ripple mdui-color-white">
+                        <div class="list-item-img">
+                            <img src="temp-img/task/goods-mooncake.jpg" alt="商品缩略图">
+                        </div>
+                        <div class="mdui-list-item-content list-item-content">
+                            <div class="list-item-content-row">
+                                <span>价格（淘豆）：</span>
+                                <span>2000</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>佣金（淘豆）：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>单数：</span>
+                                <span>40</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>下单周期：</span>
+                                <span>3</span>
+                            </div>
+                            <div class="list-item-content-row">
+                                <span>订单状态：</span>
+                                <span>参团</span>
+                            </div>
+                        </div>
+                        <div class="list-item-actions">
+                            <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple" href="#">
+                                接受任务
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdui-divider mdui-m-y-0"></div>
+                </div>
+                <!--操作按钮-->
+                <div class="btn-actions">
+                    <button class="mdui-btn mdui-btn-block mdui-color-white mdui-text-color-theme-accent mdui-ripple">
+                        换一批
+                    </button>
+                </div>
+                <div class="mdui-divider mdui-m-y-0"></div>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+        <a href="home.html" class="mdui-ripple mdui-bottom-nav-active">
+            <i class="mdui-icon material-icons">home</i>
+            <label>首页</label>
+        </a>
+        <a href="task.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">view_list</i>
+            <label>任务中心</label>
+        </a>
+        <a href="complaint.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">comment</i>
+            <label>消息</label>
+        </a>
+        <a href="login.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">person</i>
+            <label>我的</label>
+        </a>
+    </div>
+</div>
+</body>
+</html>

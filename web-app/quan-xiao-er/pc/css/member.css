@@ -1,0 +1,308 @@
+#main-content{
+    width: unset;
+}
+/* 页面导航 */
+#page-navigation{
+    min-width: 1200px;
+    font-size: 0;
+    color: white;
+    background-color: #2af;
+}
+#page-navigation-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+#page-navigation-wrapper>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+#page-navigation-logo>a{
+    display: block;
+    margin-right: 40px;
+    font-size: 40px;
+    line-height: 80px;
+    color: white;
+}
+#page-navigation-menu>ul>li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+#page-navigation-menu>ul>li:hover{
+    color: #ceecff;
+}
+#page-navigation-menu>ul>li>span{
+    display: block;
+}
+/* 页面选项卡 */
+#page-tabs{
+    margin: 20px auto;
+    width: 1200px;
+}
+.tab-container{
+    font-size: 0;
+}
+.tab-sidebar, .tab-main{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.tab-sidebar{
+    width: 15%;
+    padding: 5px 0;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+}
+.tab-sidebar>ul>li{
+    padding-left: 15px;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.tab-sidebar>ul>li.active{
+    background-color: white;
+    color: #2af;
+    border-left: 2px solid #2af;
+}
+.tab-sidebar>ul>li:not(.active):hover{
+    color: #2af;
+}
+.tab-main{
+    margin-left: 20px;
+    width: calc(85% - 20px);
+}
+/* 首页卡片 */
+#account-info-home-user{
+    padding: 20px 0;
+    font-size: 0;
+    color: #999;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+#account-info-home-user>div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+#account-info-home-user-left{
+    width: 40%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+#account-info-home-user-left-avatar{
+    position: relative;
+}
+#account-info-home-user-left-avatar>img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+#account-info-home-user-left-avatar-btn-edit{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 16px;
+    color: #999;
+}
+#account-info-home-user-left:hover #account-info-home-user-left-avatar-btn-edit{
+    display: block;
+}
+#account-info-home-user-left-bottom{
+    margin-top: 20px;
+    font-size: 12px;
+}
+#account-info-home-user-left-bottom>a{
+    font-size: 0;
+    color: #666;
+}
+#account-info-home-user-left-bottom>a>*{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+#account-info-home-user-left-bottom>a>i.user-class-icon{
+    margin-top: 4px;
+}
+.user-class-icon{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/member/class_icon.png);
+    background-size: auto 16px;
+    background-repeat: no-repeat;
+}
+.user-class-icon-1{
+    background-position: 0 0;
+}
+#account-info-home-user-right{
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 20px;
+}
+#account-info-home-user-right-bind{
+    font-size: 0;
+}
+#account-info-home-user-right-bind>a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+#account-info-home-user-right-bind>a:hover{
+    color: #2af;
+    border-color: #2af;
+}
+#account-info-home-user-right-bind>a:hover>div{
+    color: #f00582;
+}
+#account-info-home-user-right-bind>a>i{
+    display: block;
+    margin-top: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+#account-info-home-user-right-bind-mail>i{
+    font-size: 14px;
+}
+#account-info-home-user-right-bind-phone>i{
+    font-size: 18px;
+}
+#account-info-home-user-right-balance{
+    margin: 25px 0 15px 0;
+}
+#account-info-home-user-right-balance>span{
+    font-weight: bold;
+    color: #f00582;
+}
+#account-info-home-user-right-balance>a.btn-charge{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    width: 70px;
+    line-height: 24px;
+    text-align: center;
+    color: #2af;
+    border: 1px solid #2af;
+    border-radius: 15px;
+}
+#account-info-home-user-right-balance>a.btn-charge:hover{
+    color: white;
+    background-color: #2af;
+}
+#account-info-home-user-right-score>span{
+    font-weight: bold;
+    color: #f00582;
+}
+#account-info-home-got{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+#account-info-home-got-title{
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#account-info-home-got-title-text{
+    float: left;
+    font-weight: bold;
+    color: #333;
+}
+#account-info-home-got-title-link{
+    float: right;
+    color: #999;
+}
+#account-info-home-got-content{
+    text-align: center;
+}
+#account-info-home-got-content-none{
+    display: none;
+    position: relative;
+    padding: 40px 20px 20px;
+    height: 300px;
+}
+#account-info-home-got-content-none-btn-home{
+    display: block;
+    position: absolute;
+    left: calc(50% - 60px);
+    bottom: 20px;
+    width: 120px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #f00582;
+    border: 1px solid #f00582;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#account-info-home-got-content-none-btn-home:hover{
+    color: white;
+    background-color: #f00582;
+}
+#account-info-home-got-content-list>ul{
+    overflow: hidden;
+}
+#account-info-home-got-content-list>ul>li{
+    float: left;
+    width: 20%;
+    font-size: 12px;
+    line-height: 20px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#account-info-home-got-content-list>ul>li:nth-child(5n){
+    border-right: none;
+}
+.account-info-home-got-content-list-card{
+    padding: 20px;
+}
+.account-info-home-got-content-list-card>a{
+    display: block;
+    text-decoration: none;
+}
+.account-info-home-got-content-list-card-img>img{
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+.account-info-home-got-content-list-card-title{
+    display: -webkit-box !important;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.account-info-home-got-content-list-card-title:visited{
+    color: #333;
+}
+.account-info-home-got-content-list-card-title:hover{
+    color: #f00582;
+}
+.account-info-home-got-content-list-card-status{
+    margin-top: 10px;
+    color: #999;
+}
+.account-info-home-got-content-list-card-status:visited{
+    color: #999;
+}
+.account-info-home-got-content-list-card-status:hover{
+    color: #999;
+}

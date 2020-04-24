@@ -1,0 +1,141 @@
+#main{
+    position: relative;
+    font-size: 0;
+}
+#main>div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.28rem;
+}
+#left{
+    width: 25%;
+    height: calc(100vh - 2.05rem);
+    border-right: 0.02rem solid #dddddd;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#right{
+    width: 75%;
+    height: calc(100vh - 2.05rem);
+}
+/* 左侧菜单 */
+#left-classification{
+    margin-right: -0.02rem;
+    border-right: 0.02rem solid white;
+    box-sizing: content-box;
+}
+#left-classification-list{
+    text-align: center;
+}
+#left-classification-list>li{
+    display: block;
+    background-color: #f6f6f6;
+    border-bottom: 0.02rem solid #dddddd;
+}
+#left-classification-list>li>span{
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+#left-classification-list>li.active{
+    color: #f00582;
+    background-color: white;
+}
+/* 右侧卡片列表 */
+#right-goods{
+    height: 100%;
+    overflow-y: auto;
+}
+#right-goods-list>li{
+    /* display: block; */
+    display: none;
+    border-bottom: 0.02rem solid #dddddd;
+}
+.goods-card{
+    position: relative;
+    padding: 0.15rem 0.2rem;
+}
+.goods-card-link{
+    display: block;
+    font-size: 0;
+}
+.goods-card-link>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.goods-card-link-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+}
+.goods-card-link-img>img{
+    width: 100%;
+    height: 100%;
+}
+.goods-card-link-info{
+    width: calc(100% - 1.7rem);
+}
+.goods-card-link-info>div{
+    font-size: 0.24rem;
+    line-height: 1.5;
+}
+.goods-card-link-info-title, .goods-card-link-info-coupon{
+    color: #666666;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.goods-card-link-info-gift{
+    display: -webkit-box;
+    color: #f00582;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.goods-card-link-info-progress{
+    position: relative;
+    margin: 0.4rem 0 0.3rem 0;
+    width: 75%;
+}
+.goods-card-link-info-progress-total{
+    height: 0.1rem;
+    background-color: #dddddd;
+    border-radius: 0.05rem;
+}
+.goods-card-link-info-progress-current{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.1rem;
+    background-color: #f00582;
+    border-radius: 0.05rem;
+}
+.goods-card-btn{
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.15rem;
+}
+.goods-card-btn-cart{
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border-radius: 50%;
+}
+.goods-card-btn-cart>i.fa{
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+}
+#right-goods-nothing{
+    font-size: 0.24rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #666666;
+}

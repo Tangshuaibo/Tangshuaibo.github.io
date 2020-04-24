@@ -1,0 +1,9 @@
+.article p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.article p img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

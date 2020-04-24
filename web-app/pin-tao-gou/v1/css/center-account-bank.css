@@ -1,0 +1,19 @@
+.icon-bank{
+    width: 36px;
+    height: 36px;
+    fill: currentColor;
+    overflow: hidden;
+}
+#main-bank-list>li{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+#main-bank-list>li:first-of-type{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+#input-bank-icon-right{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    line-height: 50px;
+}

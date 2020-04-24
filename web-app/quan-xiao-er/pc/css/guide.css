@@ -1,0 +1,65 @@
+#main-content{
+    width: 100%;
+    min-width: 1200px;
+}
+#guide-book>ul>li{
+    height: 430px;
+    background-size: auto 430px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#guide-book>ul>li.page-1{
+    background-image: url(../img/guide/guide_01.jpg);
+}
+#guide-book>ul>li.page-2{
+    background-image: url(../img/guide/guide_02.jpg);
+}
+#guide-book>ul>li.page-3{
+    background-image: url(../img/guide/guide_03.jpg);
+}
+#guide-book>ul>li.page-4{
+    background-image: url(../img/guide/guide_04.jpg);
+}
+#guide-desc{
+    margin: 0 auto;
+    width: 1200px;
+}
+#guide-desc>div{
+    margin: 40px 0;
+}
+#guide-desc div.title{
+    margin-bottom: 15px;
+    font-size: 0;
+    color: #333;
+}
+#guide-desc div.title>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 40px;
+}
+#guide-desc div.title>img{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+}
+#guide-desc div.item{
+    margin-bottom: 10px;
+    font-size: 0;
+    color: #666;
+}
+#guide-desc div.item>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 24px;
+}
+#guide-desc div.item>span.item-num{
+    margin: 0 10px 0 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border-radius: 50%;
+}

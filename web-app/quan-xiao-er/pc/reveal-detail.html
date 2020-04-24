@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>券小二-网购省钱神器,每天千款优惠券秒杀，一折限时疯抢！_神特惠</title>
+    <meta name="keywords" content="券小二,优惠券,优惠券折扣,9块9包邮,限时特卖,优品折扣,券小二"/>
+    <meta name="description" content="券小二-优惠券折扣直播第一站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折起！"/>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dep/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reveal-detail.css">
+    <script src="./dep/jquery-3.3.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/reveal-detail.js"></script>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div id="header">
+        <!-- 固定显示部分 -->
+        <div id="header-shown">
+            <div id="header-bar">
+                <span id="header-bar-slogan">
+                    为您精选超值低价好货，领券下单更优惠哟！
+                </span>
+                <ul>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="">用户中心</a></li>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="./help.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <div id="header-search">
+                <div id="header-search-title">
+                    <a>券小二</a>
+                </div>
+                <div id="header-search-form">
+                    <form action="">
+                        <input type="text" maxlength="40" placeholder="爆款口红">
+                        <button type="submit">搜&ensp;索</button>
+                    </form>
+                    <ul>
+                        <li><div id="header-search-form-img-1"></li>
+                        <li><div id="header-search-form-img-2"></li>
+                        <li><div id="header-search-form-img-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-menu">
+                <ul>
+                    <li id="header-menu-item-latest">
+                        <a href="">
+                            <span class="glyphicon glyphicon-list"></span>
+                            今日上新
+                        </a>
+                    </li>
+                    <li><a href="">最新揭晓</a></li>
+                    <li id="header-menu-item-share">
+                        <a href="">
+                            晒单分享
+                            <div id="header-menu-item-share-img"></div>
+                        </a>
+                    </li>
+                    <li><a href="">查优惠券</a></li>
+                    <li><a href="">新手指南</a></li>
+                    <li id="header-menu-item-app-download">
+                        <a href="">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            APP下载
+                        </a>
+                        <div id="header-menu-item-app-qr-code">
+                            <div id="header-menu-item-app-qr-code-triangle"></div>
+                            <div id="header-menu-item-app-qr-code-content">
+                                <div id="header-menu-item-app-qr-code-content-ios">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_ios.png" alt="ios版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载ios版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                iOS APP
+                                                <span>(邻家小惠)</span>
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                <span>激活码：STH888</span>
+                                                <br>
+                                                首次启动APP请使用以上激活码激活
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="header-menu-item-app-qr-code-content-android">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_android.png" alt="安卓版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载安卓版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                安卓版APP
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                移动端专享更多特色栏目内容和福利
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="header-menu-item-cart">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            购物车
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 滚动显示部分 -->
+        <div id="header-hidden">
+            <div id="header-hidden-menu">
+                <ul>
+                    <li class="active"><a href="">最新揭晓</a></li>
+                    <li><a href="">居家日用</a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">数码家电</a></li>
+                    <li><a href="">文娱车品</a></li>
+                    <li><a href="">内衣</a></li>
+                    <li><a href="">家装家纺</a></li>
+                    <li><a href="">鞋品</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">配饰</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">箱包</a></li>
+                </ul>
+            </div>
+            <div id="header-hidden-search">
+                <form action="">
+                    <input type="text" maxlength="40" placeholder="爆款口红">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-content">
+            <!-- 面包屑导航 -->
+            <div class="page-breadcrumb" id="breadcrumb">
+                当前位置：
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./reveal.html">最新揭晓</a></li>
+                    <li>揭晓详情</li>
+                </ul>
+            </div>
+            <!-- 分期详情 -->
+            <div id="stage-detail">
+                <ul class="stage-list-menu">
+                    <li class="active">
+                        <a href="">第<span>10</span>期</a>
+                    </li>
+                    <li><a href="">第<span>9</span>期</a></li>
+                    <li><a href="">第<span>8</span>期</a></li>
+                    <li><a href="">第<span>7</span>期</a></li>
+                    <li><a href="">第<span>6</span>期</a></li>
+                    <li><a href="">第<span>5</span>期</a></li>
+                    <li><a href="">第<span>4</span>期</a></li>
+                    <li><a href="">第<span>3</span>期</a></li>
+                    <li><a href="">第<span>2</span>期</a></li>
+                    <li><a href="">第<span>1</span>期</a></li>
+                </ul>
+            </div>
+            <!-- 商品揭晓 -->
+            <div id="goods-reveal">
+                <div id="goods-reveal-left">
+                    <a id="goods-reveal-left-thumbnail" href="">
+                        <img src="./temp-img/reveal-detail/camera.jpg" alt="商品缩略图"
+                            title="(第1744期)小蚁（YI）智能摄像机夜视版升级1080P 高清家用wifi摄像头 智能家居 监控摄像头 支持小米路由wifi本地存储">
+                    </a>
+                    <div id="goods-reveal-left-button">
+                        <a id="goods-reveal-left-button-detail" href="">
+                            查看商品详情
+                        </a>
+                    </div>
+                </div>
+                <div id="goods-reveal-right">
+                    <div id="goods-reveal-right-title">
+                        <span>(第1744期)小蚁（YI）智能摄像机夜视版升级1080P 高清家用wifi摄像头 智能家居 监控摄像头 支持小米路由wifi本地存储</span>
+                    </div>
+                    <div id="goods-reveal-right-price">
+                        价值：<span>￥</span><span>169.00</span>
+                    </div>
+                    <div id="goods-reveal-right-winner">
+                        <div id="goods-reveal-right-winner-avatar" title="获得者">
+                            <img src="./temp-img/reveal-detail/avatar.jpg" alt="用户头像">
+                            <a href="">
+                                <span>获得者</span>
+                            </a>
+                        </div>
+                        <div id="goods-reveal-right-winner-info">
+                            <div id="goods-reveal-right-winner-info-name">
+                                <a href="">布丁asdfghjkl</a>
+                                (<span>湖南省长沙市</span>)
+                            </div>
+                            <div id="goods-reveal-right-winner-info-bought">
+                                本期参与：<span class="colored">15</span>人次&nbsp;
+                                <span class="check">点击查看</span>
+                            </div>
+                            <div id="goods-reveal-right-winner-info-revealed-time">
+                                揭晓时间：<span>2018-11-12 21:40:44</span>
+                            </div>
+                            <div id="goods-reveal-right-winner-info-bought-time">
+                                专享时间：<span>2018-11-12 19:00:29</span>
+                            </div>
+                        </div>
+                        <div id="goods-reveal-right-winner-code">
+                            <div id="goods-reveal-right-winner-code-title">
+                                — 幸运码 —
+                            </div>
+                            <div id="goods-reveal-right-winner-code-content">
+                                <span>10000039</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="goods-reveal-right-explanation">
+                        <div class="title">如何计算？</div>
+                        <div>
+                            1、商品的最后一个号码分配完毕后，为保证公平公正公开，系统还会等待一小段时间，取最近下一期中国福利彩票“老时时彩”的开奖结果为数值A；
+                        </div>
+                        <div>
+                            2、商品总需人次为数值B；
+                        </div>
+                        <div>
+                            3、数值A除以数值B得到的余数 + 原始数 10000001，得到最终幸运码，拥有该幸运号码者，直接获得该商品。
+                        </div>
+                        <div>
+                            4、余数是指整数除法中被除数未被除尽部分， 如10÷3 = 3 ......1，1就是余数。
+                        </div>
+                        <div class="warning">
+                            注：如遇福彩中心通讯故障，无法获取上述期数的中国福利彩票“时时彩”开奖结果，且24小时内该期“时时彩”开奖结果仍未公布，则默认“时时彩”开奖结果为00000。
+                        </div>
+                    </div>
+                </div>
+                <div id="goods-reveal-code-bought">
+                    <div id="goods-reveal-code-bought-header">
+                        幸运获得者本期总共参与<span class="colored">15</span>人次
+                        <span id="goods-reveal-code-bought-header-btn-close" title="关闭">X</span>
+                    </div>
+                    <div id="goods-reveal-code-bought-main">
+                        <div id="goods-reveal-code-bought-main-time">
+                            2018-11-12 19:00:29
+                        </div>
+                        <div id="goods-reveal-code-bought-main-content">
+                            <span class="colored">10000039</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                            <span>10000010</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 相关信息列表 -->
+            <div id="related-info-container">
+                <div id="related-info-nav">
+                    <ul id="related-info-nav-list">
+                        <li class="active">
+                            <span>计算详情</span>
+                        </li>
+                        <li>
+                            <span>参与记录</span>
+                        </li>
+                    </ul>
+                    <div id="related-info-nav-slider"></div>
+                </div>
+                <div id="related-info-tabs">
+                    <div id="related-info-tabs-calculation">
+                        <div id="related-info-tabs-calculation-head">
+                            <span class="time">购买时间</span>
+                            <span class="data">转换数据</span>
+                            <span class="user">会员</span>
+                            <span class="num">参与人次</span>
+                            <span class="product">商品名称</span>
+                        </div>
+                        <div id="related-info-tabs-calculation-step">
+                            <div class="style-1">计算结果</div>
+                            <div class="middle">=</div>
+                            <div class="style-2">
+                                <div>68990</div>
+                                <div>时时彩开奖号码</div>
+                            </div>
+                            <div class="middle middle-2">
+                                <div>%</div>
+                                <div>(取余)</div>
+                            </div>
+                            <div class="style-2">
+                                <div>169</div>
+                                <div>总需参与人次</div>
+                            </div>
+                            <div class="middle">+</div>
+                            <div class="style-2">
+                                <div>10000001</div>
+                                <div>固定数值</div>
+                            </div>
+                            <div class="middle">=</div>
+                            <div class="style-3">
+                                <div>10000039</div>
+                                <div>最终计算结果</div>
+                            </div>
+                            <span class="bottom">
+                                取最近一期时时彩（第<span>20181112093</span>期）开奖结果。
+                                <a href="">开奖查询</a>
+                            </span>
+                        </div>
+                        <div id="related-info-tabs-calculation-body">
+                            <div id="related-info-tabs-calculation-body-list">
+                                <ul>
+                                    <li>
+                                        <span class="time">2018-11-1221:11:03</span>
+                                        <span class="data"></span>
+                                        <span class="user">
+                                            <a href="">也许不该</a>
+                                        </span>
+                                        <span class="num">
+                                            <span>6</span>人次
+                                        </span>
+                                        <span class="product">
+                                            <a href="">
+                                                (第43期)松下（Panasonic）HC-PV100GK 手持专业便携式高清摄像机 婚庆/会议/直播/教学/晚会 支持96帧高速拍摄
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="time">2018-11-1221:10:55</span>
+                                        <span class="data"></span>
+                                        <span class="user">
+                                            <a href="">zfw123</a>
+                                        </span>
+                                        <span class="num">
+                                            <span>80</span>人次
+                                        </span>
+                                        <span class="product">
+                                            <a href="">
+                                                (第2584期)美宝莲（MAYBELLINE）飞箭睫毛膏 蓝胖子10ml（浓密 卷翘 不结块 防水不晕染）
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="related-info-tabs-participation">
+                        <div id="related-info-tabs-participation-head">
+                            <span class="time">购买时间</span>
+                            <span class="user">会员</span>
+                            <span class="num">参与人次</span>
+                            <span class="ip">IP</span>
+                            <span class="from">来源</span>
+                        </div>
+                        <div id="related-info-tabs-participation-body">
+                            <div id="related-info-tabs-participation-body-list">
+                                <ul>
+                                    <li>
+                                        <span class="time">2018-11-14 08:21:13</span>
+                                        <span class="user">
+                                            <img src="./temp-img/reveal-detail/avatar.jpg" alt="用户头像">
+                                            <a href="">吃我非酋之茅</a>
+                                        </span>
+                                        <span class="num">
+                                            <span>150</span>人次&nbsp;
+                                            <span class="btn-check">查看购买码</span>
+                                        </span>
+                                        <span class="ip">
+                                            180.122.197.79 IP:江苏省泰州市
+                                        </span>
+                                        <span class="from">
+                                            <span class="android">
+                                                <i class="fa fa-android" aria-hidden="true"></i>
+                                                安卓客户端
+                                            </span>
+                                            <!-- <span class="ios">
+                                                <i class="fa fa-apple" aria-hidden="true"></i>
+                                                ios客户端
+                                            </span>
+                                            <span class="mobile">
+                                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                手机触屏版
+                                            </span>
+                                            <span class="pc">
+                                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                                                pc电脑版
+                                            </span> -->
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="time">2018-11-14 06:08:14</span>
+                                        <span class="user">
+                                            <img src="./temp-img/reveal-detail/avatar.jpg" alt="用户头像">
+                                            <a href="">欧洲人永不为奴</a>
+                                        </span>
+                                        <span class="num">
+                                            <span>100</span>人次&nbsp;
+                                            <span class="btn-check">查看购买码</span>
+                                        </span>
+                                        <span class="ip">
+                                            27.19.37.188 IP:湖北省武汉市
+                                        </span>
+                                        <span class="from">
+                                            <!-- <span class="android">
+                                                <i class="fa fa-android" aria-hidden="true"></i>
+                                                安卓客户端
+                                            </span> -->
+                                            <span class="ios">
+                                                <i class="fa fa-apple" aria-hidden="true"></i>
+                                                ios客户端
+                                            </span>
+                                            <!-- <span class="mobile">
+                                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                手机触屏版
+                                            </span>
+                                            <span class="pc">
+                                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                                                pc电脑版
+                                            </span> -->
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="code-container" id="related-info-tabs-participation-code-container">
+                                    <div class="code-container-header">
+                                        <div class="code-container-header-user">
+                                            <img src="./temp-img/reveal-detail/avatar.jpg" alt="用户头像">
+                                            <a href="">吃我非酋之茅</a>
+                                        </div>
+                                        <div class="code-container-header-num">
+                                            本次参与<span>8</span>人次
+                                        </div>
+                                        <div class="code-container-header-btn" title="关闭">
+                                            <span class="code-container-header-btn-close">X</span>
+                                        </div>
+                                    </div>
+                                    <div class="code-container-content">
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                        <span>10000112</span>
+                                    </div>
+                                    <div class="code-container-triangle-container">
+                                        <div class="code-container-triangle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面脚部 -->
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-title">
+                “感谢有你，我们的坚持才更有意义”
+            </div>
+            <div id="footer-author">
+                by 券小二
+            </div>
+            <div id="footer-copyright">
+                © CopyRight 2018
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                http://www.quanxiaoer.com
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                <a target="_blank" title="帮助中心" href="">
+                    ^_^亲遇到问题，联系我帮你处理哈
+                </a>
+            </div>
+            <div id="footer-about-contact">
+                <a target="_blank" href="">关于我们</a>
+                <a target="_blank" href="">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="back-to-top"></div>
+</body>
+</html>

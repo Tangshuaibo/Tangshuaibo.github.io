@@ -1,0 +1,39 @@
+#page {
+    height: 100vh;
+    background-image: url(../img/common/yungou_background.png);
+    background-size: 100% auto;
+    overflow-y: auto;
+}
+#page-content-img-container{
+    margin: 1rem auto;
+    width: 4rem;
+    min-height: 4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.02rem solid #ddd;
+}
+#page-content-img-container>img{
+    width: 100%;
+    height: auto;
+}
+#page-content-input{
+    display: none;
+}
+#page-content-btn{
+    padding: 0 0.4rem; 
+    text-align: center;
+}
+#page-content-btn>span{
+    display: block;
+    margin-bottom: 0.4rem;
+    height: 0.8rem;
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    color: white;
+    border-radius: 0.1rem;
+}
+#page-content-btn-select, #page-content-btn-submit{
+    background-color: #f00582;
+}
+#page-content-btn-reset{
+    background-color: #2af;
+}

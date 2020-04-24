@@ -1,0 +1,121 @@
+/*修改mdui样式*/
+.mdui-list-dense .mdui-list-item-avatar{
+    width: 36px;
+}
+/*页面主体*/
+.main *{
+    box-sizing: border-box;
+}
+.main a{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+}
+#app-footer{
+    background-color: white;
+}
+/*登录注册找回密码、修改手机号、修改密码*/
+.main-form{
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+.main-form>.form-input:not(:last-of-type){
+    border-bottom: 1px solid #E0E0E0;
+}
+.main-form>.form-input{
+    position: relative;
+    padding: 16px;
+    font-size: 0;
+    background-color: white;
+}
+.main-form>.form-input>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.main-form>.form-input>label{
+    width: 25%;
+}
+.main-form>.form-input>input{
+    width: 50%;
+    border: none;
+    outline: none;
+}
+.main-form>.form-input>div{
+    width: 25%;
+    height: 100%;
+}
+.main-form>.form-input>.code-img-container{
+    position: absolute;
+    top: 0;
+    right: 16px;
+}
+.main-form>.form-input>.code-img-container>img{
+    width: 80px;
+    height: 100%;
+}
+#modal-wechat-qrcode-img>img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+/*绑定身份证号、银行卡号*/
+.main-form-2{
+    font-size: 16px;
+}
+.main-form-2>.form-label{
+    display: block;
+    padding: 16px;
+}
+.main-form-2>.form-input{
+    position: relative;
+    background-color: white;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+.main-form-2>.form-input + .form-input{
+    border-top: 0;
+}
+.main-form-2>.form-input>input{
+    padding: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.main-form-2>.form-input>i{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    line-height: 48px;
+}
+.main-form-2>.form-img-list{
+    padding: 16px;
+    font-size: 0;
+    text-align: center;
+}
+.main-form-2>.form-img-list>.form-img-container{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    font-size: 16px;
+}
+.main-form-2>.form-img-list>.form-img-container:last-of-type{
+    margin-right: 0;
+}
+.main-form-2>.form-img-list>.form-img-container>.form-input-img{
+    display: none;
+}
+.main-form-2>.form-img-list>.form-img-container>.form-img{
+    width: 100%;
+    padding-top: 100%;
+    background-color: white;
+    background-image: url("../img/common/add-picture.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+.main-form-2>.form-img-list>.form-img-container>.form-img-text{
+    margin-top: 16px;
+}

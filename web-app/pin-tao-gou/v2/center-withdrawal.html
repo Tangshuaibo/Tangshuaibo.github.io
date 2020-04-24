@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center-withdrawal.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="deps/iconfont-banks/iconfont.js"></script>
+    <script src="deps/iconfont-payment-online/iconfont.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">佣金提现</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--tab选项卡-->
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab-bank" class="mdui-ripple">银行卡提现</a>
+            <a href="#main-tab-alipay" class="mdui-ripple">支付宝提现</a>
+        </div>
+        <!--银行卡提现选项卡-->
+        <div id="main-tab-bank">
+            <div class="mdui-card mdui-m-a-2">
+                <label class="mdui-checkbox mdui-m-a-2">
+                    <input type="checkbox" checked>
+                    <i class="mdui-checkbox-icon"></i>
+                    工商银行（4321）
+                </label>
+                <div class="mdui-m-x-2 mdui-text-color-red">
+                    您的资金将在三个工作日内转入到您的银行卡账户，如有疑问请联系客服
+                </div>
+                <div class="mdui-m-a-2">
+                    注：周六、周日及法定节假日为非工作日
+                </div>
+                <div class="main-form-3">
+                    <div class="form-input">
+                        <label for="input-amount-bank">金额</label>
+                        <input id="input-amount-bank" type="number" maxlength="30" placeholder="请输入提现金额">
+                    </div>
+                </div>
+                <div class="mdui-m-a-2">
+                    单次提现不得低于<span class="mdui-text-color-theme-accent">100</span>元；
+                    当前佣金总额为<span class="mdui-text-color-theme-accent">50</span>元
+                </div>
+                <div class="mdui-m-a-2">
+                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">确认提现</button>
+                </div>
+            </div>
+        </div>
+        <!--支付宝提现选项卡-->
+        <div id="main-tab-alipay">
+            <div class="mdui-card mdui-m-a-2">
+                <label class="mdui-checkbox mdui-m-a-2">
+                    <input type="checkbox" checked>
+                    <i class="mdui-checkbox-icon"></i>
+                    支付宝（1234567890）
+                </label>
+                <div class="mdui-m-x-2 mdui-text-color-red">
+                    您的资金将在三个工作日内转入到您的银行卡账户，如有疑问请联系客服
+                </div>
+                <div class="mdui-m-a-2">
+                    注：周六、周日及法定节假日为非工作日
+                </div>
+                <div class="main-form-3">
+                    <div class="form-input">
+                        <label for="input-amount-alipay">金额</label>
+                        <input id="input-amount-alipay" type="number" maxlength="30" placeholder="请输入提现金额">
+                    </div>
+                </div>
+                <div class="mdui-m-a-2">
+                    单次提现不得低于<span class="mdui-text-color-theme-accent">100</span>元；
+                    当前佣金总额为<span class="mdui-text-color-theme-accent">50</span>元
+                </div>
+                <div class="mdui-m-a-2">
+                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">确认提现</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

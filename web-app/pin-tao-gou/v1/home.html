@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+    <div id="app">
+        <!--应用栏-->
+        <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+            <div class="mdui-toolbar">
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-back">
+                    <i class="mdui-icon material-icons">chevron_left</i>
+                </a>
+                <span class="mdui-typo-title mdui-center">首页</span>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                    <i class="mdui-icon material-icons">home</i>
+                </a>
+            </div>
+        </div>
+        <!--页面主体-->
+        <div class="main">
+            <ul class="mdui-list mdui-list-dense mdui-m-t-1 main-list">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <img src="./img/home/announcement.png" alt="公告">
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-typo-title">公告</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="mdui-list mdui-list-dense main-list">
+                <a class="mdui-list-item mdui-ripple" href="./home-post-detail.html">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">
+                            关于提现到长时间的公告，提交提现申请后，资金将于2-3个工作日到账
+                        </div>
+                        <div class="mdui-list-item-text">
+                            2019-01-09 14:45:23
+                        </div>
+                    </div>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./home-post-detail.html">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">
+                            关于晒图好评的问题
+                        </div>
+                        <div class="mdui-list-item-text">
+                            2019-01-09 13:45:12
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--底部导航栏-->
+        <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+            <a href="./home.html" class="mdui-ripple mdui-bottom-nav-active">
+                <i class="mdui-icon material-icons">home</i>
+                <label>首页</label>
+            </a>
+            <a href="./task.html" class="mdui-ripple">
+                <i class="mdui-icon material-icons">view_list</i>
+                <label>订单</label>
+            </a>
+            <a href="./receive.html" class="mdui-ripple">
+                <i class="mdui-icon material-icons">add_circle</i>
+                <label>接单</label>
+            </a>
+            <a href="./complaint.html" class="mdui-ripple">
+                <i class="mdui-icon material-icons">comment</i>
+                <label>申诉</label>
+            </a>
+            <a href="./login.html" class="mdui-ripple">
+                <i class="mdui-icon material-icons">person</i>
+                <label>我的</label>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

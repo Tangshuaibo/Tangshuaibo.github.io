@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/iconfont-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="js/common.js"></script>
+    <script src="js/payment.js"></script>
+</head>
+<body>
+<div class="main" id="app">
+    <div class="header">
+        <div class="header-item left" id="header-back">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div class="header-center">
+            <span class="title">提交订单</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-title">
+            <div class="name">五台山祈福二日游</div>
+            <div class="guarantee">
+                <div class="guarantee-item">
+                    <i class="iconfont icon-roundcheck" aria-hidden="true"></i>
+                    <span class="text">官方限时特惠</span>
+                </div>
+                <div class="guarantee-item">
+                    <i class="iconfont icon-roundcheck" aria-hidden="true"></i>
+                    <span class="text">比美团价更低</span>
+                </div>
+            </div>
+        </div>
+        <div class="content-form">
+            <div class="form-row">
+                <label>有效期至</label>
+                <div class="content">
+                    2019-12-31 11:43:12
+                </div>
+            </div>
+            <div class="form-row">
+                <label>单价</label>
+                <div class="content" id="price-unit" data-price-unit="488.00">
+                    488.00元
+                </div>
+            </div>
+            <div class="form-row">
+                <label>数量</label>
+                <div class="content">
+                    <div class="spinner">
+                        <span class="spinner-btn minus">
+                            <i class="icon fa fa-minus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" maxlength="30" value="1" data-min="1" data-max="100"
+                               class="spinner-input" id="input-quantity">
+                        <span class="spinner-btn plus">
+                            <i class="icon fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <label>限购数量</label>
+                <div class="content">
+                    100
+                </div>
+            </div>
+            <div class="form-row">
+                <label>总价</label>
+                <div class="content" id="price-total">
+                    488.00元
+                </div>
+            </div>
+            <div class="phone-number">
+                <label for="input-phone-number">请输入手机号码</label>
+                <div class="input-container">
+                    <input type="text" maxlength="30" class="input-phone-number"
+                           placeholder="请输入手机号码用于接收凭证" id="input-phone-number">
+                </div>
+            </div>
+            <div class="action">
+                <span class="btn-block">
+                    提交订单
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

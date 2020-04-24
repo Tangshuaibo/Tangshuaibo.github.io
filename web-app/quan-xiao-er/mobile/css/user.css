@@ -1,0 +1,234 @@
+/* 页面头部 */
+#page-header{
+    padding: 0.4rem 0;
+    text-align: center;
+    background-color: #f00582;
+}
+#page-header-avatar>img{
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 0.04rem solid #ddd;
+    border-radius: 50%;
+}
+#page-header-name{
+    color: white;
+    margin-top: 0.4rem;
+}
+/* 页面主体 */
+#page-content-menu{
+    padding: 0.2rem;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-content-menu-list{
+    border: 0.02rem solid #f00582;
+    border-radius: 0.1rem;
+    overflow: hidden;
+}
+#page-content-menu-list>li{
+    width: 33.33%;
+    text-align: center;
+    color: #f00582;
+    border-right: 0.02rem solid #f00582;
+}
+#page-content-menu-list>li:last-of-type{
+    border-right: none;
+}
+#page-content-menu-list>li.active{
+    color: white;
+    background-color: #f00582;
+}
+#page-content-menu-list>li>span{
+    display: block;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+/* 选项卡 */
+#page-content-tab ul>li{
+    display: block;
+    padding: 0.2rem;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-content-tab ul>li>a{
+    display: block;
+}
+/* 购买记录 */
+/* 进行中卡片 */
+.tab-bought-ongoing-card{
+    font-size: 0;
+}
+.tab-bought-ongoing-card>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.tab-bought-ongoing-card-img{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+}
+.tab-bought-ongoing-card-img>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+}
+.tab-bought-ongoing-card-info{
+    width: calc(100% - 1.4rem);
+}
+.tab-bought-ongoing-card-info>div:not(:last-of-type){
+    margin-bottom: 0.2rem;
+}
+.tab-bought-ongoing-card-info-title{
+    color: #666;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tab-bought-ongoing-card-info-progress{
+    position: relative;
+}
+.tab-bought-ongoing-card-info-progress-total{
+    height: 0.1rem;
+    background-color: #ddd;
+    border-radius: 0.05rem;
+}
+.tab-bought-ongoing-card-info-progress-current{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.1rem;
+    background-color: #f00582;
+    border-radius: 0.05rem;
+}
+.tab-bought-ongoing-card-info-number{
+    font-size: 0;
+}
+.tab-bought-ongoing-card-info-number>div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 0.24rem;
+    color: #999;
+}
+.tab-bought-ongoing-card-info-number-sold>div.number{
+    color: #f00582;
+}
+.tab-bought-ongoing-card-info-number-total{
+    text-align: center;
+}
+.tab-bought-ongoing-card-info-number-total>div.number{
+    color: #666;
+}
+.tab-bought-ongoing-card-info-number-remain{
+    text-align: right;
+}
+/* 已揭晓卡片 */
+.tab-bought-unveiled-card{
+    font-size: 0;
+}
+.tab-bought-unveiled-card>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.tab-bought-unveiled-card-img{
+    margin-right: 0.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.tab-bought-unveiled-card-img>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+}
+.tab-bought-unveiled-card-info{
+    width: calc(100% - 1.4rem);
+    color: #999;
+}
+.tab-bought-unveiled-card-info>div:not(:last-of-type){
+    margin-bottom: 0.2rem;
+}
+.tab-bought-unveiled-card-info>div{
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.tab-bought-unveiled-card-info-title{
+    color: #666;
+}
+.tab-bought-unveiled-card-info-winner>span{
+    color: #2af;
+}
+.tab-bought-unveiled-card-info-code>span{
+    color: #f00582;
+}
+/* 获得记录 */
+#page-content-tab-won{
+    display: none;
+}
+.tab-won-card{
+    font-size: 0;
+}
+.tab-won-card>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.tab-won-card-img{
+    margin-right: 0.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.tab-won-card-img>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+}
+.tab-won-card-info{
+    width: calc(100% - 1.4rem);
+    color: #999;
+}
+.tab-won-card-info>div:not(:last-of-type){
+    margin-bottom: 0.2rem;
+}
+.tab-won-card-info>div{
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.tab-won-card-info-title{
+    color: #666;
+}
+.tab-won-card-info-code>span{
+    color: #2af;
+}
+.tab-won-card-info-time>span{
+    color: #f00582;
+}
+/* 晒单记录 */
+#page-content-tab-unbox{
+    display: none;
+}
+.tab-unbox-card>div{
+    margin-bottom: 0.2rem;
+    font-size: 0.24rem;
+}
+.tab-unbox-card-title{
+    color: #666 !important;
+}
+.tab-unbox-card-desc{
+    color: #999 !important;
+}
+.tab-unbox-card-img{
+    font-size: 0 !important;
+}
+.tab-unbox-card-img>img{
+    margin-right: calc((100% - 6rem) / 5);
+    width: 1rem;
+    height: 1rem;
+}
+.tab-unbox-card-img>img:last-of-type{
+    margin-right: 0;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/center-account-bind.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">京东账号管理</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--已绑定账号列表面板-->
+        <div id="main-account-binded">
+            <ul class="mdui-list mdui-p-b-0">
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <li class="mdui-list-item mdui-ripple mdui-color-white" id="btn-account-add">
+                    <div class="mdui-list-item-content mdui-text-center mdui-text-color-theme-accent">
+                        点我继续绑定京东账号
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+            </ul>
+            <ul class="mdui-list">
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <li class="mdui-list-item mdui-ripple mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">账号</div>
+                        <div class="mdui-float-right">1234567890</div>
+                    </div>
+                    <div class="mdui-m-l-2 mdui-text-color-theme-accent">
+                        删除
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <li class="mdui-list-item mdui-ripple mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">账号</div>
+                        <div class="mdui-float-right">0987654321</div>
+                    </div>
+                    <div class="mdui-m-l-2 mdui-text-color-theme-accent">
+                        删除
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+            </ul>
+        </div>
+        <!--账号绑定操作面板-->
+        <div id="main-account-bind" style="display: none;">
+            <!--注意事项-->
+            <div class="mdui-panel mdui-m-y-1" mdui-panel>
+                <div class="mdui-panel-item mdui-panel-item-open">
+                    <div class="mdui-panel-item-header">
+                        <div class="mdui-panel-item-title">
+                            <i class="mdui-icon material-icons">warning</i>
+                            <span>注意事项</span>
+                        </div>
+                        <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mdui-panel-item-body" style="height: auto;">
+                        请注意：<br>
+                        <span class="mdui-text-color-theme-accent">
+                            1.输入京东用户名，注意不是昵称；
+                        </span><br>
+                        2.请确保收货地址和收货联系人真实具体，并保证<span class="mdui-text-color-theme-accent">和京东上下单的收货地址信息一致</span>；<br>
+                        3.请确认多个京东号之间使用不同的收货信息（收货姓名、地址和电话均不同）；<br>
+                        4.账号审核人工进行，正常<span class="mdui-text-color-theme-accent">一个工作日</span>内完成，只有审核通过的买家号才能接受任务。
+                    </div>
+                </div>
+            </div>
+            <!--信息提交-->
+            <div class="main-form-3">
+                <div class="form-input">
+                    <label class="form-label" for="input-account-id">
+                        请输入京东账号
+                    </label>
+                    <input id="input-account-id" type="text" maxlength="30" placeholder="请输入京东账号">
+                </div>
+                <div class="mdui-m-t-2 form-img-list">
+                    <div class="form-img-title">
+                        请上传相关截图（<span class="mdui-text-color-theme-accent" id="btn-account-example">查看图片绑定示例</span>）
+                    </div>
+                    <div class="mdui-row">
+                        <div class="mdui-col-xs-6">
+                            <div class="form-img-container narrow">
+                                <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                                <div class="form-img"></div>
+                                <div class="form-img-text mdui-text-color-theme-accent">
+                                    我的订单截图
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-col-xs-6">
+                            <div class="form-img-container narrow">
+                                <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                                <div class="form-img"></div>
+                                <div class="form-img-text mdui-text-color-theme-accent">
+                                    我的个人中心截图
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-m-a-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+        <!--账号图片绑定示例面板-->
+        <div id="main-account-example" style="display: none;">
+            <div class="mdui-typo mdui-text-color-theme-accent mdui-p-a-2">
+                <p>
+                    1.登录京东客户端，点击“我的”，进入截图。<br>
+                    <img class="box-border" src="img/center/jingdong-example-01.png" alt="截图示例">
+                </p>
+                <p>
+                    2.点击右上角“账号设置”，京东账号名为用户名，如红框所示。<br>
+                    <img class="box-border" src="img/center/jingdong-example-02.png" alt="截图示例">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

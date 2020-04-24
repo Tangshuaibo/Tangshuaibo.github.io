@@ -1,0 +1,211 @@
+/* 揭晓页头部 */
+#reveal-header{
+    padding: 0 15px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#reveal-header-title{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    color: #333;
+}
+#reveal-header-title span{
+    display: block;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+}
+#reveal-header-info{
+    float: right;
+    font-size: 14px;
+    color: #999;
+}
+#reveal-header-info span{
+    color: #f00582;
+}
+/* 揭晓页内容 */
+#reveal-content{
+    margin-top: 10px;
+}
+#reveal-content-cards>ul{
+    font-size: 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+#reveal-content-cards>ul>li{
+    display: none;
+    width: 33.33%;
+    font-size: 14px;
+    border-top: 1px solid white;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid white;
+}
+#reveal-content-cards>ul>li:hover{
+    border: 1px solid #f00582;
+    box-shadow: 1px 1px 2px 2px #ddd;
+}
+.goods-card{
+    padding: 10px;
+    width: 100%;
+    height: 240px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.goods-card-left{
+    float: left;
+    margin-right: 10px;
+}
+.goods-card-left-img{
+    display: block;
+}
+.goods-card-left-img>img{
+    width: 150px;
+    height: 150px;
+}
+.goods-card-right{
+    float: left;
+    width: calc(100% - 160px);
+}
+.goods-card-right-user{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.goods-card-right-user-avatar{
+    float: left;
+    margin-right: 10px;
+}
+.goods-card-right-user-avatar img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.goods-card-right-user-info{
+    float: left;
+    width: calc(100% - 70px);
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.goods-card-right-user-info>div{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.goods-card-right-user-info span.colored{
+    color: #f00582;
+}
+.goods-card-right-user-info-name{
+    font-size: 14px;
+}
+.goods-card-right-user-info-name a{
+    color: #2af;
+}
+.goods-card-right-user-info-name a:hover{
+    text-decoration: underline;
+}
+.goods-card-right-goods{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.goods-card-right-goods>div{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.goods-card-right-goods-title{
+    display: block;
+    display: -webkit-box;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    white-space: normal !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.goods-card-right-goods-title a:hover{
+    color: #f00582;
+}
+.goods-card-right-button-detail{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 90px;
+    height: 26px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #f00582;
+    border: 1px solid #2af;
+    border-radius: 2px;
+}
+.goods-card-right-button-detail:hover{
+    color: white;
+    background-color: #f00582;
+    border: 1px solid #f00582;
+    cursor: pointer;
+}
+#reveal-content-pagination-container{
+    text-align: right;
+    margin-top: 20px;
+}
+#reveal-content-pagination-container>div{
+    display: inline-block;
+}
+#reveal-content-pagination-left{
+    font-size: 12px;
+    color: #666;
+}
+#reveal-content-pagination-right{
+    font-size: 0px;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+}
+#reveal-content-pagination-right>span{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#reveal-content-pagination-right>span:hover:not(.active){
+    color: #f00582;
+}
+#reveal-content-pagination-right>span.active{
+    font-weight: bold;
+    color: white;
+    background-color: #f00582;
+    border: 1px solid #f00582;
+}
+#reveal-content-pagination-right>span.disabled{
+    border: 1px solid #e4e4e4;
+    color: #CCC;
+    background-color: #f4f4f4;
+    pointer-events: none;
+}
+#reveal-content-pagination-right>span>a{
+    color: #999;
+    text-decoration: none;
+}
+#reveal-content-pagination-right>span:hover>a{
+    color: #999;
+}
+#reveal-content-pagination-right>span:hover:not(.active)>a:hover{
+    color: #f00582;
+}
+#reveal-content-pagination-right>span.active>a{
+    color: white;
+}
+#reveal-content-pagination-right>span.disabled>a{
+    color: #CCC;
+}

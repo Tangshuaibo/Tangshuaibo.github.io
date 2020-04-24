@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">我的淘豆</span>
+            <a class="mdui-typo-subheading mdui-m-x-1" href="center-flow.html">
+                账单
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-card mdui-container-fluid mdui-p-a-2 mdui-m-a-2
+            mdui-typo-subheading mdui-text-center mdui-color-white mdui-shadow-1">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-12">
+                    <div>总资产（淘豆）</div>
+                    <div class="mdui-m-t-1 mdui-text-color-theme-accent">19.5</div>
+                </div>
+            </div>
+            <div class="mdui-divider mdui-m-y-2"></div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-6">
+                    <div>本金豆</div>
+                    <div class="mdui-m-t-1 mdui-text-color-theme-accent">1.5</div>
+                </div>
+                <div class="mdui-col-xs-6">
+                    <div>佣金豆</div>
+                    <div class="mdui-m-t-1 mdui-text-color-theme-accent">3.5</div>
+                </div>
+            </div>
+            <div class="mdui-divider mdui-m-y-2"></div>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-12">
+                    <div>待审核</div>
+                    <div class="mdui-m-t-1 mdui-text-color-theme-accent">9.5</div>
+                </div>
+            </div>
+            <div class="mdui-m-t-2">
+                <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple"
+                    href="center-withdrawal.html">
+                    提现
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

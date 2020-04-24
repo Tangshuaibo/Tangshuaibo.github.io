@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">联系客服</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-card mdui-m-a-4">
+            <div class="mdui-typo-title mdui-text-center mdui-p-y-2 mdui-color-theme-accent">
+                客服微信二维码
+            </div>
+            <div class="card-img mdui-text-center mdui-p-y-2">
+                <img src="./img/center/QR-Code.png" alt="微信二维码" style="width: 150px;">
+            </div>
+            <div class="mdui-typo-subheading mdui-text-center mdui-m-b-2 mdui-text-color-theme-accent">
+                客服微信：123456789
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-typo-subheading mdui-p-a-2">
+                保存图片到本地，打开微信扫一扫，添加客服微信
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

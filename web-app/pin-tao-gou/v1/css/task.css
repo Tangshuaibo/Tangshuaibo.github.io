@@ -1,0 +1,21 @@
+.card-title{
+    border-left: 3px solid orange;
+}
+.card-links{
+    font-size: 0;
+}
+.card-links>a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 14px;
+    text-align: center;
+}
+.card-links>a>img{
+    width: 55px;
+    height: 55px;
+}
+.card-links>a>span{
+    display: block;
+    margin-top: 8px;
+}

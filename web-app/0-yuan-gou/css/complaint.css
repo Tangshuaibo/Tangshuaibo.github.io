@@ -1,0 +1,36 @@
+/*列表样式*/
+.list-item{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: white;
+}
+.list-item>*{
+    font-size: 14px;
+}
+.list-item-dec{
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.list-item-con{
+    margin: 0 8px;
+    flex: 1;
+}
+.list-item-con>div{
+    font-size: 0;
+    word-break: break-all;
+}
+.list-item-con>div span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.list-item-con>div+div{
+    margin-top: 8px;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>券小二-网购省钱神器,每天千款优惠券秒杀，一折限时疯抢！_神特惠</title>
+    <meta name="keywords" content="券小二,优惠券,优惠券折扣,9块9包邮,限时特卖,优品折扣,券小二"/>
+    <meta name="description" content="券小二-优惠券折扣直播第一站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折起！"/>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dep/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/unbox-detail.css">
+    <script src="./dep/jquery-3.3.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/unbox-detail.js"></script>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div id="header">
+        <!-- 固定显示部分 -->
+        <div id="header-shown">
+            <div id="header-bar">
+                <span id="header-bar-slogan">
+                    为您精选超值低价好货，领券下单更优惠哟！
+                </span>
+                <ul>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="">用户中心</a></li>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="./help.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <div id="header-search">
+                <div id="header-search-title">
+                    <a>券小二</a>
+                </div>
+                <div id="header-search-form">
+                    <form action="">
+                        <input type="text" maxlength="40" placeholder="爆款口红">
+                        <button type="submit">搜&ensp;索</button>
+                    </form>
+                    <ul>
+                        <li><div id="header-search-form-img-1"></li>
+                        <li><div id="header-search-form-img-2"></li>
+                        <li><div id="header-search-form-img-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-menu">
+                <ul>
+                    <li id="header-menu-item-latest">
+                        <a href="">
+                            <span class="glyphicon glyphicon-list"></span>
+                            今日上新
+                        </a>
+                    </li>
+                    <li><a href="">最新揭晓</a></li>
+                    <li id="header-menu-item-share">
+                        <a href="">
+                            晒单分享
+                            <div id="header-menu-item-share-img"></div>
+                        </a>
+                    </li>
+                    <li><a href="">查优惠券</a></li>
+                    <li><a href="">新手指南</a></li>
+                    <li id="header-menu-item-app-download">
+                        <a href="">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            APP下载
+                        </a>
+                        <div id="header-menu-item-app-qr-code">
+                            <div id="header-menu-item-app-qr-code-triangle"></div>
+                            <div id="header-menu-item-app-qr-code-content">
+                                <div id="header-menu-item-app-qr-code-content-ios">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_ios.png" alt="ios版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载ios版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                iOS APP
+                                                <span>(邻家小惠)</span>
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                <span>激活码：STH888</span>
+                                                <br>
+                                                首次启动APP请使用以上激活码激活
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="header-menu-item-app-qr-code-content-android">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_android.png" alt="安卓版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载安卓版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                安卓版APP
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                移动端专享更多特色栏目内容和福利
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="header-menu-item-cart">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            购物车
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 滚动显示部分 -->
+        <div id="header-hidden">
+            <div id="header-hidden-menu">
+                <ul>
+                    <li class="active"><a href="">最新揭晓</a></li>
+                    <li><a href="">居家日用</a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">数码家电</a></li>
+                    <li><a href="">文娱车品</a></li>
+                    <li><a href="">内衣</a></li>
+                    <li><a href="">家装家纺</a></li>
+                    <li><a href="">鞋品</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">配饰</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">箱包</a></li>
+                </ul>
+            </div>
+            <div id="header-hidden-search">
+                <form action="">
+                    <input type="text" maxlength="40" placeholder="爆款口红">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-content">
+                <!-- 面包屑导航 -->
+                <div class="page-breadcrumb" id="breadcrumb">
+                    当前位置：
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./unbox.html">晒单分享</a></li>
+                        <li>晒单详情</li>
+                    </ul>
+                </div>
+                <!-- 晒单页内容 -->
+                <div id="unbox-content">
+                    <!-- 获得者信息 -->
+                    <div id="unbox-content-user">
+                        <div id="unbox-content-user-info">
+                            <div id="unbox-content-user-info-avatar">
+                                <a href="">
+                                    <img src="./temp-img/unbox-detail/avatar.jpg" alt="用户头像">
+                                    <span>欧吃矛嘤嘤嘤</span>
+                                </a>
+                            </div>
+                            <div id="unbox-content-user-info-num">
+                                <div class="left">本期专享：</div>
+                                <div class="right">
+                                    <span class="colored">48</span>人次
+                                </div>
+                            </div>
+                            <div id="unbox-content-user-info-code">
+                                <div class="left">幸运专享码：</div>
+                                <div class="right">
+                                    <span class="colored">10000399</span>
+                                </div>
+                            </div>
+                            <div id="unbox-content-user-info-time">
+                                <div class="left">揭晓时间：</div>
+                                <div class="right">
+                                    <span>2018-03-28 07:43:14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="unbox-content-user-prize">
+                            <div id="unbox-content-user-prize-wrapper">
+                                <div id="unbox-content-user-prize-img">
+                                    <a href="">
+                                        <img src="./temp-img/unbox-detail/prize.jpg" alt="商品缩略图">
+                                    </a>
+                                </div>
+                                <div id="unbox-content-user-prize-title">
+                                    <a href="">
+                                        (第16期)锤子 坚果 Pro 2 碳黑色（细红线版） 全面屏双摄 6 64GB 全网通 移动
+                                    </a>
+                                </div>
+                                <div id="unbox-content-user-prize-price">
+                                    商品价值：
+                                    <span>￥</span>
+                                    <span class="price">2299.00</span>
+                                </div>
+                            </div>
+                            <div id="unbox-content-user-prize-decoration">
+                                <img src="./img/unbox-detail/prize_decoration.png" alt="装饰图">
+                            </div>
+                        </div>
+                        <div id="unbox-content-user-unbox">
+                            <div id="unbox-content-user-unbox-title">
+                                TA的其他晒单
+                            </div>
+                            <div id="unbox-content-user-unbox-content">
+                                <ul>
+                                    <li>
+                                        <div class="unbox-content-user-unbox-item">
+                                            <a href="">
+                                                <div class="unbox-content-user-unbox-item-header">
+                                                    <span class="unbox-icon"></span>
+                                                    <span>oppo手机中到啦</span>
+                                                </div>
+                                                <div class="unbox-content-user-unbox-item-desc">
+                                                    没想到我真的中了，太开心了。物流很快，服务很好
+                                                </div>
+                                                <div class="unbox-content-user-unbox-item-img">
+                                                    <img src="./temp-img/unbox-detail/unbox2_1.jpg" alt="晒单缩略图">
+                                                    <img src="./temp-img/unbox-detail/unbox2_2.jpg" alt="晒单缩略图">
+                                                    <img src="./temp-img/unbox-detail/unbox2_3.jpg" alt="晒单缩略图">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 获得者文章 -->
+                    <div id="unbox-content-article">
+                        <div id="unbox-content-article-title">
+                            <span>喜中锤子</span>
+                            <span class="reward-container">
+                                <img src="./img/unbox-detail/reward_decoration.png" alt="奖励装饰图">
+                                <span class="score">100</span>
+                            </span>
+                        </div>
+                        <div id="unbox-content-article-info">
+                            <div id="unbox-content-article-info-time">
+                                3月28日 07:43
+                            </div>
+                            <div id="unbox-content-article-info-like">
+                                <span>2</span>人羡慕
+                            </div>
+                            <!-- <div id="unbox-content-article-info-comment">
+                                <span>0</span>人评论
+                            </div> -->
+                        </div>
+                        <div id="unbox-content-article-content">
+                            <p>手机很精致、很流畅、重要的这个平台原了我手机梦。刺激又好玩</p>
+                            <img src="./temp-img/unbox-detail/unbox_1.jpg" alt="商品晒单图">
+                            <img src="./temp-img/unbox-detail/unbox_2.jpg" alt="商品晒单图">
+                            <img src="./temp-img/unbox-detail/unbox_3.jpg" alt="商品晒单图">
+                        </div>
+                        <div id="unbox-content-article-btn">
+                            <div id="unbox-content-article-btn-like">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="text">羡慕</span>
+                                <span class="trangle-container">
+                                    <span class="trangle"></span>
+                                </span>
+                                <span class="number">2</span>
+                            </div>
+                            <div id="unbox-content-article-btn-share">
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                <span>分享</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 其他信息 -->
+                    <div id="unbox-content-others">
+                        <div id="unbox-content-others-winner">
+                            <div id="unbox-content-others-winner-title">
+                                其他获得者
+                            </div>
+                            <div id="unbox-content-others-winner-list">
+                                <ul>
+                                    <li>
+                                        <div class="winner-info">
+                                            <img src="./temp-img/unbox-detail/avatar2.jpg" alt="用户头像">
+                                            <a href="">不想中奖但还是中了</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="winner-info">
+                                            <img src="./temp-img/unbox-detail/avatar2.jpg" alt="用户头像">
+                                            <a href="">又中奖了好烦啊</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="unbox-content-others-unbox">
+                            <div id="unbox-content-others-unbox-title">
+                                最新晒单
+                            </div>
+                            <div id="unbox-content-others-unbox-list">
+                                <ul>
+                                    <li>
+                                        <div class="unbox-content-others-unbox-item">
+                                            <a href="">
+                                                <div class="unbox-content-others-unbox-item-header">
+                                                    <span class="unbox-icon"></span>
+                                                    <span>最好的系统卖最好的产品</span>
+                                                </div>
+                                                <div class="unbox-content-others-unbox-item-desc">
+                                                    beats 完美传承，拿到手后十分满足，颜值没得说，音质一万以下听个响，不强求，配之前买的小红solo 3，满足。
+                                                </div>
+                                                <div class="unbox-content-others-unbox-item-img">
+                                                    <img src="./temp-img/unbox-detail/unbox3_1.jpg" alt="晒单缩略图">
+                                                    <img src="./temp-img/unbox-detail/unbox3_2.jpg" alt="晒单缩略图">
+                                                    <img src="./temp-img/unbox-detail/unbox3_3.jpg" alt="晒单缩略图">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- 页面脚部 -->
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-title">
+                “感谢有你，我们的坚持才更有意义”
+            </div>
+            <div id="footer-author">
+                by 券小二
+            </div>
+            <div id="footer-copyright">
+                © CopyRight 2018
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                http://www.quanxiaoer.com
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                <a target="_blank" title="帮助中心" href="">
+                    ^_^亲遇到问题，联系我帮你处理哈
+                </a>
+            </div>
+            <div id="footer-about-contact">
+                <a target="_blank" href="">关于我们</a>
+                <a target="_blank" href="">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="back-to-top"></div>
+</body>
+</html>

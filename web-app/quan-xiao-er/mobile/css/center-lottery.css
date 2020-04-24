@@ -1,0 +1,243 @@
+#page{
+    height: 100vh;
+    background-image: url('../img/center-lottery/smash_background.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+/* 抽奖部分 */
+#page-game{
+    margin: 4rem auto 1rem auto;
+    padding-top: 1.5rem;
+    width: 5rem;
+    height: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.4rem;
+}
+#page-game-stationary{
+    position: relative;
+    margin: 0 auto;
+    width: 3rem;
+}
+#page-game-stationary>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+#page-game-movable{
+    position: relative;
+    top: -0.6rem;
+    left: 3.2rem;
+    width: 1.4rem;
+}
+#page-game-movable>img{
+    width: 100%;
+    height: auto;
+}
+#page-snackbar{
+    position: fixed;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+    margin: 0 auto;
+    width: 3rem;
+    font-size: 0.32rem;
+    line-height: 2;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.32rem;
+}
+/* 抽奖结果 */
+#page-result{
+    margin: 0 auto 0.8rem auto;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    border: 0.02rem solid #ddd;
+    border-radius: 0.32rem;
+}
+#page-result-title{
+    font-size: 0.48rem;
+    line-height: 2;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-result-loading{
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    color: #f00582;
+}
+#page-result-detail-header{
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
+}
+#page-result-detail-content{
+    display: block;
+    padding: 0.2rem;
+    font-size: 0;
+}
+#page-result-detail-content>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+    text-align: left;
+}
+#page-result-detail-content-img{
+    margin-right: 0.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+#page-result-detail-content-img>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+}
+#page-result-detail-content-info{
+    width: calc(100% - 1.4rem);
+}
+#page-result-detail-content-info-title{
+    display: -webkit-box;
+    margin-bottom: 0.2rem;
+    color: #2af;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#page-result-detail-content-info-price{
+    font-size: 0;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#page-result-detail-content-info-price>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+    color: #999;
+}
+/* 动画效果 */
+.raise-hammer{
+    -webkit-animation: raise-hammer 1s forwards;
+            animation: raise-hammer 1s forwards;
+}
+.drop-hammer{
+    -webkit-animation: drop-hammer 0.5s forwards;
+            animation: drop-hammer 0.5s forwards;
+}
+.bounce-hammer{
+    -webkit-animation: bounce-hammer 0.5s forwards;
+            animation: bounce-hammer 0.5s forwards;
+}
+@-webkit-keyframes raise-hammer{
+    to{
+        -webkit-transform: translateY(-50%) rotate(60deg);
+                transform: translateY(-50%) rotate(60deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}
+@keyframes raise-hammer{
+    to{
+        -webkit-transform: translateY(-50%) rotate(60deg);
+                transform: translateY(-50%) rotate(60deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}
+@-webkit-keyframes drop-hammer{
+    from{
+        -webkit-transform: translateY(-50%) rotate(60deg);
+                transform: translateY(-50%) rotate(60deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    to{
+        -webkit-transform: translateY(0) rotate(-30deg);
+                transform: translateY(0) rotate(-30deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}
+@keyframes drop-hammer{
+    from{
+        -webkit-transform: translateY(-50%) rotate(60deg);
+                transform: translateY(-50%) rotate(60deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    to{
+        -webkit-transform: translateY(0) rotate(-30deg);
+                transform: translateY(0) rotate(-30deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}
+@-webkit-keyframes bounce-hammer{
+    0%{
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    25%{
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    50%{
+        -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    75%{
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}
+@keyframes bounce-hammer{
+    0%{
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    25%{
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    50%{
+        -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    75%{
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+    }
+}

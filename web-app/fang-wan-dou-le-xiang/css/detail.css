@@ -1,0 +1,146 @@
+.action-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.action {
+    display: block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 4px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.action>*+* {
+    margin-top: 4px;
+}
+.action-icon {
+    color: #666;
+}
+.action-icon>* {
+    font-size: 28px;
+}
+.action-text {
+    font-size: 12px;
+}
+.action-btn {
+    font-size: 14px;
+    line-height: 52px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 51, 102);
+    cursor: pointer;
+}
+#btn-buy {
+    width: 40%;
+}
+.info {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 51, 102) , white);
+}
+.info-discount {
+    margin-left: 8px;
+    min-width: 100px;
+    font-size: 0;
+    color: white;
+}
+.info-discount>* {
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 40px;
+}
+.info-discount>.symbol {
+    font-size: 16px;
+}
+.info-discount>.number {
+    font-size: 24px;
+    font-weight: 600;
+}
+.info-coupon {
+    margin-left: 8px;
+    margin-right: auto;
+    min-width: 75px;
+    text-align: center;
+}
+.info-coupon>*+* {
+    margin-top: 4px;
+}
+.info-coupon>.origin {
+    font-size: 14px;
+    text-decoration-line: line-through;
+    color: white;
+}
+.info-coupon>.difference {
+    font-size: 12px;
+}
+.info-countdown {
+    min-width: 150px;
+    font-size: 12px;
+    text-align: center;
+}
+.info-countdown>*+* {
+    margin-top: 4px;
+}
+.info-countdown>.countdown {
+    font-size: 0;
+}
+.info-countdown>.countdown>* {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.guarantee {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 8px 0;
+    background-color: white;
+}
+.guarantee-item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 0;
+    line-height: 40px;
+    text-align: center;
+}
+.guarantee-item>* {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.guarantee-item>*+* {
+    margin-left: 4px;
+}
+.guarantee-item>.icon {
+    width: 14px;
+    height: 14px;
+}
+.description {
+    padding: 16px;
+    background-color: white;
+}
+.description>*+* {
+    margin-top: 8px;
+}
+.description>h4 {
+    font-size: 16px;
+    color: rgb(255, 51, 102);
+}
+.description>p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-all;
+}
+.description img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.description img+img {
+    margin-top: 8px;
+}

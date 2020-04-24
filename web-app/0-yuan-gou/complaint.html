@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/complaint.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.html"></script>
+    <script src="js/common.html"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                申诉管理
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="tab-selector-container">
+            <ul class="tab-selector">
+                <li class="tab-selector-item active" data-tab-id="list-received">
+                    <span>收到的申诉</span>
+                </li>
+                <li class="tab-selector-item" data-tab-id="list-closed">
+                    <span>关闭的申诉</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <!--收到的申诉-->
+            <ul class="list tab-item active" id="list-received">
+                <li class="list-item">
+                    <div class="list-item-dec"
+                         style="background-image: url(temp-img/complaint/goods_01.jpg)"
+                    ></div>
+                    <div class="list-item-con">
+                        <div class="tit">
+                            <span>商品名称：miss</span>
+                        </div>
+                        <div class="id">
+                            <span>任务ID：6666</span>
+                        </div>
+                        <div class="num">
+                            <span>数量：20</span>
+                        </div>
+                        <div class="act">
+                            <span>任务类型：淘宝递推</span>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="complaint-detail.html">
+                            <div class="btn">
+                                处理
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!--列表2-->
+                <li class="list-item">
+                    <div class="list-item-dec"
+                         style="background-image: url(temp-img/complaint/goods_01.jpg)"
+                    ></div>
+                    <div class="list-item-con">
+                        <div class="tit">
+                            <span>商品名称：呼吁环保</span>
+                        </div>
+                        <div class="id">
+                            <span>任务ID：8888</span>
+                        </div>
+                        <div class="num">
+                            <span>数量：20</span>
+                        </div>
+                        <div class="act">
+                            <span>任务类型：京东精刷</span>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="complaint-detail.html">
+                            <div class="btn">
+                                处理
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!--关闭的申诉-->
+            <ul class="list tab-item" id="list-closed">
+                <li class="list-item">
+                    <div class="list-item-dec"
+                         style="background-image: url(temp-img/complaint/goods_01.jpg)"
+                    ></div>
+                    <div class="list-item-con">
+                        <div class="tit">
+                            <span>商品名称：商铺</span>
+                        </div>
+                        <div class="id">
+                            <span>任务ID：99999</span>
+                        </div>
+                        <div class="num">
+                            <span>数量：20</span>
+                        </div>
+                        <div class="act">
+                            <span>任务类型：淘宝递推</span>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="complaint-detail-closed.html">
+                            <div class="btn">
+                                查看
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer tab-bar">
+        <div class="tab-bar-item" id="footer-item-home">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-homefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                首页
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-service">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-servicefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                联系客服
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-order">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-formfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                订单
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-center">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-myfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                个人中心
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

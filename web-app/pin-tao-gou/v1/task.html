@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/task.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons"></i>
+            </a>
+            <span class="mdui-typo-title mdui-center">我的任务</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-home">
+                <i class="mdui-icon material-icons"></i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="mdui-m-y-2 main">
+        <div class="mdui-m-t-2 mdui-p-a-1 mdui-color-white">
+            <div class="mdui-p-x-1 card-title">已接精刷任务</div>
+            <div class="mdui-divider mdui-m-y-1"></div>
+            <div class="card-links">
+                <a href="task-unfinished.html">
+                    <img src="./img/task/weiwancheng.png" alt="未完成">
+                    <span>未完成</span>
+                </a>
+                <a href="task-completed.html">
+                    <img src="./img/task/yiwancheng.png" alt="已完成">
+                    <span>已完成</span>
+                </a>
+                <a href="task-canceled.html">
+                    <img src="./img/task/yichexiao.png" alt="已撤销">
+                    <span>已撤销</span>
+                </a>
+            </div>
+        </div>
+        <div class="mdui-m-t-2 mdui-p-a-1 mdui-color-white">
+            <div class="mdui-p-x-1 card-title">已接标签任务</div>
+            <div class="mdui-divider mdui-m-y-1"></div>
+            <div class="card-links">
+                <a href="task-unfinished.html">
+                    <img src="./img/task/weiwancheng.png" alt="未完成">
+                    <span>未完成</span>
+                </a>
+                <a href="task-completed.html">
+                    <img src="./img/task/yiwancheng.png" alt="已完成">
+                    <span>已完成</span>
+                </a>
+                <a href="task-canceled.html">
+                    <img src="./img/task/yichexiao.png" alt="已撤销">
+                    <span>已撤销</span>
+                </a>
+            </div>
+        </div>
+        <div class="mdui-m-t-2 mdui-p-a-1 mdui-color-white">
+            <div class="mdui-p-x-1 card-title">已接浏览任务</div>
+            <div class="mdui-divider mdui-m-y-1"></div>
+            <div class="card-links">
+                <a href="task-unfinished.html">
+                    <img src="./img/task/weiwancheng.png" alt="未完成">
+                    <span>未完成</span>
+                </a>
+                <a href="task-completed.html">
+                    <img src="./img/task/yiwancheng.png" alt="已完成">
+                    <span>已完成</span>
+                </a>
+                <a href="task-canceled.html">
+                    <img src="./img/task/yichexiao.png" alt="已撤销">
+                    <span>已撤销</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+        <a href="./home.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">home</i>
+            <label>首页</label>
+        </a>
+        <a href="./task.html" class="mdui-ripple mdui-bottom-nav-active">
+            <i class="mdui-icon material-icons">view_list</i>
+            <label>订单</label>
+        </a>
+        <a href="./receive.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">add_circle</i>
+            <label>接单</label>
+        </a>
+        <a href="./complaint.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">comment</i>
+            <label>申诉</label>
+        </a>
+        <a href="./login.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">person</i>
+            <label>我的</label>
+        </a>
+    </div>
+</div>
+</body>
+</html>

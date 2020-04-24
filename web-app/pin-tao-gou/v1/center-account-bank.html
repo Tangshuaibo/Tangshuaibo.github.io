@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./deps/mobileselectjs-2018.2.1/css/mobileSelect.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account-bank.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/mobileselectjs-2018.2.1/js/mobileSelect.min.js"></script>
+    <script src="./deps/iconfont-banks/iconfont.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-account-bank.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">银行卡号绑定</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab-bank-list" class="mdui-ripple">已绑定列表</a>
+            <a href="#main-tab-bank-add" class="mdui-ripple">绑定银行卡</a>
+        </div>
+        <div id="main-tab-bank-list">
+            <ul class="mdui-list" id="main-bank-list">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-gongshangyinhang-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            工商银行(2323)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-zhongguojianshe-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            建设银行(8789)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-nongyeyinhang-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            农业银行(3435)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-zhongguoyinhang-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            中国银行(2341)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-jiaotongyinhang-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            交通银行(2513)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-zhaoshangyinhang-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            招商银行(2435)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-zhongguopingan-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            平安银行(7984)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-zhongxinshiye-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            中信银行(7867)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-fujianxingye-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            兴业银行(6754)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-zhongguominsheng-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            民生银行(4764)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar mdui-color-white">
+                        <svg class="icon-bank" aria-hidden="true">
+                            <use xlink:href="#icon-yinhang-zhongguoguangda-"></use>
+                        </svg>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-float-left">
+                            光大银行(0789)
+                        </div>
+                        <div class="mdui-float-right mdui-text-color-theme-accent">
+                            删除
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="main-tab-bank-add">
+            <div class="mdui-p-a-2 mdui-text-color-black-secondary">
+                姓名必须和身份证中填写的一致，请不要使用信用卡绑定；
+                <span class="mdui-text-color-red">不支持拼淘购上没有显示的银行</span>，如果绑定错误，请联系专属客服
+            </div>
+            <div class="main-form-2">
+                <div class="form-input">
+                    <input id="input-account-name" type="text" maxlength="30" placeholder="请输入开户姓名">
+                </div>
+                <div class="form-input" id="input-bank-name-selector">
+                    <input class="mdui-text-color-theme-accent" id="input-bank-name" type="text" maxlength="30" value="请选择银行名称" readonly>
+                    <i class="mdui-icon material-icons mdui-text-color-theme-accent">chevron_right</i>
+                </div>
+                <div class="form-input">
+                    <input id="input-account-number" type="number" maxlength="30" placeholder="请输入银行账号">
+                </div>
+                <div class="form-input">
+                    <input id="input-account-number-confirm" type="number" maxlength="30" placeholder="请再次输入银行账号">
+                </div>
+            </div>
+            <div class="mdui-p-a-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

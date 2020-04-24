@@ -1,0 +1,293 @@
+/* 页面主体 */
+#main-container{
+    padding-bottom: 1rem;
+}
+/* 轮播图 */
+.swiper-pagination-bullet-active{
+    background-color: #f00582;
+}
+.carousel-img-container{
+    height: 5rem;
+    text-align: center;
+}
+.carousel-img-container>img{
+    width: auto;
+    height: 100%;
+}
+/* 页面标语 */
+#page-slogan-title{
+    padding: 0 0.2rem;
+    color: white;
+    background: url(../img/common/dataoke.png) 0 -33rem no-repeat;
+    background-size: auto 36rem;
+    overflow: hidden;
+}
+#page-slogan-title-left{
+    float: left;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    font-style: italic;
+    font-weight: bold;
+}
+#page-slogan-title-right{
+    float: right;
+    font-size: 0.24rem;
+    line-height: 0.6rem;
+}
+#page-slogan-price{
+    padding: 0.2rem;
+    color: #666;
+    background: url(../img/common/dataoke.png) 0 -31.5rem no-repeat;
+    background-size: auto 36rem;
+    overflow: hidden;
+}
+#page-slogan-price-discount{
+    float: left;
+}
+#page-slogan-price-discount>span{
+    font-size: 0.56rem;
+    font-weight: bold;
+    line-height: 0.8rem;
+    color: #f00582;
+}
+#page-slogan-price-original{
+    float: right;
+}
+#page-slogan-price-original>span{
+    line-height: 0.8rem;
+    text-decoration-line: line-through;
+}
+#page-slogan-price-original>span.symbol{
+    margin-right: -0.1rem;
+}
+/* 赠品卡片 */
+#page-gift-info{
+    padding: 0.2rem;
+}
+#page-gift-info>div:not(:last-of-type){
+    margin-bottom: 0.1rem;
+}
+#page-gift-info-title{
+    font-size: 0.28rem;
+    word-break: break-all;
+    color: #666;
+}
+#page-gift-info-progress{
+    position: relative;
+}
+#page-gift-info-progress-total{
+    height: 0.1rem;
+    background-color: #ddd;
+    border-radius: 0.05rem;
+}
+#page-gift-info-progress-sold{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.1rem;
+    background-color: #f00582;
+    border-radius: 0.05rem;
+}
+#page-gift-info-number{
+    font-size: 0;
+}
+#page-gift-info-number>div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 0.24rem;
+    color: #999;
+}
+#page-gift-info-number-total{
+    text-align: center;
+}
+#page-gift-info-number-remain{
+    text-align: right;
+}
+#page-gift-info-number-sold>div.number{
+    color: #f00582;
+}
+#page-gift-info-number-total>div.number{
+    color: #666;
+}
+/* 商品卡片 */
+#page-goods-info{
+    color: #666;
+    background-color: #ddd;
+    border-radius: 0.05rem;
+}
+#page-goods-info-header{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.24rem;
+    border-bottom: 0.02rem solid #bbb;
+}
+#page-goods-info-content{
+    padding: 0.2rem;
+    font-size: 0;
+}
+#page-goods-info-content>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+#page-goods-info-content-img{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.2rem;
+}
+#page-goods-info-content-img>img{
+    width: 100%;
+    height: 100%;
+}
+#page-goods-info-content-main{
+    width: calc(100% - 1.6rem);
+    font-size: 0.24rem;
+}
+#page-goods-info-content-main-title{
+    line-height: 1.5;
+    word-break: break-all;
+    color: #666;
+}
+#page-goods-info-content-main-coupon{
+    font-size: 0;
+    margin-top: 0.1rem;
+}
+#page-goods-info-content-main-coupon>div{
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.4rem;
+    font-size: 0.28rem;
+}
+#page-goods-info-content-main-coupon-left{
+    padding: 0 0.1rem;
+    line-height: 0.4rem;
+    color: white;
+    background-color: #f00582;
+    border-top-left-radius: 0.08rem;
+    border-bottom-left-radius: 0.08rem;
+}
+#page-goods-info-content-main-coupon-right{
+    padding: 0 0.1rem;
+    line-height: 0.36rem;
+    color: #f00582;
+    background-color: white;
+    border: 0.02rem solid #f00582;
+    border-top-right-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
+}
+/* 玩法介绍 */
+#page-play-intro{
+    background-color: rgba(255, 102, 0, 0.05);
+    border-top: 0.2rem solid #eee;
+    border-bottom: 0.2rem solid #eee;
+}
+#page-play-intro-header{
+    padding: 0.2rem;
+    font-size: 0.28rem;
+    border-bottom: 0.02rem solid #ddd;
+    overflow: hidden;
+}
+#page-play-intro-header-left{
+    float: left;
+}
+#page-play-intro-header-right{
+    float: right;
+}
+#page-play-intro-header-right>a{
+    display: block;
+    color: #999;
+}
+#page-play-intro-content{
+    padding: 0.3rem 0;
+    font-size: 0;
+}
+#page-play-intro-content>div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    text-align: center;
+}
+.page-play-intro-content-step>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.page-play-intro-content-step-number{
+    width: 0.32rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    color: white;
+    background-color: #999;
+    border-radius: 50%;
+}
+.page-play-intro-content-step-info{
+    margin-left: 0.16rem;
+    line-height: 0.32rem;
+    color: #666;
+}
+/* 链接列表 */
+.page-link-list-item{
+    display: block;
+    padding: 0.3rem;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-link-list-item-container{
+    display: block;
+}
+.page-link-list-item-content{
+    color: #666;
+    overflow: hidden;
+}
+.page-link-list-item-content-title{
+    float: left;
+}
+.page-link-list-item-content-arrow{
+    float: right;
+}
+.page-link-list-item-content-arrow>i.iconfont{
+    font-size: 0.28rem;
+}
+/* 页面底部 */
+#footer-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 7.5rem;
+    background-color: white;
+    border-top: 0.02rem solid #dddddd;
+    z-index: 1000;
+}
+#footer-menu{
+    font-size: 0;
+}
+#footer-menu>li{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+    text-align: center;
+}
+#footer-menu>li>a{
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: white;
+}
+#footer-menu-buy{
+    width: 40%;
+    background-color: #f00582;
+}
+#footer-menu-add{
+    width: 40%;
+    background-color: #2af;
+}
+#footer-menu-cart{
+    width: 20%;
+    background-color: #ddd;
+}
+#footer-menu-cart>a{
+    color: #999 !important;
+}
+#footer-menu-cart>a>i.iconfont{
+    font-size: 0.4rem;
+}

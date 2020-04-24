@@ -1,0 +1,170 @@
+/* 页面整体 */
+#page{
+    height: 100vh;
+    background-image: url(../img/common/yungou_background.png);
+    background-size: 100% auto;
+    overflow-y: auto;
+}
+/* 页面头部 */
+#header{
+    position: relative;
+}
+#header-setting{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    text-align: center;
+    color: white;
+}
+#header-setting>i.iconfont{
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+/* 页面主体 */
+/* 用户信息 */
+#page-user{
+    padding: 0.4rem 0 0.2rem 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-user-top{
+    font-size: 0.24rem;
+    text-align: center;
+    color: #999;
+}
+#page-user-top-avatar{
+    position: relative;
+    margin: 0 auto 0.2rem auto;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+#page-user-top-avatar>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+    border-radius: 50%;
+}
+#page-user-top-avatar-gender{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0.48rem;
+    height: 0.48rem;
+    color: #f00582;
+    background-color: white;
+    border: 0.02rem solid #f00582;
+    border-radius: 50%;
+}
+#page-user-top-avatar-gender>i.iconfont{
+    font-size: 0.32rem;
+    line-height: 0.44rem;
+}
+#page-user-top-id{
+    margin-bottom: 0.2rem;
+}
+#page-user-top-class{
+    font-size: 0;
+}
+#page-user-top-class>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+#page-user-top-class>span.class{
+    margin-right: 0.2rem;
+    padding: 0 0.1rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    color: white;
+    background-color: #f00582;
+    border-radius: 0.05rem;
+}
+#page-user-bottom{
+    margin-top: 0.4rem;
+    font-size: 0;
+}
+.page-user-bottom-item{
+    display: inline-block;
+    width: 33.33%;
+    font-size: 0.28rem;
+    text-align: center;
+}
+.page-user-bottom-item *{
+    line-height: 0.4rem;
+}
+.page-user-bottom-item>div.text{
+    color: #666;
+}
+.page-user-bottom-item>div.number{
+    font-size: 0;
+    color: #f00582;
+}
+.page-user-bottom-item>div.number>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+/* 主要内容 */
+#page-content-list{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#page-content-list>li{
+    width: 33.33%;
+    text-align: center;
+    border-right: 0.02rem solid #ddd;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-content-list>li:nth-child(3n){
+    border-right: none;
+}
+.link-card{
+    display: block;
+    padding: 0.4rem 0;
+    color: #666;
+}
+.link-card-icon{
+    margin: 0 auto 0.32rem auto;
+    width: 1rem;
+    height: 1rem;
+    color: white;
+    border-radius: 0.2rem;
+}
+.link-card-icon>i.iconfont{
+    font-size: 0.48rem;
+    line-height: 1rem;
+}
+#link-card-icon-record-bought{
+    background-color: rgb(253, 110, 144);
+}
+#link-card-icon-record-gift{
+    background-color: rgb(255, 102, 101);
+}
+#link-card-icon-record-proxy{
+    background-color: rgb(51, 203, 154);
+}
+#link-card-icon-record-bill{
+    background-color: rgb(183, 137, 253);
+}
+#link-card-icon-record-commission{
+    background-color: rgb(103, 210, 248);
+}
+#link-card-icon-management-prize{
+    background-color: rgb(220, 185, 93);
+}
+#link-card-icon-management-unbox{
+    background-color: rgb(255, 119, 0);
+}
+#link-card-icon-management-invite{
+    background-color: rgb(139, 195, 74);
+}
+#link-card-icon-management-address{
+    background-color: rgb(150, 228, 98);
+}
+#link-card-icon-management-info{
+    background-color: rgb(255, 199, 78);
+}
+#link-card-icon-lottery{
+    background-color: #ff534d;
+}

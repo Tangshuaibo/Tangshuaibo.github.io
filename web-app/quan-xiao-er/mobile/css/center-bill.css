@@ -1,0 +1,129 @@
+#page-menu-list>li{
+    width: 50%;
+    text-align: center;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-menu-list>li.active{
+    border-bottom-color: #f00582;
+}
+#page-menu-list>li>span{
+    display: block;
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    color: #666;
+}
+.page-tab-loading{
+    padding: 0.2rem 0;
+    font-size: 0;
+    text-align: center;
+    color: #666;
+}
+.page-tab-loading>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-tab-loading-img{
+    margin-right: 0.1rem;
+    width: 0.32rem;
+    height: 0.32rem;
+}
+.page-tab-loading-img>img{
+    width: 100%;
+    height: 100%;
+}
+.page-tab-nothing{
+    padding: 1rem;
+    font-size: 0.32rem;
+    color: #999;
+    text-align: center;
+}
+.page-tab-nothing-img{
+    margin-bottom: 0.4rem;
+}
+/* 充值明细 */
+.page-tab-recharge-menu{
+    font-size: 0;
+    text-align: center;
+    color: #999;
+    background-color: #eee;
+}
+.page-tab-recharge-menu>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+}
+.page-tab-recharge-list>li{
+    display: block;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-tab-recharge-list>li>span{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.1rem 0;
+    width: 33.33%;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}
+.page-tab-recharge-list>li>span.amount{
+    font-size: 0;
+    word-break: break-all;
+}
+.page-tab-recharge-list>li>span.amount>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-tab-recharge-bottom{
+    padding: 0.2rem;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}
+/* 消费明细 */
+.page-tab-consume-menu{
+    font-size: 0;
+    text-align: center;
+    color: #999;
+    background-color: #eee;
+}
+.page-tab-consume-menu>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+}
+.page-tab-consume-list>li{
+    display: block;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-tab-consume-list>li>span{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.1rem 0;
+    width: 50%;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}
+.page-tab-consume-list>li>span.amount{
+    font-size: 0;
+    word-break: break-all;
+}
+.page-tab-consume-list>li>span.amount>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-tab-consume-bottom{
+    padding: 0.2rem;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}

@@ -1,0 +1,27 @@
+.list-order {
+    margin: 8px 0;
+}
+.list-order-item {
+    background-color: white;
+}
+.list-order-item+.list-order-item {
+    border-top: 1px solid #ddd;
+}
+.panel-collapse-body>.row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+.panel-collapse-body>.row>* {
+    -webkit-box-flex: 1;
+    flex: 1;
+    line-height: normal;
+}
+.panel-collapse-body>.row>.detail {
+    text-align: right;
+    word-break: break-all;
+    word-wrap: break-word;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account-id.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-account.js"></script>
+    <script src="./js/center-account-id.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">身份证号绑定</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--信息填写选项卡-->
+        <div id="main-tab-info">
+            <div class="mdui-p-x-2 mdui-p-t-2 mdui-text-color-black-secondary">
+                请提供清晰的身份证照片，单张大小不超过3M
+            </div>
+            <div class="main-form-2">
+                <label class="form-label" for="input-real-name">
+                    1.输入您的真实姓名
+                </label>
+                <div class="form-input">
+                    <input id="input-real-name" type="text" maxlength="30" placeholder="请输入真实姓名">
+                </div>
+                <label class="form-label" for="input-id-number">
+                    2.输入您的身份证号
+                </label>
+                <div class="form-input">
+                    <input id="input-id-number" type="number" maxlength="30" placeholder="请输入身份证号">
+                </div>
+                <label class="form-label mdui-p-b-0">
+                    3.上传身份证照片（<span class="mdui-text-color-theme-accent" id="btn-view-example">点我查看示例</span>）
+                </label>
+                <div class="form-img-list">
+                    <div class="form-img-container">
+                        <input class="form-input-img" type="file" accept="image/png, image/jpeg" id="img-id-card-front">
+                        <div class="form-img"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            身份证正面照
+                        </div>
+                    </div>
+                    <div class="form-img-container">
+                        <input class="form-input-img" type="file" accept="image/png, image/jpeg" id="img-id-card-back">
+                        <div class="form-img"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            身份证背面照
+                        </div>
+                    </div>
+                    <div class="form-img-container">
+                        <input class="form-input-img" type="file" accept="image/png, image/jpeg" id="img-id-card-hold">
+                        <div class="form-img"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            手持身份证照
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-p-x-2 mdui-text-color-red">
+                只有身份证和淘宝账号都上传齐全才具备审核资格
+            </div>
+            <div class="mdui-p-a-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+        <!--示例选项卡-->
+        <div id="main-tab-example" style="display: none;">
+            <div class="mdui-typo mdui-text-color-black-secondary mdui-p-a-2">
+                <p>
+                    1.身份证正面照片，如下图，要求：<br>
+                    ①证件文字、图片信息清晰可见；<br>
+                    ②无遮挡、无马赛克。<br>
+                    身份证背面照片要求同上。<br>
+                    <img src="./img/center/id-card-front.png" alt="示例图片">
+                </p>
+                <p>
+                    2.手持身份证照片，如下图，要求：<br>
+                    ①本人面部必须清晰可见；<br>
+                    ②证件文字和人像必须清晰可见，无遮挡、无马赛克；<br>
+                    ③证件需双手握持。<br>
+                    <img src="./img/center/id-card-hold.png" alt="示例图片">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账户充值</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./dep/icon-others-3/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-recharge.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-recharge.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">账户充值</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 页面上部 -->
+                <div id="page-recharge-top">
+                    <div id="page-recharge-amount">
+                        <div class="page-recharge-amount-item active">
+                            <span class="number">50</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <div class="page-recharge-amount-item">
+                            <span class="number">100</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <div class="page-recharge-amount-item">
+                            <span class="number">200</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <div class="page-recharge-amount-item">
+                            <span class="number">500</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <div class="page-recharge-amount-item">
+                            <span class="number">1000</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <input type="text" maxlength="30" placeholder="输入金额">
+                    </div>
+                    <div id="page-recharge-text">
+                        <span>充值金额：</span>
+                        <span class="symbol">￥</span>
+                        <span class="number">50.00</span>
+                    </div>
+                </div>
+                <!-- 页面下部 -->
+                <div id="page-recharge-bottom">
+                    <div id="page-recharge-bottom-title">
+                        支付方式
+                    </div>
+                    <div id="page-recharge-bottom-content">
+                        <ul id="page-recharge-bottom-content-list">
+                            <li data-id="alipay">
+                                <div class="recharge-method-item">
+                                    <div class="recharge-method-item-icon">
+                                        <img src="./img/recharge/payment-alipay.png" alt="支付宝缩略图">
+                                    </div>
+                                    <div class="recharge-method-item-text">
+                                        支付宝支付
+                                    </div>
+                                    <div class="recharge-method-item-checkbox">
+                                        <i class="iconfont icon-radioschecked"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-id="wechat">
+                                <div class="recharge-method-item">
+                                    <div class="recharge-method-item-icon">
+                                        <img src="./img/recharge/payment-wechat.png" alt="微信支付缩略图">
+                                    </div>
+                                    <div class="recharge-method-item-text">
+                                        微信支付
+                                    </div>
+                                    <div class="recharge-method-item-checkbox">
+                                        <i class="iconfont icon-radiosunchecked"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-id="union">
+                                <div class="recharge-method-item">
+                                    <div class="recharge-method-item-icon">
+                                        <img src="./img/recharge/payment-union.png" alt="银联支付缩略图">
+                                    </div>
+                                    <div class="recharge-method-item-text">
+                                        银联支付
+                                    </div>
+                                    <div class="recharge-method-item-checkbox">
+                                        <i class="iconfont icon-radiosunchecked"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="page-recharge-bottom-button">
+                        <span class="pay">立即支付</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

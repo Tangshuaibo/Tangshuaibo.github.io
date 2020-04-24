@@ -1,0 +1,47 @@
+#list-setting{
+    margin: 8px 0;
+    background-color: white;
+}
+#list-setting>.list-item{
+    position: relative;
+    padding: 0 16px;
+    font-size: 0;
+}
+#list-setting>.list-item>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 48px;
+}
+#list-setting>.list-item>.text{
+    float: right;
+    max-width: calc(100% - 64px);
+    color: #999;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+#selector-avatar>.avatar-container{
+    float: right;
+    font-size: 0;
+}
+#selector-avatar>.avatar-container>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+#selector-avatar>.avatar-container>*+*{
+    margin-left: 8px;
+}
+#selector-avatar>.avatar-container>.avatar{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-color: #efefef;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

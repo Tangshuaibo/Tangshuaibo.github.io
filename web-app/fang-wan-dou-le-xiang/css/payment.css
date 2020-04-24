@@ -1,0 +1,74 @@
+.content-title {
+    padding: 16px;
+    background-color: white;
+}
+.content-title>*+* {
+    margin-top: 16px;
+}
+.content-title>.name {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "宋体", serif;
+    line-height: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.content-title>.guarantee {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.content-title .guarantee-item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 0;
+    text-align: center;
+    color: #448AFF;
+}
+.content-title .guarantee-item>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-title .guarantee-item>*+* {
+    margin-left: 8px;
+}
+.content-title .guarantee-item>.iconfont {
+    font-size: 24px;
+}
+.content-title .guarantee-item>.text {
+    font-size: 12px;
+}
+.content-form {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.content-form>.phone-number>label {
+    display: block;
+    padding: 14px;
+    font-size: 16px;
+}
+.content-form>.phone-number>.input-container {
+    background-color: white;
+    padding: 8px;
+}
+.content-form>.phone-number>.input-container>input {
+    display: block;
+    width: 100%;
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    transition: background-color 0.2s;
+}
+.content-form>.phone-number>.input-container>input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.content-form>.action {
+    padding: 14px;
+}
+#price-total {
+    color: rgb(255, 51, 102);
+}

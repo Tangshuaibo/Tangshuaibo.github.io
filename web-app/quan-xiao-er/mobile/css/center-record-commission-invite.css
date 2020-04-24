@@ -1,0 +1,71 @@
+.page-content-loading{
+    padding: 0.2rem 0;
+    font-size: 0;
+    text-align: center;
+    color: #666;
+}
+.page-content-loading>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-content-loading-img{
+    margin-right: 0.1rem;
+    width: 0.32rem;
+    height: 0.32rem;
+}
+.page-content-loading-img>img{
+    width: 100%;
+    height: 100%;
+}
+.page-content-nothing{
+    padding: 1rem;
+    font-size: 0.32rem;
+    color: #999;
+    text-align: center;
+}
+.page-content-nothing-img{
+    margin-bottom: 0.4rem;
+}
+.page-content-invited-menu{
+    font-size: 0;
+    text-align: center;
+    color: #999;
+    background-color: #eee;
+}
+.page-content-invited-menu>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+}
+.page-content-invited-list>li{
+    display: block;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-content-invited-list>li>span{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.1rem 0;
+    width: 33.33%;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}
+.page-content-invited-list>li>span.consume{
+    font-size: 0;
+    word-break: break-all;
+}
+.page-content-invited-list>li>span.consume>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-content-invited-bottom{
+    padding: 0.2rem;
+    font-size: 0.28rem;
+    text-align: center;
+    color: #999;
+}

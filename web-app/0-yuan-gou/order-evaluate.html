@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order-evaluate.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.html"></script>
+    <script src="js/common.html"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                评价
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="main-top">
+            <div class="main-top-left">
+                <img src="temp-img/order/goods_01.jpg" alt="img">
+            </div>
+            <div class="main-top-right">
+                <p><span><b>搜索关键词：</b>xxxsssssss</span></p>
+                <p><span><b>搜索显示价：</b>000</span></p>
+                <p><span><b>下单价格：</b>000</span></p>
+                <p><span><b>拍下件数：</b>000</span></p>
+                <p><span><b>收货人数：</b>000</span></p>
+                <p><span><b>返款金额：</b>000</span></p>
+            </div>
+        </div>
+        <div class="yaoqiu">
+            要求：如果商家有指定评语图片视频请按指定信息提交，如无指定信息请5字以上好评。
+        </div>
+        <div class="dingdan">
+            <div class="fukuan">
+                <p><span>商家指定好评</span> </p>
+                <div class="haoping">啦啦啦啦，哈哈哈，咕咕咕啦啦啦啦，哈哈哈，咕咕咕</div>
+            </div>
+            <div class="tijiao">
+                <button>复制好评</button>
+            </div>
+        </div>
+        <div class="dingdan">
+            <div class="fukuan">
+                <p><span>商家指定图片</span></p>
+                <ul>
+                    <li>
+                        <img src="temp-img/order/goods_01.jpg" alt="">
+                    </li>
+                    <li class="img">
+                        <img src="temp-img/order/goods_01.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="temp-img/order/goods_01.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="tijiao">
+                <button>下载指定图片</button>
+            </div>
+        </div>
+        <div class="dingdan">
+            <div class="fukuan">
+                <p><span>商家指定视频</span></p>
+                <div class="video">
+                    <video src="temp-video/movie.mp4" controls="controls"></video>
+                </div>
+            </div>
+            <div class="tijiao">
+                <button>下载指定视频</button>
+            </div>
+        </div>
+        <div class="dingdan">
+            <div class="fukuan">
+                <p><span>选择评价图片</span></p>
+                <div class="input">
+                    <div class="img">
+                    </div>
+                    <input type="file" class="file" name="">
+                </div>
+            </div>
+            <div class="tijiao">
+                <button>提交</button>
+            </div>
+        </div>
+        <!--<div class="caozuo">-->
+            <!--<p>操作须知：</p>-->
+            <!--<p>1.必须用绑定账号操作</p>-->
+            <!--<p>2.严禁搜店铺下单</p>-->
+            <!--<p>3.按商家要求操作</p>-->
+        <!--</div>-->
+    </div>
+    <!--页面底部-->
+    <div class="footer tab-bar">
+        <div class="tab-bar-item" id="footer-item-home">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-homefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                首页
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-service">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-servicefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                联系客服
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-order">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-formfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                订单
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-center">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-myfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                个人中心
+            </span>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(".file").change(function(){
+            $(".img").css('background-image','url('+URL.createObjectURL($(this)[0].files[0])+')')
+        });
+    })
+</script>
+</body>
+</html>

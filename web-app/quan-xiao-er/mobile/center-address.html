@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地址管理</title>
+    <link rel="stylesheet" href="./dep/swiper-4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./dep/icon-others-4/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-address.css">
+    <script src="./dep/swiper-4.4.2/js/swiper.min.js"></script>
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-address.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">地址管理</span>
+                <a id="header-plus" href="./center-address-add.html">
+                    <i class="iconfont icon-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 正在加载 -->
+                <div id="page-loading" style="display: none;">
+                    <span id="page-loading-img">
+                        <img src="./img/common/loading.gif" alt="加载中图片">
+                    </span>
+                    <span>正在加载</span>
+                </div>
+                <!-- 地址列表 -->
+                <div id="page-address">
+                    <ul id="page-address-list">
+                        <li class="page-address-list-item">
+                            <div class="address-card">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide address-card-info-container">
+                                            <div class="address-card-info">
+                                                <div class="address-card-info-top">
+                                                    <span class="address-card-info-top-name">
+                                                        人体蜈蚣3号
+                                                    </span>
+                                                    <span class="address-card-info-top-info-number">
+                                                        12354648970
+                                                    </span>
+                                                </div>
+                                                <div class="address-card-info-bottom">
+                                                    福建省福州市平潭县我也不清楚是哪里
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide address-card-btn-container">
+                                            <a class="address-card-btn-modify" href="./center-address-modify.html">修改</a>
+                                            <span class="address-card-btn-delete">删除</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="page-address-list-item">
+                            <div class="address-card">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide address-card-info-container">
+                                            <div class="address-card-info">
+                                                <div class="address-card-info-top">
+                                                    <span class="address-card-info-top-name">
+                                                        人体蜈蚣122号
+                                                    </span>
+                                                    <span class="address-card-info-top-info-number">
+                                                        12354648970
+                                                    </span>
+                                                </div>
+                                                <div class="address-card-info-bottom">
+                                                    西瓜省某某市萝莉县兄贵山大锤村2333号
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide address-card-btn-container">
+                                            <a class="address-card-btn-modify" href="./center-address-modify.html">修改</a>
+                                            <span class="address-card-btn-delete">删除</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="page-address-bottom">
+                        已经到底了
+                    </div>
+                </div>
+                <!-- 什么都没有 -->
+                <div id="page-nothing" style="display: none;">
+                    <div id="page-nothing-img">
+                        <img src="./img/common/exclamation.png" alt="感叹号">
+                    </div>
+                    <div id="page-nothing-text">
+                        没有收货地址
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*提交任务信息*/
+/*提交任务截图*/
+.task-screen-shot-container{
+    font-size: 0;
+    text-align: center;
+}
+.task-screen-shot-container>.task-screen-shot{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 16px;
+    margin-right: 16px;
+    width: calc((100% - 16px) / 2);
+    font-size: 16px;
+}
+.task-screen-shot-container>.task-screen-shot:nth-child(2n+1){
+    margin-right: 0;
+}
+.task-screen-shot-container>.task-screen-shot.proto{
+    display: none;
+}
+.task-screen-shot>.task-screen-shot-img{
+    padding-top: 100%;
+    width: 100%;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+.task-screen-shot>.task-screen-shot-img-del{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}

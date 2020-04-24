@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./deps/hg-citypicker-1.2.4/picker.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account-bind.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/hg-citypicker-1.2.4/city.js"></script>
+    <script src="./deps/hg-citypicker-1.2.4/citypicker.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-account.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">绑定拼多多账号</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--选项卡选择器-->
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab-account-list" class="mdui-ripple">已绑定列表</a>
+            <a href="#main-tab-account-add" class="mdui-ripple">继续绑定账号</a>
+        </div>
+        <!--已绑定账号列表选项卡-->
+        <div class="mdui-list" id="main-tab-account-list">
+            <a class="mdui-list-item mdui-ripple" href="./center-account-pinduoduo-detail.html">
+                <div class="mdui-list-item-avatar">
+                    <img src="./temp-img/center/avatar1.jpg" alt="账号头像">
+                </div>
+                <div class="mdui-list-item-content">我和隔壁老王的那一夜</div>
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent btn-item-delete">delete_forever</i>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-pinduoduo-detail.html">
+                <div class="mdui-list-item-avatar">
+                    <img src="./temp-img/center/avatar2.jpg" alt="账号头像">
+                </div>
+                <div class="mdui-list-item-content">我爱上了科学怪人</div>
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent btn-item-delete">delete_forever</i>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-pinduoduo-detail.html">
+                <div class="mdui-list-item-avatar">
+                    <img src="./temp-img/center/avatar3.jpg" alt="账号头像">
+                </div>
+                <div class="mdui-list-item-content">我是飞天意面神教的信徒</div>
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent btn-item-delete">delete_forever</i>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+            </a>
+        </div>
+        <!--继续添加账号选项卡-->
+        <div id="main-tab-account-add">
+            <div class="mdui-panel mdui-m-t-1" mdui-panel>
+                <div class="mdui-panel-item mdui-panel-item-open">
+                    <div class="mdui-panel-item-header">
+                        <div class="mdui-panel-item-title">
+                            <i class="mdui-icon material-icons">warning</i>
+                            <span>注意事项</span>
+                        </div>
+                        <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mdui-panel-item-body mdui-text-color-theme-accent">
+                        请注意：<br>
+                        <span class="mdui-text-color-red">
+                            1.输入拼多多用户名，注意不是昵称；
+                        </span><br>
+                        2.请确保收货地址和收货联系人真实具体，并保证和<span class="mdui-text-color-pink">拼多多上下单的收货地址信息一致</span>；<br>
+                        3.请确认多个拼多多号之间使用不同的收货信息（收货姓名、地址和电话均不同）；<br>
+                        4.账号审核人工进行，正常<span class="mdui-text-color-pink">一个工作日</span>内完成，只有审核通过的买家号才能接受任务；<br>
+                        5.未通过审核的账号信息，可以直接修改提交。
+                    </div>
+                </div>
+            </div>
+            <div class="main-form-2">
+                <label class="form-label" for="input-account-name">
+                    输入拼多多用户名
+                </label>
+                <div class="form-input">
+                    <input id="input-account-name" type="text" maxlength="30" placeholder="请输入拼多多用户名">
+                </div>
+                <label class="form-label" for="input-account-address">
+                    选择拼多多账号收货地址
+                </label>
+                <div class="form-input">
+                    <input id="input-account-address" type="text" placeholder="请选择收货地址" readonly>
+                </div>
+                <label class="form-label" for="input-account-address-detail">
+                    输入拼多多账号详细收货地址
+                </label>
+                <div class="form-input">
+                    <input id="input-account-address-detail" type="text" maxlength="50" placeholder="如：春木镇榆树街13号">
+                </div>
+                <label class="form-label" for="input-account-age">
+                    输入拼多多账号年龄
+                </label>
+                <div class="form-input">
+                    <input id="input-account-age" type="number" maxlength="30" placeholder="请输入拼多多账号年龄">
+                </div>
+                <label class="form-label">
+                    选择拼多多账号性别
+                </label>
+                <div class="mdui-container-fluid mdui-p-x-2 mdui-p-y-1 form-input">
+                    <div class="mdui-row-xs-3">
+                        <div class="mdui-col">
+                            <label class="mdui-radio">
+                                <input type="radio" name="group-gender"/>
+                                <i class="mdui-radio-icon"></i>
+                                <span>男</span>
+                            </label>
+                        </div>
+                        <div class="mdui-col">
+                            <label class="mdui-radio">
+                                <input type="radio" name="group-gender"/>
+                                <i class="mdui-radio-icon"></i>
+                                <span>女</span>
+                            </label>
+                        </div>
+                        <div class="mdui-col">
+                            <label class="mdui-radio">
+                                <input type="radio" name="group-gender"/>
+                                <i class="mdui-radio-icon"></i>
+                                <span>其他</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label class="form-label mdui-p-b-0">
+                    选择相关截图
+                </label>
+                <div class="form-img-list">
+                    <div class="form-img-container">
+                        <input class="form-input-img" type="file" accept="image/png, image/jpeg" id="img-pinduoduo-personal-center">
+                        <div class="form-img"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            拼多多个人中心截图
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-m-x-2 mdui-m-b-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

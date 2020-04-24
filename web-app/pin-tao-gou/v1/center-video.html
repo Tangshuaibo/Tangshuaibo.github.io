@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./deps/dplayer-1.25.0/DPlayer.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/dplayer-1.25.0/DPlayer.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-video.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">操作教学</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-card mdui-m-a-2">
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar mdui-color-theme" src="./img/common/favicon.png"/>
+                <div class="mdui-card-header-title">相关操作教学</div>
+                <div class="mdui-card-header-subtitle">账号绑定操作教学</div>
+            </div>
+            <div class="mdui-card-media">
+                <div id="video-player"></div>
+            </div>
+            <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-color-theme-accent mdui-ripple" id="card-btn-back">返回</button>
+                <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-float-right"
+                        id="card-btn-replay" style="margin: 0;">
+                    重播
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

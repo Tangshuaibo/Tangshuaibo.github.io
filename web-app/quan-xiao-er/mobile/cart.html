@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./dep/swiper-4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./dep/icon-footer/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./dep/swiper-4.4.2/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/cart.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <span id="header-text">购物车</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="top">
+                    <div id="top-cart">
+                        <ul id="top-cart-list">
+                            <li>
+                                <div class="cart-card">
+                                    <div class="cart-card-top">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide swiper-slide-cart-card-top-left">
+                                                    <div class="cart-card-top-left">
+                                                        <div class="cart-card-top-left-img">
+                                                            <img src="./temp-img/cart/goods_1.jpg" alt="商品缩略图">
+                                                        </div>
+                                                        <div class="cart-card-top-left-info">
+                                                            <div class="cart-card-top-left-info-title">
+                                                                200斤大码女裤夏季新款胖mm宽松高腰小脚裤棉麻休闲九分哈伦裤潮
+                                                            </div>
+                                                            <div class="cart-card-top-left-info-remain">
+                                                                剩余<span>1500</span>件
+                                                            </div>
+                                                            <div class="cart-card-top-left-info-calculator">
+                                                                <div class="cart-card-top-left-info-calculator-price">
+                                                                    <span class="symbol">￥</span>
+                                                                    <span class="total-price">2.20</span>
+                                                                    <span class="currency">元</span>
+                                                                </div>
+                                                                <div class="cart-card-top-left-info-calculator-counter">
+                                                                    <span class="minus">-</span>
+                                                                    <input type="text" maxlength="15" value="1">
+                                                                    <span class="plus">+</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="cart-card-top-right">
+                                                        <div class="cart-card-top-right-btn-delete">删除</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-card-bottom">
+                                        <div class="cart-card-bottom-gift">
+                                            <div class="cart-card-bottom-gift-decoration">赠品</div>
+                                            <div class="cart-card-bottom-gift-img">
+                                                <img src="./temp-img/cart/gift_1.jpg" alt="赠品缩略图">
+                                            </div>
+                                            <div class="cart-card-bottom-gift-title">
+                                                <span class="text">
+                                                    第(22)期 微软（Microsoft）Surface Book 2 二合一平板笔记本 15英寸（Intel i7 16G内存 256G存储）银色
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <div id="bottom-checkout">
+                        <div id="bottom-checkout-info">
+                            合计：<span class="symbol">￥</span>
+                            <span class="total-price">0.00</span>
+                            <span class="currency">元</span>
+                        </div>
+                        <div id="bottom-checkout-btn">
+                            <a id="bottom-checkout-btn-submit" href="./cart-settlement.html">结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+                <ul id="footer-menu">
+                    <li>
+                        <a href="./index.html">
+                            <i class="iconfont icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./goods.html">
+                            <i class="iconfont icon-goods"></i>
+                            <span>所有商品</span>
+                        </a>
+                    </li>
+                    <li class="cart">
+                        <a href="./cart.html">
+                            <i class="iconfont icon-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./unveil.html">
+                            <i class="iconfont icon-trophy"></i>
+                            <span>最新揭晓</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class="iconfont icon-person"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

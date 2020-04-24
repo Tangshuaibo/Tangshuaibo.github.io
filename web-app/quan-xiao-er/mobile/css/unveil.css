@@ -1,0 +1,125 @@
+#unveiled-goods-list{
+    font-size: 0;
+}
+#unveiled-goods-list>li{
+    display: none;
+    /* display: inline-block; */
+    vertical-align: middle;
+    width: 50%;
+    height: 4rem;
+    font-size: 0.24rem;
+    color: #999999;
+    border-right: 0.02rem solid #dddddd;
+    border-bottom:  0.02rem solid #dddddd;
+    overflow: hidden;
+}
+#unveiled-goods-list>li:nth-child(2n){
+    border-right: none;
+}
+/* 已揭晓卡片 */
+.unveiled-card{
+    padding: 0.2rem;
+}
+.unveiled-card>*{
+    margin-bottom: 0.1rem;
+}
+.unveiled-card-img{
+    display: block;
+    text-align: center;
+}
+.unveiled-card-img>img{
+    width: 2rem;
+    height: 2rem;
+}
+.unveiled-card-winner{
+    display: block;
+    font-size: 0;
+}
+.unveiled-card-winner>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.unveiled-card-winner-avatar>img{
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 0.02rem solid #dddddd;
+    border-radius: 50%;
+}
+.unveiled-card-winner-info{
+    margin-left: 0.2rem;
+    width: calc(100% - 0.9rem);
+}
+.unveiled-card-winner-info>div{
+    margin: 0.1rem 0;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.unveiled-card-winner-info-name{
+    color: #22aaff;
+}
+.unveiled-card-winner-info-num>span{
+    color: #f00582;
+}
+.unveiled-card-code, .unveiled-card-time{
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.unveiled-card-code>span{
+    color: #f00582;
+}
+/* 即将揭晓卡片 */
+.unveiling-card{
+    padding: 0.2rem;
+}
+.unveiling-card>*{
+    margin-bottom: 0.1rem;
+}
+.unveiling-card-img{
+    display: block;
+    text-align: center;
+}
+.unveiling-card-img>img{
+    width: 2rem;
+    height: 2rem;
+}
+.unveiling-card-title{
+    color: #333333;
+}
+.unveiling-card-title, .unveiling-card-price{
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.unveiling-card-waiting{
+    display: none;
+    margin-top: 0.3rem;
+    font-size: 0.36rem;
+    color: #f00582;
+    text-align: center;
+}
+.unveiling-card-count-down{
+    margin-top: 0.1rem;
+    font-size: 0;
+    text-align: center;
+    color: #f00582;
+}
+.unveiling-card-count-down>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.32rem;
+    line-height: 0.46rem;
+    border: 0.02rem solid #f00582;
+    border-radius: 0.08rem;
+}
+.unveiling-card-count-down>span.colon{
+    width: 0.3rem;
+    border: none;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>确认支付</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./dep/icon-others-3/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/cart-settlement.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/cart-settlement.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">确认支付</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 页面内容 -->
+                <div id="page-content">
+                    <!-- 购物车列表 -->
+                    <ul id="page-content-list">
+                        <li class="page-content-list-item">
+                            <div class="page-content-list-item-img">
+                                <img src="./temp-img/cart-settlement/goods_1.jpg" alt="商品缩略图">
+                            </div>
+                            <div class="page-content-list-item-info">
+                                <div class="page-content-list-item-info-title">
+                                    彩虹条纹上衣夏无袖显瘦性感紧身露脐短款甜美修身高腰吊带衫女潮
+                                </div>
+                                <div class="page-content-list-item-info-amount">
+                                    <span class="number">6</span>
+                                    <span>件/</span>
+                                    <span class="symbol colored">￥</span>
+                                    <span class="price colored">6.00</span>
+                                </div>
+                                <div class="page-content-list-item-info-gift">
+                                    <span>送抽奖：</span>
+                                    <span class="text">(第24期)微软（Microsoft）Surface Book 2 二合一平板笔记本 15英寸（Intel i7 16G内存 1T存储）银色</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 账号支付 -->
+                    <div id="page-content-payment-account">
+                        <div id="page-content-payment-account-header">
+                            <span>总需支付金额：</span>
+                            <span class="symbol colored">￥</span>
+                            <span class="price colored">7.00</span>
+                        </div>
+                        <div class="page-content-payment-account-row" id="page-content-payment-account-row-point">
+                            <div class="page-content-payment-account-row-left">
+                                福分支付（您的福分：<span>2</span>）
+                            </div>
+                            <div class="page-content-payment-account-row-right">
+                                <i class="iconfont icon-radiosunchecked"></i>
+                            </div>
+                        </div>
+                        <div class="page-content-payment-account-row" id="page-content-payment-account-row-balance">
+                            <div class="page-content-payment-account-row-left">
+                                账户余额（您的余额：￥<span>0.00</span>）
+                            </div>
+                            <div class="page-content-payment-account-row-right">
+                                <i class="iconfont icon-radiosunchecked"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三方支付 -->
+                    <div id="page-content-payment-third">
+                        <div id="page-content-payment-third-header">
+                            <span>第三方支付：</span>
+                            <span class="symbol colored">￥</span>
+                            <span class="price colored">7.00</span>
+                        </div>
+                        <div class="page-content-payment-third-row active">
+                            <div class="page-content-payment-third-row-img">
+                                <img src="./img/cart-settlement/payment-alipay.png" alt="支付宝">
+                            </div>
+                            <div class="page-content-payment-third-row-text">
+                                支付宝支付
+                            </div>
+                            <div class="page-content-payment-third-row-checkbox">
+                                <i class="iconfont icon-radioschecked"></i>
+                            </div>
+                        </div>
+                        <div class="page-content-payment-third-row">
+                            <div class="page-content-payment-third-row-img">
+                                <img src="./img/cart-settlement/payment-wechat.png" alt="微信">
+                            </div>
+                            <div class="page-content-payment-third-row-text">
+                                微信支付
+                            </div>
+                            <div class="page-content-payment-third-row-checkbox">
+                                <i class="iconfont icon-radiosunchecked"></i>
+                            </div>
+                        </div>
+                        <div class="page-content-payment-third-row">
+                            <div class="page-content-payment-third-row-img">
+                                <img src="./img/cart-settlement/payment-union.png" alt="银联">
+                            </div>
+                            <div class="page-content-payment-third-row-text">
+                                银联支付
+                            </div>
+                            <div class="page-content-payment-third-row-checkbox">
+                                <i class="iconfont icon-radiosunchecked"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 页面模态框 -->
+                <div id="page-layer" style="display: none;">
+                    <div class="page-layer-modal" id="page-layer-modal-balance" style="display: none;">
+                        <div class="page-layer-modal-title">
+                            提示
+                        </div>
+                        <div class="page-layer-modal-text">
+                            您的账户余额不足，是否前往充值？
+                        </div>
+                        <div class="page-layer-modal-btn">
+                            <span class="page-layer-modal-btn-cancel">
+                                取消
+                            </span>
+                            <span class="page-layer-modal-btn-confirm">
+                                确定
+                            </span>
+                        </div>
+                    </div>
+                    <div class="page-layer-modal" id="page-layer-modal-point" style="display: none;">
+                        <div class="page-layer-modal-title">
+                            提示
+                        </div>
+                        <div class="page-layer-modal-text">
+                            您的积分不足，加油赚取积分吧
+                        </div>
+                        <div class="page-layer-modal-btn">
+                            <span class="page-layer-modal-btn-cancel">
+                                确定
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+                <div id="footer-btn">
+                    <span id="footer-btn-submit">
+                        去支付
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

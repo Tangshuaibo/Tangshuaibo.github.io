@@ -1,0 +1,125 @@
+/* slogan */
+.slogan {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 0;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.slogan>*{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.slogan>*+*{
+    margin-left: 4px;
+}
+.slogan-title {
+    font-size: 14px;
+}
+.slogan-text {
+    font-size: 12px;
+    color: rgb(255, 51, 102);
+}
+/* card */
+.card-list {
+    padding: 10px;
+    font-size: 0;
+}
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 10px) / 2);
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card:not(:nth-child(2)):not(:first-of-type) {
+    margin-top: 10px;
+}
+.card:nth-child(2n) {
+    margin-left: 10px;
+}
+.card-img {
+    padding-top: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-info {
+    padding: 10px;
+}
+.card-info>.title {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-info>.row {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-info>.row.current {
+    margin-top: 16px;
+}
+.card-info>.row.origin {
+    margin-top: 10px;
+}
+.card-info>.row>* {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.card-info>.row>.fa-star {
+    color: #03A9F4;
+}
+.card-info>.row>.coupon {
+    margin-left: 2px;
+    color: rgb(255, 51, 102);
+}
+.card-info>.row>.discount {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    font-size: 16px;
+    color: rgb(255, 51, 102);
+}
+.card-info>.row>.fa-clock-o {
+    color: #999;
+}
+.card-info>.row>.time{
+    margin-left: 2px;
+    color: #999;
+}
+.card-info>.row>.price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+    text-decoration-line: line-through;
+}
+.card-info>.countdown-timer {
+    margin-top: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.card-info>.countdown-timer>* {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.card-info>.countdown-timer>*+* {
+    margin-left: 4px;
+}
+.card-info>.countdown-timer>.time {
+    padding: 4px;
+    color: white;
+    background-color: #333;
+    border-radius: 4px;
+}

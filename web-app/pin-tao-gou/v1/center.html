@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">个人中心</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--用户头像-->
+        <div class="mdui-p-y-3 mdui-text-center mdui-color-theme" id="main-avatar">
+            <div id="main-avatar-img">
+                <img class="mdui-img-circle" src="./img/center/avatar.png" alt="用户头像">
+            </div>
+            <div class="mdui-m-t-2 mdui-typo-subheading" id="main-avatar-name">
+                深空鲨鱼
+            </div>
+        </div>
+        <!--功能列表-->
+        <div id="main-content">
+            <div class="mdui-m-y-1 mdui-list" id="main-content-list">
+                <a class="mdui-list-item mdui-ripple" href="./center-commission.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">account_balance_wallet</i>
+                    <div class="mdui-list-item-content">佣金收益</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./center-account.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">account_circle</i>
+                    <div class="mdui-list-item-content">账户信息</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./center-invite.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">people</i>
+                    <div class="mdui-list-item-content">推广赚钱</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./center-video.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">ondemand_video</i>
+                    <div class="mdui-list-item-content">任务操作教学视频</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./center-video.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">ondemand_video</i>
+                    <div class="mdui-list-item-content">账号信息绑定教学视频</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+                <a class="mdui-list-item mdui-ripple" href="./center-service.html">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">tag_faces</i>
+                    <div class="mdui-list-item-content">联系客服</div>
+                    <i class="mdui-icon material-icons">chevron_right</i>
+                </a>
+            </div>
+            <div class="mdui-m-x-2 mdui-m-b-2" id="main-content-btn-group">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">退出登录</button>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+        <a href="./home.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">home</i>
+            <label>首页</label>
+        </a>
+        <a href="./task.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">view_list</i>
+            <label>订单</label>
+        </a>
+        <a href="./receive.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">add_circle</i>
+            <label>接单</label>
+        </a>
+        <a href="./complaint.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">comment</i>
+            <label>申诉</label>
+        </a>
+        <a href="./login.html" class="mdui-ripple mdui-bottom-nav-active">
+            <i class="mdui-icon material-icons">person</i>
+            <label>我的</label>
+        </a>
+    </div>
+</div>
+</body>
+</html>

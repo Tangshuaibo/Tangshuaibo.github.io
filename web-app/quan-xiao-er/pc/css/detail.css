@@ -1,0 +1,404 @@
+/* 分期详情 */
+.stage-list-menu{
+    width: 100%;
+    font-size: 0;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 0 5px #e4e4e4;
+}
+.stage-list-menu li{
+    display: inline-block;
+    width: 109px;
+    height: 38px;
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+}
+.stage-list-menu li:last-of-type{
+    border: none;
+}
+.stage-list-menu li a{
+    display: block;
+    width: 100%;
+    line-height: 38px;
+    color: #999;
+}
+.stage-list-menu li:first-of-type{
+    width: 216px;
+    background-color: #f00582;
+}
+.stage-list-menu li:first-of-type a{
+    color: white;
+    pointer-events: none;
+}
+.stage-list-menu li:hover a{
+    color: #f00582;
+}
+.stage-list-menu li:first-of-type:hover a{
+    color: white;
+}
+
+/* 推荐详情 */
+.recommond-card{
+    position: relative;
+    margin: 10px 0; 
+    width: 100%;
+    font-size: 0;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+}
+/* 推荐卡片左侧 */
+.recommond-card-left{
+    display: inline-block;
+    padding: 20px;
+    width: 380px;
+    height: 100%;
+    font-size: 12px;
+}
+.recommond-card-left-img img{
+    width: 340px;
+    height: 340px;
+}
+.recommond-card-left-img-list{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 380px;
+    text-align: center;
+}
+.recommond-card-left-img-list ul{
+    display: inline;
+}
+.recommond-card-left-img-list ul li{
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.recommond-card-left-img-list ul li img{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+}
+.recommond-card-left-img-list ul li.active img{
+    border-color: #f00582;
+}
+/* 推荐卡片右侧 */
+.recommond-card-right{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 30px;
+    width: 810px;
+    font-size: 12px;
+    border-left: 1px solid #f3f3f3;
+}
+/* 推荐卡片右侧标题 */
+.recommond-card-right-title{
+    font-size: 18px;
+    line-height: 26px;
+    word-break:break-all;
+    color: #333;
+}
+.recommond-card-right-title>img{
+    width: 16px;
+    height: 16px;
+}
+/* 推荐卡片右侧商品详情 */
+.recommond-card-right-detail{
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px dotted #C9C9C9;
+    border-bottom: 1px dotted #C9C9C9;
+    overflow: hidden;
+}
+.recommond-card-right-detail-price{
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #333;
+}
+.recommond-card-right-detail-price>span{
+    font-weight: bold;
+    color: #f00582;
+}
+.recommond-card-right-detail-price>span:first-of-type{
+    margin-left: 16px;
+}
+.recommond-card-right-detail-number{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.recommond-card-right-detail-number-remain{
+    margin-left: 30px;
+}
+/* 推荐卡片右侧购买计数 */
+.recommond-card-right-buy{
+    margin: 8px 0 24px 0;
+    width: 508px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+}
+.recommond-card-right-buy-counter, .recommond-card-right-buy-num-list{
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-size: 0;
+    color: #333;
+}
+.recommond-card-right-buy-counter-minus, .recommond-card-right-buy-counter-add{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #666;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.recommond-card-right-buy-counter-minus{
+    border: 1px solid #e4e4e4;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.recommond-card-right-buy-counter-add{
+    border: 1px solid #e4e4e4;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.recommond-card-right-buy-counter-input{
+    width: 64px;
+    height: 28px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    outline: none;
+}
+.recommond-card-right-buy-num-list ul{
+    display: inline;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.recommond-card-right-buy-num-list ul li{
+    display: inline-block;
+    margin-left: 10px;
+    width: 60px;
+    height: 28px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.recommond-card-right-buy-num-list ul li:hover{
+    color: #f00582;
+}
+/* 推荐卡片右侧售卖状态 */
+.recommond-card-right-status-title{
+    position: relative;
+    font-size: 12px;
+    color: white;
+}
+.recommond-card-right-status-title-background{
+    height: 30px;
+    line-height: 30px;
+    background: url(../img/common/dataoke.png) 0 -1600px no-repeat;
+}
+.recommond-card-right-status-title-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    background: url(../img/common/dataoke.png) -756px -1600px no-repeat;
+}
+.recommond-card-right-status-title-desc{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.recommond-card-right-status-content{
+    position: relative;
+    padding: 20px 10px;
+    font-size: 14px;
+    color: #787878;
+    background: url(../img/common/dataoke.png) 0 -1510px no-repeat;
+}
+.recommond-card-right-status-content>div{
+    display: inline-block;
+    margin-right: 56px;
+}
+.recommond-card-right-status-content-new-price span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f00582;
+}
+.recommond-card-right-status-content-old-price span{
+    margin-right: -4px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #666;
+}
+.recommond-card-right-status-content-sales-volum span{
+    font-weight: bold;
+    color: #fc903d;
+}
+/* 推荐卡片右侧售卖状态宣传语 */
+.recommond-card-right-status-slogan{
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #8E8787;
+    border-top: 1px dotted #C9C9C9;
+    border-bottom: 1px dotted #C9C9C9;
+}
+.recommond-card-right-status-slogan-left{
+    margin-right: 20px;
+    padding: 0 20px;
+    border-right: 1px solid #E5DFDA;
+}
+.recommond-card-right-status-slogan-right span{
+    color: #f00582;
+}
+/* 推荐卡片右侧按钮组 */
+.recommond-card-right-button-list{
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+.recommond-card-right-button-list span{
+    display: inline-block;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.recommond-card-right-button-list-buy-now{
+    margin-right: 30px;
+    padding: 10px 60px;
+    background-color: #f60;
+}
+.recommond-card-right-button-list-buy-now:hover{
+    background-color: #f40;
+}
+.recommond-card-right-button-list-add-to-cart{
+    padding: 10px 30px;
+    background-color: #ffac4a;
+}
+.recommond-card-right-button-list-add-to-cart:hover{
+    background-color: #f92;
+}
+/* 推荐卡片右侧商品图片列表 */
+.recommond-card-right-img-list{
+    margin-top: 20px;
+    text-align: center;
+}
+.recommond-card-right-img-list ul{
+    display: inline;
+}
+.recommond-card-right-img-list ul li{
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.recommond-card-right-img-list ul li img{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+}
+.recommond-card-right-img-list ul li.active img{
+    border-color: #f00582;
+}
+
+/* 商品相关信息详情 */
+.goods-info-tab{
+    margin: 10px 0;
+    border: 1px solid #e4e4e4;
+}
+/* 商品相关信息选项卡菜单 */
+.goods-info-tab-menu{
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e4e4e4;
+}
+.goods-info-tab-menu ul{
+    font-size: 0;
+}
+.goods-info-tab-menu ul li{
+    display: inline-block;
+    padding: 0 30px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    color: #333;
+    border-right: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+.goods-info-tab-menu ul li.active{
+    margin: -2px 0;
+    font-weight: bold;
+    color: #f00582;
+    background-color: white;
+    border-top: 2px solid #f00582;
+    border-bottom: 2px solid white;
+    box-sizing: content-box;
+    z-index: 10;
+}
+/* 商品相关信息选项卡内容 */
+.goods-info-tab-content>div{
+    display: none;
+}
+.goods-info-tab-content>div:first-of-type{
+    display: block;
+}
+/* 商品相关信息商品详情选项卡 */
+.goods-detail{
+    padding: 30px;
+}
+.goods-detail-img{
+    width: 750px;
+    margin: 0 auto;
+}
+.goods-detail-img img{
+    width: 100%;
+    height: auto;
+}
+/* 商品相关信息晒单选项卡 */
+.goods-no-unboxing-record-container{
+    display: table;
+    width: 100%;
+    height: 256px;
+}
+.goods-no-unboxing-record{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.goods-no-unboxing-record-img{
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    background: url(../img/common/yungouos.png) 0 -290px no-repeat;
+}
+.goods-no-unboxing-record-title{
+    font-size: 16px;
+    padding-left: 16px;
+    height: 48px;
+    line-height: 48px;
+    color: #bbb;
+}

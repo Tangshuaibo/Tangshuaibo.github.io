@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 0.28rem;
+    color: #333;
+}
+ul{
+    font-size: 0;
+}
+li{
+    display: inline-block;
+    font-size: 0.28rem;
+    vertical-align: middle;
+    list-style-type: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #333;
+}
+#page{
+    margin: 0 auto;
+    width: 7.5rem;
+}
+/* 页面头部 */
+#header-container{
+    color: white;
+    background-color: #f00582;
+}
+#header{
+    position: relative;
+    text-align: center;
+    height: 0.8rem;
+    font-size: 0;
+}
+#header-text{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+#header>div{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+#header>div>i{
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+#header-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header-home{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

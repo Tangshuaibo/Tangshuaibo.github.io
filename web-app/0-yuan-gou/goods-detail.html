@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/swiper-4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/goods-detail.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="vendor/swiper-4.5.0/js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/goods-detail.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item d-none" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                商品详情
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item d-none" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--临终前会看走马灯-->
+        <div class="swiper-container" id="carousel-goods">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide carousel-img-container">
+                    <img src="temp-img/goods-detail/goods_01.jpg" alt="img">
+                </div>
+                <div class="swiper-slide carousel-img-container">
+                    <img src="temp-img/goods-detail/goods_02.jpg" alt="img">
+                </div>
+                <div class="swiper-slide carousel-img-container">
+                    <img src="temp-img/goods-detail/goods_03.jpg" alt="img">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--嗯，这是标题-->
+        <div id="main-title">
+            <div class="price">
+                <span class="text">￥</span>
+                <span class="number">0.00</span>
+            </div>
+            <div class="discount">
+                <div class="discount-top">
+                    <span>下单价￥</span>
+                    <span>100.00</span>
+                </div>
+                <div class="discount-bottom">
+                    <span>返现￥</span>
+                    <span>100.00</span>
+                </div>
+            </div>
+            <div class="countdown">
+                <div class="title">
+                    距离结束仅剩
+                </div>
+                <div class="countdown-timer">
+                    <span class="time minute">09</span>
+                    <span>分</span>
+                    <span class="time second">59</span>
+                    <span>秒</span>
+                </div>
+            </div>
+        </div>
+        <div id="main-slogan">
+            超级返全额购
+        </div>
+        <div id="main-guarantee">
+            <span class="icon">
+                <i class="iconfont icon-insurance"></i>
+            </span>
+            <span class="text">
+                商家已缴纳￥2333.00元保证金，请放心购买
+            </span>
+        </div>
+        <div id="main-gift">
+            <div class="title">
+                可选礼品：任选一种
+            </div>
+            <ul class="img-selector-list">
+                <li class="img-selector-item">
+                    <div class="img-selector-item-checkbox">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="img-selector-item-img"
+                        style="background-image: url('temp-img/goods-detail/gift_01.png')"
+                    ></div>
+                    <div class="img-selector-item-text">抽纸1包</div>
+                </li>
+                <li class="img-selector-item">
+                    <div class="img-selector-item-checkbox">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="img-selector-item-img"
+                         style="background-image: url('temp-img/goods-detail/gift_01.png')"
+                    ></div>
+                    <div class="img-selector-item-text">衣架1个</div>
+                </li>
+                <li class="img-selector-item">
+                    <div class="img-selector-item-checkbox">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="img-selector-item-img"
+                         style="background-image: url('temp-img/goods-detail/gift_01.png')"
+                    ></div>
+                    <div class="img-selector-item-text">垃圾袋1包</div>
+                </li>
+                <li class="img-selector-item">
+                    <div class="img-selector-item-checkbox">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="img-selector-item-img"
+                         style="background-image: url('temp-img/goods-detail/gift_01.png')"
+                    ></div>
+                    <div class="img-selector-item-text">现金5元</div>
+                </li>
+            </ul>
+        </div>
+        <div id="main-notice">
+            <div class="title">
+                拍前必看
+            </div>
+            <div class="warn">
+                <span>遇到问题第一时间联系客服</span>
+                <a class="btn" href="service.html">联系客服</a>
+            </div>
+            <div class="warn">
+                <span>切勿咨询商家有关超级返的任何问题</span>
+            </div>
+            <div class="notice">
+                <span>1.实发商品以页面选择产品为准；</span>
+            </div>
+            <div class="notice">
+                <span>2.根据标题找到商品，并在规定时间内完成抢购并将订单号回填。</span>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer">
+        <a class="link-service" href="service.html">
+            <i class="iconfont icon-service"></i>
+            <div class="text">联系客服</div>
+        </a>
+        <div class="number">
+            剩余13/233
+        </div>
+        <span class="btn-footer">
+            立即抢购
+        </span>
+    </div>
+</div>
+</body>
+</html>

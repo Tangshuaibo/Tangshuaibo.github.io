@@ -1,0 +1,123 @@
+/* 选项卡选择器 */
+#page-menu-list>li{
+    width: 50%;
+    text-align: center;
+    border-bottom: 0.02rem solid #ddd;
+}
+#page-menu-list>li.active{
+    border-bottom-color: #f00582;
+}
+#page-menu-list>li>span{
+    display: block;
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    color: #666;
+}
+/* 正在加载 */
+.page-tab-loading{
+    padding: 0.2rem 0;
+    font-size: 0;
+    text-align: center;
+    color: #666;
+}
+.page-tab-loading>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.page-tab-loading-img{
+    margin-right: 0.1rem;
+    width: 0.32rem;
+    height: 0.32rem;
+}
+.page-tab-loading-img>img{
+    width: 100%;
+    height: 100%;
+}
+/* 选项卡 */
+#page-tab-unveiled{
+    display: none;
+}
+.page-tab-nothing{
+    padding: 1rem;
+    font-size: 0.32rem;
+    color: #999;
+    text-align: center;
+}
+.page-tab-nothing-img{
+    margin-bottom: 0.4rem;
+}
+#page-tab-unveiled>div.page-tab-nothing{
+    display: none;
+}
+.page-tab-list-bottom{
+    padding: 0.2rem 0;
+    text-align: center;
+    color: #999;
+}
+.page-tab-list>li{
+    display: block;
+    border-bottom: 0.02rem solid #ddd;
+}
+/* 已揭晓选项卡卡片 */
+.page-tab-list-unveiled-card{
+    display: block;
+    padding: 0.2rem;
+    font-size: 0;
+}
+.page-tab-list-unveiled-card>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.page-tab-list-unveiled-card-img{
+    position: relative;
+    margin-right: 0.2rem;
+    width: 1.28rem;
+    height: 1.28rem;
+    border: 0.02rem solid #ddd;
+    border-radius: 0.1rem;
+    overflow: hidden;
+}
+.page-tab-list-unveiled-card-img>img{
+    width: 100%;
+    height: 100%;
+}
+.page-tab-list-unveiled-card-img-decoration{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 0.32rem;
+    text-align: center;
+    color: white;
+    background-color: #bbb;
+}
+.page-tab-list-unveiled-card-info{
+    width: calc(100% - 1.48rem);
+}
+.page-tab-list-unveiled-card-info>div:not(:last-of-type){
+    margin-bottom: 0.1rem;
+}
+.page-tab-list-unveiled-card-info-title{
+    display: -webkit-box;
+    font-size: 0.28rem;
+    line-height: 0.32rem;
+    color: #666;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.page-tab-list-unveiled-card-info-winner, .page-tab-list-unveiled-card-info-time{
+    color: #999;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.page-tab-list-unveiled-card-info-winner>span{
+    color: #2af;
+}

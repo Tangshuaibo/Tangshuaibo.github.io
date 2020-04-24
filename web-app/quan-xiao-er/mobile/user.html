@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/user.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">用户信息</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-header">
+                    <div id="page-header-avatar">
+                        <img src="./temp-img/user/avatar.jpg" alt="用户头像">
+                    </div>
+                    <div id="page-header-name">
+                        永远的神龟巨人
+                    </div>
+                </div>
+                <div id="page-content">
+                    <div id="page-content-menu">
+                        <ul id="page-content-menu-list">
+                            <li data-target="bought" class="active">
+                                <span>购买记录</span>
+                            </li>
+                            <li data-target="won">
+                                <span>获得记录</span>
+                            </li>
+                            <li data-target="unbox">
+                                <span>晒单记录</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="page-content-tab">
+                        <!-- 购买记录 -->
+                        <div data-id="bought" id="page-content-tab-bought">
+                            <ul id="page-content-tab-bought-list">
+                                <!-- 进行中条目 -->
+                                <li class="tab-bought-ongoing-item">
+                                    <a class="tab-bought-ongoing-card" href="./goods-detail.html">
+                                        <div class="tab-bought-ongoing-card-img">
+                                            <img src="./temp-img/user/goods1_1.jpg" alt="商品缩略图">
+                                        </div>
+                                        <div class="tab-bought-ongoing-card-info">
+                                            <div class="tab-bought-ongoing-card-info-title">
+                                                (第2294期)薇诺娜柔润保湿霜套装（保湿霜+润肤水 面霜 修护舒缓 补水保湿）
+                                            </div>
+                                            <div class="tab-bought-ongoing-card-info-progress">
+                                                <div class="tab-bought-ongoing-card-info-progress-total"></div>
+                                                <div class="tab-bought-ongoing-card-info-progress-current" style="width: 33%;"></div>
+                                            </div>
+                                            <div class="tab-bought-ongoing-card-info-number">
+                                                <div class="tab-bought-ongoing-card-info-number-sold">
+                                                    <div class="number">1000</div>
+                                                    <div>已参与</div>
+                                                </div>
+                                                <div class="tab-bought-ongoing-card-info-number-total">
+                                                    <div class="number">3000</div>
+                                                    <div>总个数</div>
+                                                </div>
+                                                <div class="tab-bought-ongoing-card-info-number-remain">
+                                                    <div class="number">2000</div>
+                                                    <div>剩余</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- 已揭晓条目 -->
+                                <li class="tab-bought-unveiled-item">
+                                    <a class="tab-bought-unveiled-card" href="./unveil-detail.html">
+                                        <div class="tab-bought-unveiled-card-img">
+                                            <img src="./temp-img/user/goods1_2.jpg" alt="商品缩略图">
+                                        </div>
+                                        <div class="tab-bought-unveiled-card-info">
+                                            <div class="tab-bought-unveiled-card-info-title">
+                                                (第39期)华为（HUAWEI） 荣耀10 游戏手机 幻影蓝 全网通6GB+128GB
+                                            </div>
+                                            <div class="tab-bought-unveiled-card-info-winner">
+                                                获得者：<span>永远的神龟巨人</span>
+                                            </div>
+                                            <div class="tab-bought-unveiled-card-info-code">
+                                                幸运抽奖码：<span>10005483</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 获得记录 -->
+                        <div data-id="won" id="page-content-tab-won">
+                            <ul id="page-content-tab-won-list">
+                                <li class="tab-won-item">
+                                    <a class="tab-won-card" href="./unveil-detail.html">
+                                        <div class="tab-won-card-img">
+                                            <img src="./temp-img/user/goods1_2.jpg" alt="商品缩略图">
+                                        </div>
+                                        <div class="tab-won-card-info">
+                                            <div class="tab-won-card-info-title">
+                                                (第39期)华为（HUAWEI） 荣耀10 游戏手机 幻影蓝 全网通6GB+128GB
+                                            </div>
+                                            <div class="tab-won-card-info-code">
+                                                幸运抽奖码：<span>10005483</span>
+                                            </div>
+                                            <div class="tab-won-card-info-time">
+                                                揭晓时间：<span>2018-11-30 13:10:59</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 晒单记录 -->
+                        <div data-id="unbox" id="page-content-tab-unbox">
+                            <ul id="page-content-tab-unbox-list">
+                                <li class="tab-unbox-item">
+                                    <a class="tab-unbox-card" href="./unbox.html">
+                                        <div class="tab-unbox-card-title">
+                                            oppo手机中到啦
+                                        </div>
+                                        <div class="tab-unbox-card-desc">
+                                            没想到我真的中了，太开心了。物流很快，服务很好。
+                                        </div>
+                                        <div class="tab-unbox-card-img">
+                                            <img src="./temp-img/user/goods2_1.jpg" alt="晒单缩略图">
+                                            <img src="./temp-img/user/goods2_2.jpg" alt="晒单缩略图">
+                                            <img src="./temp-img/user/goods2_3.jpg" alt="晒单缩略图">
+                                            <img src="./temp-img/user/goods2_1.jpg" alt="晒单缩略图">
+                                            <img src="./temp-img/user/goods2_2.jpg" alt="晒单缩略图">
+                                            <img src="./temp-img/user/goods2_3.jpg" alt="晒单缩略图">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

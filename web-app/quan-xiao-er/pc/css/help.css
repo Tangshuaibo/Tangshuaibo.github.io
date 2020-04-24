@@ -1,0 +1,107 @@
+#main-content{
+    margin-top: 20px;
+    font-size: 0;
+}
+#main-content>div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+/* 左侧导航 */
+#page-nav-container{
+    width: 20%;
+}
+#page-nav{
+    border: 1px solid #ddd;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+.page-nav-item{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.page-nav-item-title{
+    padding-left: 20px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    color: #999;
+    background-color: #f7f7f7;
+}
+.page-nav-item-list>li{
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+    cursor: pointer;
+}
+.page-nav-item-list>li.active{
+    color: #f00582;
+}
+#page-contact{
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #ddd;
+}
+#page-contact-qq>a{
+    display: block;
+    margin: 10px 0;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border-radius: 5px;
+}
+#page-contact-tel>span{
+    display: block;
+}
+#page-contact-tel>span.tel-num{
+    font-size: 24px;
+    line-height: 40px;
+    color: #f00582;
+}
+#page-contact-mail{
+    font-size: 0;
+}
+#page-contact-mail>*{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+#page-contact-mail>a{
+    width: calc(100% - 60px);
+    word-break: break-all;
+    color: #999;
+}
+#page-contact-mail>a:hover{
+    color: #f00582;
+}
+/* 右侧内容 */
+#page-article-container{
+    margin-left: 10px;
+    padding: 20px;
+    width: calc(80% - 10px);
+    min-height: 850px;
+    color: #666;
+    border: 1px solid #ddd;
+}
+#page-article-title{
+    padding: 0 0 20px 15px;
+    font-size: 24px;
+    line-height: 1;
+    border-bottom: 1px solid #ddd;
+}
+#page-article-content *{
+    font-size: 14px;
+    line-height: 1.5;
+}
+#page-article-content h1, #page-article-content h2, #page-article-content h3, #page-article-content h4{
+    font-weight: bold;
+    margin-top: 30px;
+}

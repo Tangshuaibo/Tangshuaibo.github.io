@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加地址</title>
+    <link rel="stylesheet" href="./dep/city-picker-1.2.0/css/city-picker.css">
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-address-add.css">
+    <script src="./dep/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="./dep/city-picker-1.2.0/js/city-picker.data.min.js"></script>
+    <script src="./dep/city-picker-1.2.0/js/city-picker.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-address-add.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">添加地址</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-content">
+                    <div class="page-row">
+                        <label for="input-name">收货人</label>
+                        <input name="input-name" type="text" maxlength="30" placeholder="请输入姓名">
+                    </div>
+                    <div class="page-row">
+                        <label for="input-number">联系电话</label>
+                        <input name="input-number" type="text" maxlength="30" placeholder="请输入手机号码">
+                    </div>
+                    <div class="page-row" id="city-picker-container">
+                        <label for="input-address">选择地址</label>
+                        <input name="input-address" data-toggle="city-picker" type="text" readonly>
+                    </div>
+                    <div class="page-row">
+                        <label for="textarea-address">详细地址</label>
+                        <textarea name="textarea-address" placeholder="请输入详细地址"></textarea>
+                    </div>
+                    <div class="page-row">
+                        <label for="input-code">邮政编码</label>
+                        <input name="input-code" type="text" maxlength="30" placeholder="请输入邮政编码">
+                    </div>
+                    <div id="page-content-btn">
+                        <span id="page-content-btn-reset">重置</span>
+                        <span id="page-content-btn-submit">确定</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

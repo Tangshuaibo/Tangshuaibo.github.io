@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/swiper-4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="vendor/swiper-4.5.0/js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="main" id="app">
+        <div class="content">
+            <!-- carousel -->
+            <div class="swiper-container" id="carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide carousel-item">
+                        <img src="temp-img/banner_01.jpg" alt="img">
+                    </div>
+                    <div class="swiper-slide carousel-item">
+                        <img src="temp-img/banner_02.jpg" alt="img">
+                    </div>
+                    <div class="swiper-slide carousel-item">
+                        <img src="temp-img/banner_03.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="carousel-btn prev">
+                    <i class="icon fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-btn next">
+                    <i class="icon fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- tab-selector -->
+            <div class="tab-selector">
+                <span class="tab-selector-item active" data-target="tab-ongoing">
+                    进行中
+                </span>
+                <span class="tab-selector-item" data-target="tab-upcoming">
+                    即将开始
+                </span>
+                <span class="tab-selector-item" data-target="tab-previous">
+                    往期回顾
+                </span>
+            </div>
+            <!-- solgan -->
+            <div class="slogan">
+                <span class="slogan-title">
+                    限时抢购海报列表
+                </span>
+                <span class="slogan-text">
+                    选择某个商品，点击获取海报
+                </span>
+            </div>
+            <!-- tab-items -->
+            <div class="tab-item" id="tab-ongoing">
+                <div class="card-list">
+                    <a class="card" href="poster.html">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_01.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">五台山祈福二日游</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖78.00元红包
+                                </span>
+                                <span class="discount">
+                                    488.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-07-11
+                                </span>
+                                <span class="price">
+                                    998.00
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="poster.html">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_02.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">测试专用</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖1.00元红包
+                                </span>
+                                <span class="discount">
+                                    1.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-02-09
+                                </span>
+                                <span class="price">
+                                    1.00
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="poster.html">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_03.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">人类包年脱皮</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖5.00元红包
+                                </span>
+                                <span class="discount">
+                                    38.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-12-19
+                                </span>
+                                <span class="price">
+                                    343.00
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-item" id="tab-upcoming">
+                <ul class="card-list">
+                    <li class="card">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_01.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">五台山祈福二日游</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖78.00元红包
+                                </span>
+                                <span class="discount">
+                                    488.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-07-11
+                                </span>
+                                <span class="price">
+                                    998.00
+                                </span>
+                            </div>
+                            <div class="countdown-timer">
+                                <span class="time hour">00</span>
+                                <span>:</span>
+                                <span class="time minute">00</span>
+                                <span>:</span>
+                                <span class="time second">00</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_01.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">五台山祈福二日游</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖78.00元红包
+                                </span>
+                                <span class="discount">
+                                    488.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-07-11
+                                </span>
+                                <span class="price">
+                                    998.00
+                                </span>
+                            </div>
+                            <div class="countdown-timer">
+                                <span class="time hour">00</span>
+                                <span>:</span>
+                                <span class="time minute">00</span>
+                                <span>:</span>
+                                <span class="time second">00</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img"
+                            style="background-image: url(temp-img/banner_01.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">五台山祈福二日游</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖78.00元红包
+                                </span>
+                                <span class="discount">
+                                    488.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-07-11
+                                </span>
+                                <span class="price">
+                                    998.00
+                                </span>
+                            </div>
+                            <div class="countdown-timer">
+                                <span class="time hour">00</span>
+                                <span>:</span>
+                                <span class="time minute">00</span>
+                                <span>:</span>
+                                <span class="time second">00</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-item" id="tab-previous">
+                <div class="card-list">
+                    <a class="card" href="poster.html">
+                        <div class="card-img"
+                             style="background-image: url(temp-img/banner_02.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">测试专用</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖1.00元红包
+                                </span>
+                                <span class="discount">
+                                    1.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-02-09
+                                </span>
+                                <span class="price">
+                                    1.00
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="poster.html">
+                        <div class="card-img"
+                             style="background-image: url(temp-img/banner_02.jpg)"
+                        ></div>
+                        <div class="card-info">
+                            <div class="title">测试专用</div>
+                            <div class="row current">
+                                <i class="icon fa fa-star" aria-hidden="true"></i>
+                                <span class="coupon">
+                                    奖1.00元红包
+                                </span>
+                                <span class="discount">
+                                    1.00
+                                </span>
+                            </div>
+                            <div class="row origin">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="time">
+                                    2020-02-09
+                                </span>
+                                <span class="price">
+                                    1.00
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

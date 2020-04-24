@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account-bind.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-account.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">淘宝账号信息</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--账户信息列表-->
+        <ul class="mdui-list" id="main-account-bind-detail-list">
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">用户名</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">人类歼灭者</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">账号等级</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">110</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">淘气值</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">250</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">收货地址</div>
+                    <div class="mdui-list-item-text">银河系太阳系木星木卫二13区</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">账号性别</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">扶她</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">账号年龄</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">1000</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">是否是学生</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">是</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">是否开通花呗</div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">是</div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">相关截图</div>
+                    <div class="account-screen-shot-container">
+                        <div class="account-screen-shot">
+                            <div class="account-screen-shot-img" style="background-image: url(./temp-img/center/screenshot1.jpg);"></div>
+                            <div class="account-screen-shot-text mdui-text-color-theme-accent">
+                                淘宝个人中心截图
+                            </div>
+                        </div>
+                        <div class="account-screen-shot">
+                            <div class="account-screen-shot-img" style="background-image: url(./temp-img/center/screenshot2.jpg);"></div>
+                            <div class="account-screen-shot-text mdui-text-color-theme-accent">
+                                支付宝个人中心截图
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--模态框查看图片-->
+        <div class="mdui-dialog mdui-p-a-2" id="account-screen-shot-viewer">
+            <img class="mdui-center" src="./img/center/avatar.png" alt="截图">
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>券小二-网购省钱神器,每天千款优惠券秒杀，一折限时疯抢！_神特惠</title>
+    <meta name="keywords" content="券小二,优惠券,优惠券折扣,9块9包邮,限时特卖,优品折扣,券小二"/>
+    <meta name="description" content="券小二-优惠券折扣直播第一站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折起！"/>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dep/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dep/index-iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./dep/jquery-3.3.1.min.js"></script>
+    <script src="./dep/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div id="header">
+        <!-- 固定显示部分 -->
+        <div id="header-shown">
+            <div id="header-bar">
+                <span id="header-bar-slogan">
+                    为您精选超值低价好货，领券下单更优惠哟！
+                </span>
+                <ul>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="">用户中心</a></li>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="./help.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <div id="header-search">
+                <div id="header-search-title">
+                    <a>券小二</a>
+                </div>
+                <div id="header-search-form">
+                    <form action="">
+                        <input type="text" maxlength="40" placeholder="爆款口红">
+                        <button type="submit">搜&ensp;索</button>
+                    </form>
+                    <ul>
+                        <li><div id="header-search-form-img-1"></li>
+                        <li><div id="header-search-form-img-2"></li>
+                        <li><div id="header-search-form-img-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-menu">
+                <ul>
+                    <li class="active" id="header-menu-item-latest">
+                        <a href="">
+                            <span class="glyphicon glyphicon-list"></span>
+                            今日上新
+                        </a>
+                    </li>
+                    <li><a href="">最新揭晓</a></li>
+                    <li id="header-menu-item-share">
+                        <a href="">
+                            晒单分享
+                            <div id="header-menu-item-share-img"></div>
+                        </a>
+                    </li>
+                    <li><a href="">查优惠券</a></li>
+                    <li><a href="">新手指南</a></li>
+                    <li id="header-menu-item-app-download">
+                        <a href="">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            APP下载
+                        </a>
+                        <div id="header-menu-item-app-qr-code">
+                            <div id="header-menu-item-app-qr-code-triangle"></div>
+                            <div id="header-menu-item-app-qr-code-content">
+                                <div id="header-menu-item-app-qr-code-content-ios">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_ios.png" alt="ios版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载ios版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                iOS APP
+                                                <span>(邻家小惠)</span>
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                <span>激活码：STH888</span>
+                                                <br>
+                                                首次启动APP请使用以上激活码激活
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="header-menu-item-app-qr-code-content-android">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_android.png" alt="安卓版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载安卓版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                安卓版APP
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                移动端专享更多特色栏目内容和福利
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="header-menu-item-cart">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            购物车
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 滚动显示部分 -->
+        <div id="header-hidden">
+            <div id="header-hidden-menu">
+                <ul>
+                    <li class="active"><a href="">最新揭晓</a></li>
+                    <li><a href="">居家日用</a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">数码家电</a></li>
+                    <li><a href="">文娱车品</a></li>
+                    <li><a href="">内衣</a></li>
+                    <li><a href="">家装家纺</a></li>
+                    <li><a href="">鞋品</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">配饰</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">箱包</a></li>
+                </ul>
+            </div>
+            <div id="header-hidden-search">
+                <form action="">
+                    <input type="text" maxlength="40" placeholder="爆款口红">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 页面主体 -->
+    <div id="main">
+        <div id="main-content">
+            <!-- 首页横幅 -->
+            <div id="page-banner">
+                <div id="page-banner-goods-list">
+                    <ul>
+                        <li>
+                            <i class="iconfont icon-caigouriyongpin"></i>
+                            <a href="">居家日用</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-meishi"></i>
+                            <a href="">美食</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-weibiaoti2fuzhi05"></i>
+                            <a href="">母婴</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-icon-test"></i>
+                            <a href="">美妆</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-nvzhuang"></i>
+                            <a href="">女装</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shumajiadianleimu"></i>
+                            <a href="">数码家电</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-cheliang"></i>
+                            <a href="">文娱车品</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-neiyi"></i>
+                            <a href="">内衣</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-jiazhuang"></i>
+                            <a href="">家装家纺</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-xiepin"></i>
+                            <a href="">鞋品</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-nvzhuang"></i>
+                            <a href="">男装</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-peishi"></i>
+                            <a href="">配饰</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-fenleiyundonghuwai"></i>
+                            <a href="">户外运动</a>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-xiangbao"></i>
+                            <a href="">箱包</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-banner-carousel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <!-- 轮播指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- 轮播项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./temp-img/index/banner_1.jpg" alt="banner_1">
+                            </div>
+                            <div class="item">
+                                <img src="./temp-img/index/banner_2.jpg" alt="banner_2">
+                            </div>
+                            <div class="item">
+                                <img src="./temp-img/index/banner_3.jpg" alt="banner_3">
+                            </div>
+                            <div class="item">
+                                <img src="./temp-img/index/banner_4.png" alt="banner_4">
+                            </div>
+                            <div class="item">
+                                <img src="./temp-img/index/banner_5.jpg" alt="banner_5">
+                            </div>
+                        </div>
+                        <!-- 轮播导航 -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="page-banner-share"></div>
+            </div>
+            <!-- 首页主要内容 -->
+            <div id="page-content">
+                <div id="page-content-announcement">
+                    这是网站公告
+                </div>
+                <div id="page-content-goods-cards">
+                    <ul id="page-content-goods-cards-list">
+                        <li>
+                            <div class="goods-card">
+                                <a class="goods-card-img" href="">
+                                    <i class="goods-card-img-new"></i>
+                                    <img src="./temp-img/index/cosmetic.jpg" alt="商品展示图">
+                                </a>
+                                <div class="goods-card-detail">
+                                    <div class="goods-card-detail-price">
+                                        <span class="goods-card-detail-price-new">
+                                            <i>￥</i>
+                                            <span class="price">39</span>
+                                            <span>券后价</span>
+                                        </span>
+                                        <span class="goods-card-detail-price-coupon">
+                                            <span>券</span>
+                                            <i>￥</i>
+                                            <span class="price">60</span>
+                                        </span>
+                                    </div>
+                                    <div class="goods-card-detail-title">
+                                        <a href="">
+                                            【温碧泉】透芯净水乳三件套
+                                        </a>
+                                    </div>
+                                    <div class="goods-card-detail-number">
+                                        销量
+                                        <span>44512</span>
+                                    </div>
+                                    <div class="goods-card-detail-type">
+                                        <div class="tmall" title="天猫"></div>
+                                        <div class="seckill" title="秒杀"></div>
+                                        <div class="insurance" title="运费险"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-content-pagination">
+                    <ul class="page-pagination">
+                        <li class="previous disabled">
+                            <a href="">上一页</a>
+                        </li>
+                        <li class="active">
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                        <li>
+                            <a href="">5</a>
+                        </li>
+                        <li class="disabled">
+                            <a href="">…</a>
+                        </li>
+                        <li>
+                            <a href="">600</a>
+                        </li>
+                        <li class="next">
+                            <a href="">下一页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面脚部 -->
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-title">
+                “感谢有你，我们的坚持才更有意义”
+            </div>
+            <div id="footer-author">
+                by 券小二
+            </div>
+            <div id="footer-copyright">
+                © CopyRight 2018
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                http://www.quanxiaoer.com
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                <a target="_blank" title="帮助中心" href="">
+                    ^_^亲遇到问题，联系我帮你处理哈
+                </a>
+            </div>
+            <div id="footer-about-contact">
+                <a target="_blank" href="">关于我们</a>
+                <a target="_blank" href="">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="back-to-top"></div>
+</body>
+</html>

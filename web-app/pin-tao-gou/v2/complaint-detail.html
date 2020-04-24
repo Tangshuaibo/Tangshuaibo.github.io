@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/complaint-detail.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/complaint-detail.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">对话详情</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--任务信息-->
+        <div class="mdui-list mdui-color-white mdui-p-y-0 mdui-m-y-1" id="mian-task-info">
+            <div class="mdui-divider mdui-m-y-0"></div>
+            <div class="mdui-list-item mdui-ripple">
+                <div class="list-item-img">
+                    <img src="temp-img/task/goods-mango.png" alt="商品缩略图"/>
+                </div>
+                <div class="mdui-list-item-content list-item-content">
+                    <div class="list-item-content-row">
+                        <span class="list-item-content-row-key">任务ID</span>
+                        <span class="list-item-content-row-value">1568039</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span class="list-item-content-row-key">申诉类型</span>
+                        <span class="list-item-content-row-value">其他</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span class="list-item-content-row-key">商品名称</span>
+                        <span class="list-item-content-row-value">动词打次嘟嘟嘟</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span class="list-item-content-row-key">任务类型</span>
+                        <span class="list-item-content-row-value">京东标签单</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span class="list-item-content-row-key">任务详情</span>
+                        <span class="list-item-content-row-value">
+                            <a class="mdui-text-color-theme-accent" href="#">
+                                查看详情
+                            </a>
+                        </span>
+                    </div>
+                    <div class="mdui-text-center mdui-m-t-1">
+                        <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="complaint-detail.html">
+                            申请平台介入
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-divider mdui-m-y-0"></div>
+        </div>
+        <!--对话列表-->
+        <div id="main-dialogue">
+            <ul class="mdui-list mdui-color-white mdui-p-y-0">
+                <!--发单员模板-->
+                <li class="mdui-list-item mdui-ripple list-item-user proto">
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <div class="conversation-content-text" style="display: none;"></div>
+                            <img src="#" alt="对话图" style="display: none;">
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary conversation-time"></div>
+                    </div>
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">王老二</div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <!--发布人内容-->
+                <li class="mdui-list-item mdui-ripple list-item-publisher">
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-publisher.jpg" alt="商家头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">许小解</div>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <div class="conversation-content-text">
+                                你多做了10单，我们只要求做5单。所以这个佣金不能给你。
+                            </div>
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                            2019-10-11 10:23:34
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <!--刷单员内容-->
+                <li class="mdui-list-item mdui-ripple list-item-user">
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <div class="conversation-content-text">
+                                正是因为不想要这佣金了，所以才多做了10单。
+                            </div>
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                            2019-10-11 13:24:05
+                        </div>
+                    </div>
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">王老二</div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <!--刷单员内容-->
+                <li class="mdui-list-item mdui-ripple list-item-user">
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <img src="temp-img/common/requirement1.jpg" alt="对话图">
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                            2019-10-11 13:24:06
+                        </div>
+                    </div>
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">王老二</div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <!--发布人内容-->
+                <li class="mdui-list-item mdui-ripple list-item-publisher">
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-publisher.jpg" alt="商家头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">许小解</div>
+                    </div>
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <div class="conversation-content-text">
+                                挺好的，合作愉快
+                            </div>
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                            2019-10-11 13:30:17
+                        </div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <!--刷单员内容-->
+                <li class="mdui-list-item mdui-ripple list-item-user">
+                    <div class="mdui-list-item-content">
+                        <div class="conversation-content">
+                            <div class="conversation-content-text">
+                                合作愉快
+                            </div>
+                        </div>
+                        <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                            2019-10-11 13:32:10
+                        </div>
+                    </div>
+                    <div class="list-item-avatar">
+                        <img class="list-item-avatar-img" src="temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        <div class="mdui-text-color-theme-accent list-item-avatar-name">王老二</div>
+                    </div>
+                </li>
+                <li class="mdui-divider mdui-m-y-0"></li>
+            </ul>
+        </div>
+        <!--底部输入栏-->
+        <div class="mdui-shadow-24" id="complaint-footer">
+            <input type="file" id="input-footer-image" style="display: none;">
+            <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-black-secondary" id="btn-footer-image">
+                <i class="mdui-icon material-icons">image</i>
+            </button>
+            <div class="mdui-textfield" id="footer-textarea">
+                <textarea class="mdui-textfield-input" type="text" placeholder="请输入要回复的内容"></textarea>
+            </div>
+            <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-black-secondary" id="btn-footer-send">
+                <i class="mdui-icon material-icons">send</i>
+            </button>
+        </div>
+        <!--查看大图模态框-->
+        <div class="mdui-dialog mdui-valign mdui-p-a-1" id="image-viewer">
+            <img class="mdui-img-fluid mdui-center" src="img/common/favicon.png" alt="大图模式">
+        </div>
+    </div>
+</div>
+</body>
+</html>

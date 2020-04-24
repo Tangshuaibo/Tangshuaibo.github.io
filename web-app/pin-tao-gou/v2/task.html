@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/task.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons"></i>
+            </a>
+            <span class="mdui-typo-title mdui-center">任务中心</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-home">
+                <i class="mdui-icon material-icons"></i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--页面搜索栏-->
+        <div class="mdui-color-white mdui-m-a-1" id="main-search">
+            <div class="search-bar">
+                <label for="input-task-id"></label>
+                <input class="search-bar-input" type="text" maxlength="30" placeholder="搜索任务ID/店铺名" id="input-task-id">
+                <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple search-bar-submit">
+                    <i class="mdui-icon material-icons">search</i>
+                </button>
+            </div>
+        </div>
+        <!--页面主要内容-->
+        <div id="main-content">
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">淘宝地推单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-text-center">
+                    <div class="mdui-row">
+                        <a href="task-taobao-promotion-operation.html" class="mdui-col-xs-3 mdui-p-y-1 badge-container">
+                            待操作
+                            <span class="badge">2</span>
+                        </a>
+                        <a href="task-taobao-promotion-review.html" class="mdui-col-xs-6 mdui-p-y-1">待审核</a>
+                        <a href="task-taobao-promotion-completed.html" class="mdui-col-xs-3 mdui-p-y-1">已完成</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">淘宝标签单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-row-xs-4  mdui-text-center">
+                    <a href="task-taobao-label-operation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待操作
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-taobao-label-review.html" class="mdui-col mdui-p-y-1">待审核</a>
+                    <a href="task-taobao-label-evaluation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待评价
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-taobao-label-completed.html" class="mdui-col mdui-p-y-1">已完成</a>
+                </div>
+            </div>
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">京东精刷单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-row-xs-4 mdui-text-center">
+                    <a href="task-jingdong-fine-operation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待操作
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-jingdong-fine-review.html" class="mdui-col mdui-p-y-1">待审核</a>
+                    <a href="task-jingdong-fine-evaluation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待评价
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-jingdong-fine-completed.html" class="mdui-col mdui-p-y-1">已完成</a>
+                </div>
+            </div>
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">京东标签单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-row-xs-4 mdui-text-center">
+                    <a href="task-jingdong-label-operation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待操作
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-jingdong-label-review.html" class="mdui-col mdui-p-y-1">待审核</a>
+                    <a href="task-jingdong-label-evaluation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待评价
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-jingdong-label-completed.html" class="mdui-col mdui-p-y-1">已完成</a>
+                </div>
+            </div>
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">拼多多精刷单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-row-xs-4 mdui-text-center">
+                    <a href="task-pinduoduo-fine-operation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待操作
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-pinduoduo-fine-review.html" class="mdui-col mdui-p-y-1">待审核</a>
+                    <a href="task-pinduoduo-fine-evaluation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待评价
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-pinduoduo-fine-completed.html" class="mdui-col mdui-p-y-1">已完成</a>
+                </div>
+            </div>
+            <div class="mdui-m-y-1 mdui-p-a-1 mdui-color-white">
+                <div class="mdui-p-x-1 item-title">拼多多标签单</div>
+                <div class="mdui-divider mdui-m-y-1"></div>
+                <div class="mdui-row-xs-4 mdui-text-center">
+                    <a href="task-pinduoduo-label-operation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待操作
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-pinduoduo-label-review.html" class="mdui-col mdui-p-y-1">待审核</a>
+                    <a href="task-pinduoduo-label-evaluation.html" class="mdui-col mdui-p-y-1 badge-container">
+                        待评价
+                        <span class="badge">2</span>
+                    </a>
+                    <a href="task-pinduoduo-label-completed.html" class="mdui-col mdui-p-y-1">已完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--底部导航栏-->
+    <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+        <a href="home.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">home</i>
+            <label>首页</label>
+        </a>
+        <a href="task.html" class="mdui-ripple mdui-bottom-nav-active">
+            <i class="mdui-icon material-icons">view_list</i>
+            <label>任务中心</label>
+        </a>
+        <a href="complaint.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">comment</i>
+            <label>消息</label>
+        </a>
+        <a href="login.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">person</i>
+            <label>我的</label>
+        </a>
+    </div>
+</body>
+</html>

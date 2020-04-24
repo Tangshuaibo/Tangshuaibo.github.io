@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>券小二 - 登录 / 注册</title>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./dep/jquery-3.3.1.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div id="header">
+        <div id="header-content">
+            <div id="header-logo">
+                <a href="./index.html">券小二</a>
+            </div>
+            <div id="header-slogan">
+                <img src="./img/login/login-header-slogan.png">
+            </div>
+        </div>
+    </div>
+    <!-- 页面主体 -->
+    <div id="main">
+        <div id="main-content">
+            <div id="main-content-img-link">
+                <a href="./index.html">
+                    <img src="./img/login/login-link-index.png" alt="跳转到首页">
+                </a>
+            </div>
+            <div id="main-content-cards">
+                <div class="login-card">
+                    <div class="login-card-title">
+                        欢迎登录券小二
+                    </div>
+                    <div class="login-card-content">
+                        <form action="">
+                            <div class="login-card-content-account">
+                                <span>账号：</span>
+                                <input type="text" maxlength="30" placeholder="请输入手机号">
+                            </div>
+                            <div class="login-card-content-pwd password-eye-container">
+                                <span>密码：</span>
+                                <input type="password" maxlength="30" placeholder="请输入密码">
+                                <span class="password-eye">
+                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="login-card-content-link">
+                                <div class="login-card-content-remember">
+                                    <input type="checkbox" checked="checked">
+                                    <span>30天内免登录</span>
+                                </div>
+                                <div class="login-card-content-forget-pwd">
+                                    <span>修改/找回密码</span>
+                                </div>
+                            </div>
+                            <div class="login-card-content-button-login">
+                                <button type="submit">登录</button>
+                            </div>
+                            <div class="login-card-content-register-link">
+                                没有账号？
+                                <span>免费注册</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="register-card">
+                    <div class="register-card-title">
+                        欢迎注册
+                        <div class="register-card-title-back">返回登录</div>
+                    </div>
+                    <div class="register-card-content">
+                        <form action="">
+                            <div class="register-card-content-account">
+                                <span>账号：</span>
+                                <input type="text" maxlength="30" placeholder="请输入手机号">
+                            </div>
+                            <div class="register-card-content-pwd password-eye-container">
+                                <span>密码：</span>
+                                <input type="password" maxlength="30" placeholder="请输入密码">
+                                <span class="password-eye">
+                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="register-card-content-code">
+                                <input type="text" maxlength="30" placeholder="请输入验证码">
+                                <span>发送短信验证码</span>
+                            </div>
+                            <div class="register-card-content-agree">
+                                <input type="checkbox" checked="checked">
+                                <span>同意<a href="">券小二用户协议</a></span>
+                            </div>
+                            <div class="register-card-content-button-register">
+                                <button type="submit">注册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="reset-card">
+                        <div class="reset-card-title">
+                            修改密码
+                            <div class="reset-card-title-back">返回登录</div>
+                        </div>
+                        <div class="reset-card-content">
+                            <form action="">
+                                <div class="reset-card-content-account">
+                                    <span>账号：</span>
+                                    <input type="text" maxlength="30" placeholder="请输入手机号">
+                                </div>
+                                <div class="reset-card-content-pwd password-eye-container">
+                                    <span>密码：</span>
+                                    <input type="password" maxlength="30" placeholder="请输入新密码">
+                                    <span class="password-eye">
+                                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="reset-card-content-code">
+                                    <input type="text" maxlength="30" placeholder="请输入验证码">
+                                    <span>发送短信验证码</span>
+                                </div>
+                                <div class="reset-card-content-button-reset">
+                                    <button type="submit">重置密码</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面脚部 -->
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-copyright">
+                copyright©2018 券小二：淘宝优惠券,天猫优惠券领取分享平台
+            </div>
+        </div>
+    </div>
+</body>
+</html>

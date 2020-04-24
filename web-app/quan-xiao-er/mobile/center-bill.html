@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专享订单</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-bill.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-bill.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">专享订单</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-menu">
+                    <ul id="page-menu-list">
+                        <li class="active" data-target="recharge">
+                            <span>充值明细</span>
+                        </li>
+                        <li data-target="consume">
+                            <span>消费明细</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-tabs">
+                    <div class="page-tab-loading" style="display: none;">
+                        <span class="page-tab-loading-img">
+                            <img src="./img/common/loading.gif" alt="加载中图片">
+                        </span>
+                        <span>正在加载</span>
+                    </div>
+                    <div class="page-tab" data-id="recharge">
+                        <div class="page-tab-recharge">
+                            <div class="page-tab-recharge-menu">
+                                <span class="time">充值时间</span>
+                                <span class="amount">充值金额</span>
+                                <span class="method">充值渠道</span>
+                            </div>
+                            <ul class="page-tab-recharge-list">
+                                <li>
+                                    <span class="time">2018-11-21 09:18:55</span>
+                                    <span class="amount">
+                                        <span class="symbol">￥</span>
+                                        <span class="number">10.00</span>
+                                    </span>
+                                    <span class="method">支付宝</span>
+                                </li>
+                                <li>
+                                    <span class="time">2018-11-20 07:16:50</span>
+                                    <span class="amount">
+                                        <span class="symbol">￥</span>
+                                        <span class="number">20.00</span>
+                                    </span>
+                                    <span class="method">微信</span>
+                                </li>
+                            </ul>
+                            <div class="page-tab-recharge-bottom">
+                                已经到底了
+                            </div>
+                        </div>
+                        <div class="page-tab-nothing" style="display: none;">
+                            <div class="page-tab-nothing-img">
+                                <img src="./img/common/exclamation.png" alt="感叹号">
+                            </div>
+                            最近三个月无记录
+                        </div>
+                    </div>
+                    <div class="page-tab" data-id="consume" style="display: none;">
+                        <div class="page-tab-consume" style="display: none;">
+                            <div class="page-tab-consume-menu">
+                                <span class="time">消费时间</span>
+                                <span class="amount">消费金额</span>
+                            </div>
+                            <ul class="page-tab-consume-list">
+                                <li>
+                                    <span class="time">2018-11-11 09:18:55</span>
+                                    <span class="amount">
+                                        <span class="symbol">￥</span>
+                                        <span class="number">10.00</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="time">2018-11-08 07:16:50</span>
+                                    <span class="amount">
+                                        <span class="symbol">￥</span>
+                                        <span class="number">20.00</span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="page-tab-recharge-bottom">
+                                已经到底了
+                            </div>
+                        </div>
+                        <div class="page-tab-nothing">
+                            <div class="page-tab-nothing-img">
+                                <img src="./img/common/exclamation.png" alt="感叹号">
+                            </div>
+                            最近三个月无记录
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

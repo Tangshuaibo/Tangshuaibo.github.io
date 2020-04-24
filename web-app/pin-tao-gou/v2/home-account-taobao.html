@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home-account-taobao.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">淘宝账号绑定</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--二维码部分-->
+        <div id="main-qrcode-container">
+            <div class="mdui-m-a-2 mdui-text-color-red">
+                <span>要求：1.不经常刷单的账号</span><br>
+                <span style="margin-left: 32px">2.周不过5月不过12</span><br>
+                <span style="margin-left: 32px">3.自用，亲戚，朋友，同学等认识的人账号</span><br>
+                <span>注意：提交账号后请等待管理员审核，审核通过方可接单，通过账号有效期为7天，超过有效期需重新提交</span>
+            </div>
+            <div class="mdui-text-center mdui-color-white" id="main-qrcode">
+                <div class="mdui-p-t-2 mdui-m-b-1">
+                    2019年7月27日最新二维码
+                </div>
+                <img class="mdui-img-rounded mdui-color-white mdui-m-b-2" alt="二维码" src="img/login/QR-Code.png">
+            </div>
+            <div class="mdui-text-center mdui-m-a-2 mdui-text-color-red">
+                二维码每天都会更新<br>
+                请下载最新二维码使用淘宝扫一扫截图后上传到系统
+            </div>
+        </div>
+        <!--淘宝账号绑定-->
+        <div class="mdui-m-y-2" id="main-account-bind">
+            <div class="main-form-3">
+                <div class="form-input">
+                    <label for="input-account-id">
+                        淘宝账号
+                    </label>
+                    <input id="input-account-id" type="text" maxlength="30" placeholder="请输入淘宝账号">
+                </div>
+                <div class="form-img-list">
+                    <div class="form-img-title">
+                        选择验号图片
+                    </div>
+                    <div class="form-img-container narrow">
+                        <input class="form-input-img" type="file" accept="image/png, image/jpeg" id="img-personal-center">
+                        <div class="form-img"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            淘宝评价截图
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-m-a-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

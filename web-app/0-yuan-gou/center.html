@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.html"></script>
+    <script src="js/common.html"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                个人中心
+            </span>
+        </div>
+        <div class="header-right">
+            <a class="header-item" id="header-setting" href="center-setting.html">
+                <span class="text">设置</span>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div id="wallet">
+            <a class="wallet-item" href="reward-detail.html">
+                <div class="number">
+                    0.00元
+                </div>
+                <div class="text">
+                    已返还
+                </div>
+            </a>
+            <a class="wallet-item" href="order.html#refund">
+                <div class="number">
+                    0.00元
+                </div>
+                <div class="text">
+                    待返还
+                </div>
+            </a>
+            <a class="wallet-item" href="order.html#operate">
+                <div class="number">
+                    5单
+                </div>
+                <div class="text">
+                    待操作
+                </div>
+            </a>
+        </div>
+        <div class="card" id="order">
+            <div class="order-header">
+                <span class="title">0元购订单</span>
+                <a class="btn-more" href="order.html">查看全部&gt;</a>
+            </div>
+            <div class="order-class">
+                <a class="order-class-item" href="order.html#operate">
+                    <div class="icon">
+                        <i class="iconfont icon-edit"></i>
+                    </div>
+                    <div class="text">
+                        待操作
+                    </div>
+                </a>
+                <a class="order-class-item" href="order.html#refund">
+                    <div class="icon">
+                        <i class="iconfont icon-YUAN"></i>
+                    </div>
+                    <div class="text">
+                        待返还
+                    </div>
+                </a>
+                <a class="order-class-item" href="order.html#expired">
+                    <div class="icon">
+                        <i class="iconfont icon-reloadtime"></i>
+                    </div>
+                    <div class="text">
+                        已失效
+                    </div>
+                </a>
+                <a class="order-class-item" href="order.html#evaluate">
+                    <div class="icon">
+                        <i class="iconfont icon-comment"></i>
+                    </div>
+                    <div class="text">
+                        待评价
+                    </div>
+                </a>
+                <a class="order-class-item" href="order.html#refunded">
+                    <div class="icon">
+                        <i class="iconfont icon-check-circle"></i>
+                    </div>
+                    <div class="text">
+                        已返还
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a id="slogan" href="javascript: void(0);">
+            <img src="temp-img/center/slogan.png" alt="img">
+        </a>
+        <div class="card" id="action">
+            <a class="action-item" href="withdrawal.html">
+                <div class="icon">
+                    <img src="temp-img/center/wallet.png" alt="img">
+                </div>
+                <div class="text">
+                    我要提现
+                </div>
+            </a>
+            <a class="action-item" href="complaint.html">
+                <div class="icon">
+                    <img src="temp-img/center/complaint.png" alt="img">
+                </div>
+                <div class="text">
+                    申诉管理
+                </div>
+            </a>
+            <a class="action-item" href="service.html">
+                <div class="icon">
+                    <img src="temp-img/center/service.png" alt="img">
+                </div>
+                <div class="text">
+                    联系客服
+                </div>
+            </a>
+            <a class="action-item" href="question.html">
+                <div class="icon">
+                    <img src="temp-img/center/question.png" alt="img">
+                </div>
+                <div class="text">
+                    常见问题
+                </div>
+            </a>
+        </div>
+        <div class="card" id="detail">
+            <div class="detail-item">
+                <div class="top">
+                    点击按钮
+                </div>
+                <a class="btn btn-hollow" href="farmer-detail.html" style="position: relative;">
+                    查看详情
+                    <span style="">1</span>
+                </a>
+            </div>
+            <div class="detail-item">
+                <div class="number">
+                    0.00元
+                </div>
+                <div class="text">
+                    每日可提现一次
+                </div>
+                <a class="btn btn-hollow" href="reward-detail.html">
+                    奖励明细
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer tab-bar">
+        <div class="tab-bar-item" id="footer-item-home">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-homefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                首页
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-service">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-servicefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                联系客服
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-order">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-formfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                订单
+            </span>
+        </div>
+        <div class="tab-bar-item active" id="footer-item-center">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-myfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                个人中心
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

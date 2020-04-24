@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+    <div id="app">
+        <!--应用栏-->
+        <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+            <div class="mdui-toolbar">
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                    <i class="mdui-icon material-icons">chevron_left</i>
+                </a>
+                <span class="mdui-typo-title mdui-center">登录</span>
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#modal-wechat-qrcode'}">
+                    <i class="mdui-icon material-icons">tag_faces</i>
+                </a>
+            </div>
+        </div>
+        <!--页面主体-->
+        <div class="main">
+            <!--网站图标-->
+            <div class="main-icon mdui-m-y-3">
+                <img class="mdui-img-rounded mdui-center mdui-color-theme" id="login-icon" src="./img/common/favicon.png" alt="favicon">
+                <div class="mdui-typo-title mdui-text-center mdui-m-t-2 mdui-text-color-theme">拼淘购</div>
+            </div>
+            <!--登录表单-->
+            <div class="main-form">
+                <div class="form-input">
+                    <label class="mdui-hidden" for="login-input-account">用户名/手机号</label>
+                    <input id="login-input-account" type="text" maxlength="30" placeholder="用户名/手机号">
+                </div>
+                <div class="form-input">
+                    <label class="mdui-hidden" for="login-input-password">密码</label>
+                    <input id="login-input-password" type="text" maxlength="30" placeholder="密码">
+                    <div class="mdui-float-right mdui-text-right">
+                        <a class="mdui-text-color-theme" href="./reset.html">忘记密码</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-m-a-2 main-btn-group">
+                <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" id="btn-login" href="./center.html">登录</a>
+            </div>
+            <div class="mdui-m-a-2 mdui-typo-subheading main-link-group">
+                <a class="mdui-text-color-theme" href="./register.html">还没有注册？点这里注册</a>
+            </div>
+        </div>
+        <!--模态层-->
+        <div class="modal-layer">
+            <!--客服微信二维码-->
+            <div class="mdui-dialog mdui-p-a-3 mdui-text-center" id="modal-wechat-qrcode">
+                <div id="modal-wechat-qrcode-img">
+                    <img src="./img/login/QR-Code.png" alt="微信二维码">
+                </div>
+                <div class="mdui-typo-subheading mdui-m-t-2" id="modal-wechat-qrcode-text">
+                    请保存图片后打开微信扫一扫
+                    <br>
+                    添加客服微信
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

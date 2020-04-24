@@ -1,0 +1,140 @@
+#wallet {
+    padding: 16px 24px;
+    font-size: 0;
+    color: white;
+    background-color: rgb(252, 51, 87);
+}
+
+#wallet > .wallet-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#wallet > .wallet-item > div {
+    word-break: break-all;
+}
+
+#wallet > .wallet-item > div + div {
+    margin-top: 16px;
+}
+
+.card {
+    margin: 8px;
+    padding: 16px;
+}
+
+.btn-hollow span {
+    position: absolute;
+    display: block;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    font-size:12px;
+    color:#fff;
+}
+
+#order > .order-header {
+    font-size: 14px;
+}
+
+#order > .order-header > .btn-more {
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+
+#order > .order-class {
+    margin-top: 16px;
+    font-size: 0;
+}
+
+#order > .order-class > .order-class-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#order > .order-class > .order-class-item .iconfont {
+    font-size: 32px;
+    color: rgb(252, 51, 87);
+}
+
+#order > .order-class > .order-class-item > .text {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+}
+
+#slogan {
+    display: block;
+    margin: 8px;
+}
+
+#slogan > img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#action {
+    font-size: 0;
+    text-align: center;
+}
+
+#action > .action-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
+#action > .action-item > .icon > img {
+    width: 32px;
+    height: 32px;
+}
+
+#action > .action-item > .text {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+}
+
+#detail {
+    font-size: 0;
+}
+
+#detail > .detail-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#detail > .detail-item > * + * {
+    margin-top: 8px;
+}
+
+#detail > .detail-item > .number {
+    font-size: 20px;
+    color: rgb(252, 51, 87);
+}
+
+#detail > .detail-item > .text {
+    font-size: 12px;
+    color: #999;
+}
+
+#detail > .detail-item > .top {
+    font-size: 16px;
+    line-height: 40px;
+    color: #999;
+}

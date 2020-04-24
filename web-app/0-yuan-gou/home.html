@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                0元购
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--页面选项卡-->
+        <div class="class-selector-container">
+            <div class="class-selector">
+                <a class="class-selector-item" href="home-ongoing.html">
+                    <span>抢购中</span>
+                </a>
+                <a class="class-selector-item" href="home-upcoming.html">
+                    <span>即将开始</span>
+                </a>
+                <a class="class-selector-item" href="home-closing.html">
+                    <span>即将结束</span>
+                </a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="tab-item-container">
+            <!--主选项卡-->
+            <div class="tab-item active" id="tab-primary">
+                <div class="link-container p-a-1">
+                    <a class="link-item" id="link-guide" href="guide.html">
+                    <span class="title">
+                        新手指南
+                    </span>
+                        <img src="temp-img/home/temp_img_01.png" alt="img">
+                    </a>
+                    <a class="link-item" id="link-question" href="question.html">
+                    <span class="title">
+                        常见问题
+                    </span>
+                        <img src="temp-img/home/temp_img_01.png" alt="img">
+                    </a>
+                </div>
+                <a class="link-container" id="link-invite" href="javascript:void(0)">
+                    <img src="temp-img/home/temp_img_02.png" alt="img">
+                </a>
+                <div class="notice-container">
+                    <div class="notice-icon">
+                        <i class="iconfont icon-notification"></i>
+                    </div>
+                    <div class="notice-content marquee">
+                        <span class="text">葫芦娃葫芦娃消灭它</span>
+                    </div>
+                </div>
+                <a class="link-container" id="link-slogan" href="javascript:void(0)">
+                    <img src="temp-img/home/temp_img_03.png" alt="img">
+                </a>
+                <div class="class-selector-container">
+                    <ul class="class-selector">
+                        <li class="class-selector-item">
+                            <span>淘宝</span>
+                        </li>
+                        <li class="class-selector-item">
+                            <span>京东</span>
+                        </li>
+                        <li class="class-selector-item">
+                            <span>拼多多</span>
+                        </li>
+                        <li class="class-selector-item menu sort">
+                            <span>礼品值</span>
+                            <i class="fa fa-sort" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list" id="goods-list">
+                    <a class="list-item" href="goods-detail.html">
+                        <div class="list-item-decoration">
+                            <span>返￥</span><span>100.0</span>
+                        </div>
+                        <div class="list-item-img"
+                            style="background-image: url('temp-img/home/temp_img_01.png')"
+                        >
+                        </div>
+                        <div class="list-item-content">
+                            <div class="title">
+                                <span>天顶星的小绿人，可日用</span>
+                            </div>
+                            <div class="value">
+                                <span>礼品值￥</span><span>5.0</span>
+                            </div>
+                            <div class="number">
+                                <span>剩余</span>
+                                <span>14/135</span>
+                            </div>
+                            <div class="price">
+                                <div class="price-end">
+                                    <span>到手价￥</span><span class="font-big">0.0</span>
+                                </div>
+                                <div class="price-start">
+                                    <span>实拍价￥</span><span>100.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item-action">
+                            <span class="btn">
+                                马上抢
+                            </span>
+                        </div>
+                    </a>
+                    <a class="list-item" href="goods-detail.html">
+                        <div class="list-item-decoration">
+                            <span>返￥</span><span>100.0</span>
+                        </div>
+                        <div class="list-item-img"
+                             style="background-image: url('temp-img/home/temp_img_01.png')"
+                        >
+                        </div>
+                        <div class="list-item-content">
+                            <div class="title">
+                                <span>天顶星的小绿人，可日用</span>
+                            </div>
+                            <div class="value">
+                                <span>礼品值￥</span><span>5.0</span>
+                            </div>
+                            <div class="number">
+                                <span>剩余</span>
+                                <span>14/135</span>
+                            </div>
+                            <div class="price">
+                                <div class="price-end">
+                                    <span>到手价￥</span><span class="font-big">0.0</span>
+                                </div>
+                                <div class="price-start">
+                                    <span>实拍价￥</span><span>100.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item-action">
+                            <div class="countdown-timer">
+                                <span class="hour">00</span>
+                                <span>:</span>
+                                <span class="minute">01</span>
+                                <span>:</span>
+                                <span class="second">00</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="list-item" style="display: none;">
+                        <div class="no-data">
+                            <img src="temp-img/common/no_data.png" alt="img">
+                            <div class="no-data-text">
+                                暂无任何数据
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer tab-bar">
+        <div class="tab-bar-item active" id="footer-item-home">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-homefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                首页
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-service">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-servicefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                联系客服
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-order">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-formfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                订单
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-center">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-myfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                个人中心
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

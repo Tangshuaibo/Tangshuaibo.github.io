@@ -1,0 +1,187 @@
+#app{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*商品信息*/
+.goods-detail{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 8px 0;
+    padding: 16px;
+    font-size: 14px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.goods-detail>*+*{
+    margin-left: 16px;
+}
+.goods-detail>.image{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.goods-detail>.content{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.goods-detail>.content>.info *{
+    word-break: break-all;
+    line-height: normal;
+}
+.goods-detail>.content>.info>.row{
+    font-size: 0;
+}
+.goods-detail>.content>.info>.row>*{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.goods-detail>.content>.info>.row>label{
+    width: 60px;
+}
+.goods-detail>.content>.info>.row>span{
+    width: calc(100% - 60px);
+    text-align: right;
+}
+.goods-detail>.content>.action{
+    margin-top: 8px;
+    text-align: center;
+}
+/*对话列表*/
+.chat-box-container{
+    margin: 16px 0;
+    background-color: #efefef;
+}
+.chat-box-item+.chat-box-item{
+    margin-top: 16px;
+}
+.chat-box-item{
+    padding: 0 8px;
+    font-size: 0;
+}
+.chat-box-item>*{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.chat-box-item-avatar{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+.chat-box-item-content{
+    margin: 0 8px;
+    width: calc(100% - 96px);
+}
+.chat-box-item-content>*+*{
+    margin-top: 4px;
+}
+.chat-box-item-content>*{
+    word-break: break-all;
+}
+.chat-box-item-content>.name>span,
+.chat-box-item-content>.time>span{
+    display: inline-block;
+    text-align: left;
+    color: #666;
+}
+.chat-box-item-content>.time{
+    font-size: 12px;
+}
+.chat-box-item-content>.bubble>.bubble-box{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px;
+    max-width: 100%;
+    line-height: normal;
+    text-align: left;
+    background-color: white;
+    border-radius: 4px;
+}
+.chat-box-item-content>.bubble>.bubble-box>img{
+    display: block;
+    max-width: 100%;
+}
+.chat-box-item-content>.bubble>.bubble-box>pre{
+    font-size: 14px;
+    line-height: normal;
+    font-family: unset;
+}
+/*店铺对话项*/
+.chat-box-item.store .bubble-box{
+    background-color: #F8BBD0;
+}
+/*用户对话项*/
+.chat-box-item.user{
+    text-align: right;
+}
+.chat-box-item.user .bubble-box{
+    background-color: #B2DFDB;
+}
+/*平台对话项*/
+.chat-box-item.platform .bubble-box{
+    background-color: #BBDEFB;
+}
+/*对话输入框*/
+.chat-box-input{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.chat-box-input>.btn-item{
+    margin: 6px 0;
+    width: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+}
+.chat-box-input>.btn-item>.iconfont{
+    font-size: 24px;
+    line-height: 36px;
+}
+.chat-box-input>.textarea{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-align-self: center;
+    align-self: center;
+    margin: 8px 0;
+    padding: 4px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    outline: none;
+}
+.chat-box-input>.textarea,
+.chat-box-input>.textarea *{
+    line-height: 20px;
+}
+.chat-box-input>.textarea:focus{
+    border-bottom: 1px solid rgb(252, 51, 87);
+    box-shadow: 0 1px 0 0 rgb(252, 51, 87);
+}
+.chat-box-input>.textarea:empty:before{
+    content: attr(data-placeholder);
+    color: #999;
+}
+.chat-box-input input[type=file]{
+    display: none;
+}

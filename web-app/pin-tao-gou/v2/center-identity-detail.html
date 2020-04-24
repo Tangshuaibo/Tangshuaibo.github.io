@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">账户信息</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--信息填写选项卡-->
+        <div id="main-tab-info">
+            <div class="main-form-3">
+                <div class="form-input">
+                    <label for="input-phone">
+                        用户手机号
+                    </label>
+                    <input id="input-phone" type="text" value="1234567890" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-account-id">
+                        拼淘购ID
+                    </label>
+                    <input id="input-account-id" type="text" value="132424" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-real-name">
+                        用户姓名
+                    </label>
+                    <input id="input-real-name" type="text" value="隔壁老王" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-id-number">
+                        身份证号
+                    </label>
+                    <input id="input-id-number" type="number" value="1234567890" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-address-home">
+                        您的地址
+                    </label>
+                    <input id="input-address-home" type="text" value="广东/广州/越秀区" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-address-detail">
+                        详细地址
+                    </label>
+                    <input id="input-address-detail" type="text" value="春木镇榆树街13号" disabled>
+                </div>
+                <div class="form-img-list">
+                    <div class="form-img-title">
+                        身份证照片
+                    </div>
+                    <div class="form-img-container narrow">
+                        <div class="form-img" style="background-image: url('temp-img/center/screenshot1.jpg')"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            身份证正面照
+                        </div>
+                    </div>
+                    <div class="form-img-container narrow">
+                        <div class="form-img" style="background-image: url('temp-img/center/screenshot2.jpg')"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            身份证背面照
+                        </div>
+                    </div>
+                    <div class="form-img-container narrow">
+                        <div class="form-img" style="background-image: url('temp-img/center/screenshot3.jpg')"></div>
+                        <div class="form-img-text mdui-text-color-theme-accent">
+                            手持身份证照
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-p-a-2">
+                <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="center-identity.html">
+                    申请修改
+                </a>
+            </div>
+        </div>
+        <!--查看大图模态框-->
+        <div class="mdui-dialog mdui-valign mdui-p-a-1" id="image-viewer">
+            <img class="mdui-img-fluid mdui-center" src="img/common/favicon.png" alt="大图模式">
+        </div>
+    </div>
+</div>
+</body>
+</html>

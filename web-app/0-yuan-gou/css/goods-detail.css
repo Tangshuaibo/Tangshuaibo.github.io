@@ -1,0 +1,168 @@
+html{
+    background-color: white;
+}
+.pagination-bullet-active{
+    opacity: 1;
+    background-color: rgb(252, 51, 87);
+}
+.carousel-img-container>img{
+    width: 100%;
+}
+#main-title{
+    position: relative;
+    padding: 8px;
+    font-size: 0;
+    color: white;
+    background: linear-gradient(to right, #F06292, #E57373);
+    border-radius: 2px;
+}
+#main-title>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+#main-title>*+*{
+    margin-left: 8px;
+}
+#main-title>.price>span{
+    display: inline-block;
+    font-size: 14px;
+}
+#main-title>.price>span.number{
+    font-size: 24px;
+}
+#main-title>.discount span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+#main-title>.discount>.discount-bottom{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 4px;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+#main-title>.countdown{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+#main-title>.countdown>.countdown-timer{
+    margin-top: 4px;
+    font-size: 0;
+}
+#main-title>.countdown>.countdown-timer>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+#main-title>.countdown>.countdown-timer>span+span{
+    margin-left: 4px;
+}
+#main-title>.countdown>.countdown-timer>span.time{
+    width: 20px;
+    line-height: 20px;
+    background-color: #263238;
+    border-radius: 4px;
+}
+#main-slogan{
+    padding: 8px;
+    font-size: 16px;
+}
+#main-guarantee{
+    padding: 0 8px;
+    font-size: 0;
+    color: darkorange;
+    background-color: #FFFFE0;
+}
+#main-guarantee>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+#main-guarantee>span.icon{
+    margin-right: 8px;
+    width: 20px;
+}
+#main-guarantee>span.icon>.iconfont{
+    font-size: 20px;
+}
+#main-guarantee>span.text{
+    width: calc(100% - 28px);
+    font-size: 14px;
+    line-height: 32px;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#main-gift>.title{
+    padding: 8px;
+    font-size: 14px;
+}
+#main-notice>.title{
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(252, 51, 87);
+}
+#main-notice>.warn{
+    padding: 0 8px;
+    font-size: 0;
+}
+#main-notice>.warn>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+}
+#main-notice>.warn>*+*{
+    margin-left: 4px;
+}
+#main-notice>.notice{
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: normal;
+    color: rgb(252, 51, 87);
+}
+.footer{
+    font-size: 0;
+}
+.footer>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer>.link-service{
+    width: 80px;
+    text-align: center;
+}
+.footer>.link-service>.iconfont{
+    display: block;
+    margin: 4px 0;
+    font-size: 24px;
+    color: rgb(252, 51, 87);
+}
+.footer>.link-service>.text{
+    display: block;
+    margin: 4px 0;
+    font-size: 12px;
+    color: #999;
+}
+.footer>.number{
+    width: calc(100% - 200px);
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    color: rgb(252, 51, 87);
+}
+.footer>.btn-footer{
+    width: 120px;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    background-color: rgb(252, 51, 87);
+}

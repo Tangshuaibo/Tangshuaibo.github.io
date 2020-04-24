@@ -1,0 +1,52 @@
+.mdui-panel-item{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+}
+.hg-picker-content ul{
+    padding: 0;
+    margin: 0;
+}
+.main-form-2>.form-img-list>.form-img-container{
+    width: calc((100% - 16px) / 2);
+}
+#main-tab-account-list>a,
+#main-account-bind-detail-list>li{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+#main-tab-account-list>a:first-of-type,
+#main-account-bind-detail-list>li:first-of-type{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.account-screen-shot-container{
+    font-size: 0;
+    text-align: center;
+}
+.account-screen-shot-container>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    width: calc((100% - 16px) / 2);
+    font-size: 16px;
+}
+.account-screen-shot-container>div:nth-child(2n){
+    margin-right: 0;
+}
+.account-screen-shot>.account-screen-shot-img{
+    padding-top: 100%;
+    margin: 16px 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+#account-screen-shot-viewer>img{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}

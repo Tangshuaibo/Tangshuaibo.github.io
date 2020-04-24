@@ -1,0 +1,10 @@
+.main-list>a{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.main-list>a:first-of-type{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.main-list-icon{
+    width: 36px;
+}

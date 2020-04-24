@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/complaint.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">申诉</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab1" class="mdui-ripple">收到的申诉</a>
+            <a href="#main-tab2" class="mdui-ripple">发起的申诉</a>
+            <a href="#main-tab3" class="mdui-ripple">关闭的申诉</a>
+        </div>
+        <!--收到的申诉-->
+        <div id="main-tab1">
+            <div class="mdui-container-fluid">
+                <div class="mdui-row-xs-3">
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部平台">全部平台</option>
+                            <option value="淘宝">淘宝</option>
+                            <option value="京东">京东</option>
+                            <option value="拼多多">拼多多</option>
+                        </select>
+                    </div>
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部类型">全部类型</option>
+                            <option value="精刷任务">精刷任务</option>
+                            <option value="标签任务">标签任务</option>
+                            <option value="浏览任务">浏览任务</option>
+                        </select>
+                    </div>
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部状态">全部状态</option>
+                            <option value="待回复">待回复</option>
+                            <option value="已回复">等回复</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th>任务进度</th>
+                        <th>查看任务详情</th>
+                        <th>当前状态</th>
+                        <th>申诉发起人</th>
+                        <th>申诉发起时间</th>
+                        <th>申诉相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>日照香炉生紫烟</td>
+                        <td>淘宝浏览任务</td>
+                        <td>待返款</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>待回复</td>
+                        <td>隔壁の王老二</td>
+                        <td>
+                            2005-03-02 11:00:09
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>从高手到菜鸡</td>
+                        <td>京东标签任务</td>
+                        <td>已完成</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>等回复</td>
+                        <td>后方の水小三</td>
+                        <td>
+                            1999-07-15 10:15:10
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--发起的申诉-->
+        <div id="main-tab2">
+            <div class="mdui-container-fluid">
+                <div class="mdui-row-xs-3">
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部平台">全部平台</option>
+                            <option value="淘宝">淘宝</option>
+                            <option value="京东">京东</option>
+                            <option value="拼多多">拼多多</option>
+                        </select>
+                    </div>
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部类型">全部类型</option>
+                            <option value="精刷任务">精刷任务</option>
+                            <option value="标签任务">标签任务</option>
+                            <option value="浏览任务">浏览任务</option>
+                        </select>
+                    </div>
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部状态">全部状态</option>
+                            <option value="待回复">待回复</option>
+                            <option value="已回复">等回复</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th>任务进度</th>
+                        <th>查看任务详情</th>
+                        <th>当前状态</th>
+                        <th>申诉接收人</th>
+                        <th>申诉发起时间</th>
+                        <th>申诉相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>太空没有以太</td>
+                        <td>淘宝精刷任务</td>
+                        <td>已完成</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>待回复</td>
+                        <td>前方の^(*￣(oo)￣)^</td>
+                        <td>
+                            2006-02-28 11:10:29
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">
+                                申请关闭
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>为什么要存在</td>
+                        <td>京东浏览任务</td>
+                        <td>已撤销</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>等回复</td>
+                        <td>左方のo(=•ェ•=)m</td>
+                        <td>
+                            1997-10-06 13:00:57
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">
+                                申请关闭
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--关闭的申诉-->
+        <div id="main-tab3">
+            <div class="mdui-container-fluid">
+                <div class="mdui-row-xs-2">
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部平台">全部平台</option>
+                            <option value="淘宝">淘宝</option>
+                            <option value="京东">京东</option>
+                            <option value="拼多多">拼多多</option>
+                        </select>
+                    </div>
+                    <div class="mdui-col mdui-text-center">
+                        <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                            <option value="全部类型">全部类型</option>
+                            <option value="精刷任务">精刷任务</option>
+                            <option value="标签任务">标签任务</option>
+                            <option value="浏览任务">浏览任务</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>商品名称</th>
+                        <th>任务类型</th>
+                        <th>任务进度</th>
+                        <th>查看任务详情</th>
+                        <th>申诉接收人</th>
+                        <th>申诉发起时间</th>
+                        <th>申诉关闭时间</th>
+                        <th>申诉相关操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>太空没有以太</td>
+                        <td>淘宝精刷任务</td>
+                        <td>已撤销</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>前方の^(*￣(oo)￣)^</td>
+                        <td>
+                            2006-02-28 11:10:29
+                        </td>
+                        <td>
+                            2009-11-09 10:45:18
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">
+                                再次申诉
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>为什么要存在</td>
+                        <td>京东浏览任务</td>
+                        <td>待返款</td>
+                        <td>
+                            <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                                查看详情
+                            </a>
+                        </td>
+                        <td>左方のo(=•ェ•=)m</td>
+                        <td>
+                            1997-10-06 13:00:57
+                        </td>
+                        <td>
+                            2017-12-31 11:00:03
+                        </td>
+                        <td>
+                            <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                               href="./complaint-detail.html">
+                                查看对话
+                            </a>
+                            <button class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-pink mdui-ripple mdui-m-t-1">
+                                再次申诉
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="mdui-bottom-nav mdui-shadow-24" id="app-footer">
+        <a href="./home.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">home</i>
+            <label>首页</label>
+        </a>
+        <a href="./task.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">view_list</i>
+            <label>订单</label>
+        </a>
+        <a href="./receive.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">add_circle</i>
+            <label>接单</label>
+        </a>
+        <a href="./complaint.html" class="mdui-ripple mdui-bottom-nav-active">
+            <i class="mdui-icon material-icons">comment</i>
+            <label>申诉</label>
+        </a>
+        <a href="./login.html" class="mdui-ripple">
+            <i class="mdui-icon material-icons">person</i>
+            <label>我的</label>
+        </a>
+    </div>
+</div>
+</body>
+</html>

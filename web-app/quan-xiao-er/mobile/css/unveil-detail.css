@@ -1,0 +1,219 @@
+#main-container{
+    padding-bottom: 1rem;
+}
+/* 商品信息卡片 */
+.page-goods-card{
+    padding: 0.2rem;
+}
+.page-goods-card-img{
+    text-align: center;
+}
+.page-goods-card-img>img{
+    width: 6rem;
+    height: 6rem;
+}
+.page-goods-card-title{
+    margin-top: 0.1rem;
+    line-height: 0.4rem;
+    color: #666;
+}
+.page-goods-card-price{
+    margin-top: 0.1rem;
+    font-size: 0;
+    color: #999;
+}
+.page-goods-card-price>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+/* 倒计时卡片 */
+#page-unveiling{
+    padding: 0.2rem;
+}
+.page-unveiling-card{
+    text-align: center;
+    border: 0.02rem solid #f00582;
+    border-radius: 0.1rem;
+    color: #f00582;
+}
+.page-unveiling-card-header{
+    line-height: 2;
+    border-bottom: 0.02rem solid #FF83FA;
+}
+.page-unveiling-card-content{
+    padding: 0.4rem 0;
+}
+.page-unveiling-card-content-counter{
+    font-size: 0;
+}
+.page-unveiling-card-content-counter>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    color: white;
+    background-color: #f00582;
+    border-radius: 0.1rem;
+}
+.page-unveiling-card-content-counter>span.colon{
+    width: 0.4rem;
+    color: #f00582;
+    background-color: white;
+}
+.page-unveiling-card-content-calculating{
+    display: none;
+    font-size: 0.4rem;
+}
+/* 用户信息卡片 */
+#page-winner{
+    display: none;
+    padding: 0.2rem;
+}
+.page-winner-card{
+    position: relative;
+    border: 0.02rem solid #f00582;
+    border-radius: 0.1rem;
+    overflow: hidden;
+}
+.page-winner-card-decoration{
+    position: absolute;
+    top: 0.2rem;
+    left: -0.6rem;
+    width: 2rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    transform: rotate(-45deg);
+}
+.page-winner-card-top{
+    padding: 0.2rem;
+    font-size: 0;
+    color: #999;
+}
+.page-winner-card-top>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+}
+.page-winner-card-top-avatar{
+    margin-right: 0.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.page-winner-card-top-avatar>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02em solid #ddd;
+    border-radius: 50%;
+}
+.page-winner-card-top-info{
+    width: calc(100% - 1.6rem);
+}
+.page-winner-card-top-info>*{
+    display: block;
+    margin-top: 0.1rem;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.page-winner-card-top-info-name{
+    margin-top: 0;
+    font-size: 0.28rem;
+    color: #2af;
+}
+.page-winner-card-top-info-number>span{
+    color: #f00582;
+}
+.page-winner-card-top-info-code>span{
+    color: #f00582;
+}
+.page-winner-card-bottom{
+    border-top: 0.02rem solid #FF83FA;
+}
+.page-winner-card-bottom-header{
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #999;
+}
+.page-winner-card-bottom-content{
+    max-height: 1.6rem;
+    overflow-y: auto;
+}
+.page-winner-card-bottom-content-container{
+    font-size: 0;
+}
+.page-winner-card-bottom-content-container>span{
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 0.16rem;
+    width: 25%;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #999;
+}
+/* 链接列表 */
+#page-link{
+    border-top: 0.02rem solid #ddd;
+}
+.page-link-list-item{
+    display: block;
+    padding: 0.3rem;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-link-list-item-container{
+    display: block;
+}
+.page-link-list-item-content{
+    color: #666;
+    overflow: hidden;
+}
+.page-link-list-item-content-title{
+    float: left;
+}
+.page-link-list-item-content-arrow{
+    float: right;
+}
+.page-link-list-item-content-arrow>i.iconfont{
+    font-size: 0.28rem;
+}
+/* 页面底部 */
+#footer-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 7.5rem;
+    background-color: white;
+    z-index: 1000;
+}
+#footer-link{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+#footer-link>span{
+    display: block;
+    height: 0.8rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    color: white;
+    background-color: #f00582;
+}
+#footer-link>i.iconfont{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    color: white;
+}

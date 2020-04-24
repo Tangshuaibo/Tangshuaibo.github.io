@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="vendor/hg-citypicker-1.2.4/picker.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center-setting.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.html"></script>
+    <script src="vendor/hg-citypicker-1.2.4/city.js"></script>
+    <script src="vendor/hg-citypicker-1.2.4/citypicker.js"></script>
+    <script src="js/common.html"></script>
+    <script src="js/center-setting.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                个人信息
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <ul class="list" id="list-setting">
+            <li class="list-item" id="selector-avatar">
+                <span class="title">头像</span>
+                <div class="avatar-container">
+                    <input type="file" accept="image/png, image/jpg, image/jpeg" id="input-avatar" style="display: none;">
+                    <span class="avatar" id="avatar-user"
+                          style="background-image: url('temp-img/center-setting/avatar.png')"
+                    ></span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="list-item" id="selector-area">
+                <span class="title">地区设置</span>
+                <div class="text" id="btn-area">请选择</div>
+            </li>
+            <li class="list-item" id="selector-account-tb">
+                <span class="title">绑定淘宝账号</span>
+                <div class="text" id="btn-account-tb">请选择</div>
+            </li>
+            <li class="list-item" id="selector-number-phone">
+                <span class="title">绑定手机号</span>
+                <div class="text" id="btn-number-phone">请选择</div>
+            </li>
+        </ul>
+    </div>
+    <div class="layer-mask" id="layer-mask">
+        <div class="layer-mask-content" id="box-number-phone">
+            <div class="box">
+                <div class="box-header">
+                    <span class="title">绑定手机号</span>
+                    <span class="btn-cancel" id="btn-cancel-number-phone">取消</span>
+                </div>
+                <form class="box-content">
+                    <div class="form-row">
+                        <label for="input-account-tb">手机号</label>
+                        <input type="text" placeholder="请输入手机号" id="input-number-phone">
+                    </div>
+                    <div class="action">
+                        <span class="btn btn-block" id="btn-submit-number-phone">
+                            完成
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="layer-mask-content" id="box-account-tb">
+            <div class="box">
+                <div class="box-header">
+                    <span class="title">绑定淘宝账号</span>
+                    <span class="btn-cancel" id="btn-cancel-account-tb">取消</span>
+                </div>
+                <form class="box-content">
+                    <div class="form-row">
+                        <label for="input-account-tb">淘宝号</label>
+                        <input type="text" maxlength="30" placeholder="请输入淘宝账号" id="input-account-tb">
+                    </div>
+                    <div class="action">
+                        <span class="btn btn-block" id="btn-submit-account-tb">
+                            完成
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer tab-bar">
+        <div class="tab-bar-item" id="footer-item-home">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-homefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                首页
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-service">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-servicefill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                联系客服
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-order">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-formfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                订单
+            </span>
+        </div>
+        <div class="tab-bar-item" id="footer-item-center">
+            <span class="tab-bar-item-icon">
+                <span class="iconfont icon-myfill"></span>
+            </span>
+            <span class="tab-bar-item-label">
+                个人中心
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

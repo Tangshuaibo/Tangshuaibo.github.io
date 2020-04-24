@@ -1,0 +1,109 @@
+/* 页面头部 */
+#header-plus{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    color: white;
+}
+#header-plus>i.iconfont{
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+/* 页面主体 */
+/* 加载中 */
+#page-loading{
+    padding: 0.2rem 0;
+    font-size: 0;
+    text-align: center;
+    color: #666;
+}
+#page-loading>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+#page-loading-img{
+    margin-right: 0.1rem;
+    width: 0.32rem;
+    height: 0.32rem;
+}
+#page-loading-img>img{
+    width: 100%;
+    height: 100%;
+}
+/* 没有更多 */
+#page-address-bottom{
+    padding: 0.2rem 0;
+    font-size: 0.28rem;
+    color: #999;
+    text-align: center;
+}
+/* 没有记录 */
+#page-nothing{
+    padding: 1rem;
+    font-size: 0.32rem;
+    color: #999;
+    text-align: center;
+}
+#page-nothing-img{
+    margin-bottom: 0.4rem;
+}
+#page-nothing-img>img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+/* 地址列表 */
+#page-address-list{
+    border-top: 0.02rem solid white;
+}
+.page-address-list-item{
+    display: block;
+    border-bottom: 0.02rem solid #ddd;
+}
+.address-card-info-container{
+    display: table;
+    width: 100% !important;
+    height: 1.8rem;
+}
+.address-card-info{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0.3rem;
+}
+.address-card-info>div{
+    width: 6.4rem;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.address-card-info-top{
+    margin-bottom: 0.2rem;
+    font-size: 0.32rem;
+}
+.address-card-info-bottom{
+    font-size: 0.24rem;
+    color: #666;
+}
+.address-card-btn-container{
+    font-size: 0;
+}
+.address-card-btn-container>*{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    font-size: 0.32rem;
+    text-align: center;
+    color: white;
+}
+.address-card-btn-modify{
+    background-color: #2af;
+}
+.address-card-btn-delete{
+    background-color: #f00582;
+}

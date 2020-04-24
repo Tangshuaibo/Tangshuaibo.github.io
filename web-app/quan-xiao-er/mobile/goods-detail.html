@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./dep/swiper-4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/goods-detail.css">
+    <script src="./dep/swiper-4.4.2/js/swiper.min.js"></script>
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/goods-detail.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">商品详情</span>
+                <div id="header-home">
+                    <i class="iconfont icon-home-2"></i>
+                </div>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 轮播图 -->
+                <div id="page-carousel-container">
+                    <div class="swiper-container" id="page-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carousel-img-container">
+                                    <img src="./temp-img/goods-detail/banner_1.jpg" alt="商品缩略图">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-img-container">
+                                    <img src="./temp-img/goods-detail/banner_2.jpg" alt="商品缩略图">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-img-container">
+                                    <img src="./temp-img/goods-detail/banner_3.jpg" alt="商品缩略图">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="page-carousel-pagination"></div>
+                    </div>
+                </div>
+                <!-- 优惠宣传 -->
+                <div id="page-slogan">
+                    <div id="page-slogan-title">
+                        <div id="page-slogan-title-left">
+                            送抽奖
+                        </div>
+                        <div id="page-slogan-title-right">
+                            购买优惠卷即赠送抽奖资格
+                        </div>
+                    </div>
+                    <div id="page-slogan-price">
+                        <div id="page-slogan-price-discount">
+                            专享价
+                            <span class="symbol">￥</span>
+                            <span class="price">1.00</span>
+                        </div>
+                        <div id="page-slogan-price-original">
+                            原价
+                            <span class="symbol">￥</span>
+                            <span class="price">8399.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品信息 -->
+                <div id="page-gift-info">
+                    <div id="page-gift-info-title">
+                        (第45期)松下（Panasonic）HC-PV100GK 手持专业便携式高清摄像机 婚庆/会议/直播/教学/晚会 支持96帧高速拍摄
+                    </div>
+                    <div id="page-gift-info-progress">
+                        <div id="page-gift-info-progress-total"></div>
+                        <div id="page-gift-info-progress-sold" style="width: 33%;"></div>
+                    </div>
+                    <div id="page-gift-info-number">
+                        <div id="page-gift-info-number-sold">
+                            <div class="number">1000</div>
+                            <div>已赠送</div>
+                        </div>
+                        <div id="page-gift-info-number-total">
+                            <div class="number">3000</div>
+                            <div>总个数</div>
+                        </div>
+                        <div id="page-gift-info-number-remain">
+                            <div class="number">2000</div>
+                            <div>剩余</div>
+                        </div>
+                    </div>
+                    <div id="page-goods-info">
+                        <div id="page-goods-info-header">
+                            购买优惠卷可参与获得商品专享价
+                        </div>
+                        <div id="page-goods-info-content">
+                            <div id="page-goods-info-content-img">
+                                <img src="./temp-img/goods-detail/goods.jpg" alt="商品缩略图">
+                            </div>
+                            <div id="page-goods-info-content-main">
+                                <div id="page-goods-info-content-main-title">
+                                    女神两件套秋装女韩版衬衣西装外套+半身裙子时尚甜美套装裙秋
+                                </div>
+                                <div id="page-goods-info-content-main-coupon">
+                                    <div id="page-goods-info-content-main-coupon-left">
+                                        优惠券
+                                    </div>
+                                    <div id="page-goods-info-content-main-coupon-right">
+                                        满<span class="reach">10</span>元减<span class="cut">3</span>元
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 玩法介绍 -->
+                <div id="page-play-intro">
+                    <div id="page-play-intro-header">
+                        <div id="page-play-intro-header-left">
+                            怎么玩
+                        </div>
+                        <div id="page-play-intro-header-right">
+                            <a href="./guide.html">
+                                玩法详情
+                            </a>
+                        </div>
+                    </div>
+                    <div id="page-play-intro-content">
+                        <div class="page-play-intro-content-step">
+                            <div class="page-play-intro-content-step-number">
+                                1
+                            </div>
+                            <div class="page-play-intro-content-step-info">
+                                选择优惠<br>付款获得
+                            </div>
+                        </div>
+                        <div class="page-play-intro-content-step">
+                            <div class="page-play-intro-content-step-number">
+                                2
+                            </div>
+                            <div class="page-play-intro-content-step-info">
+                                赠送抽奖码<br>时时彩开奖
+                            </div>
+                        </div>
+                        <div class="page-play-intro-content-step">
+                            <div class="page-play-intro-content-step-number">
+                                3
+                            </div>
+                            <div class="page-play-intro-content-step-info">
+                                支付专享价<br>购得该商品
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 链接列表 -->
+                <div id="page-link">
+                    <ul id="page-link-list">
+                        <li class="page-link-list-item">
+                            <a class="page-link-list-item-container" href="./goods-intro.html">
+                                <div class="page-link-list-item-content">
+                                    <div class="page-link-list-item-content-title">
+                                        图文详情（建议在WIFI下使用）
+                                    </div>
+                                    <div class="page-link-list-item-content-arrow">
+                                        <i class="iconfont icon-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page-link-list-item">
+                            <a class="page-link-list-item-container" href="./record-sold.html">
+                                <div class="page-link-list-item-content">
+                                    <div class="page-link-list-item-content-title">
+                                        所有赠送记录
+                                    </div>
+                                    <div class="page-link-list-item-content-arrow">
+                                        <i class="iconfont icon-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page-link-list-item">
+                            <a class="page-link-list-item-container" href="./record-trend.html">
+                                <div class="page-link-list-item-content">
+                                    <div class="page-link-list-item-content-title">
+                                        开奖走势
+                                    </div>
+                                    <div class="page-link-list-item-content-arrow">
+                                        <i class="iconfont icon-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page-link-list-item">
+                            <a class="page-link-list-item-container" href="./record-unveiled.html">
+                                <div class="page-link-list-item-content">
+                                    <div class="page-link-list-item-content-title">
+                                        往期揭晓
+                                    </div>
+                                    <div class="page-link-list-item-content-arrow">
+                                        <i class="iconfont icon-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page-link-list-item">
+                            <a class="page-link-list-item-container" href="./record-unbox.html">
+                                <div class="page-link-list-item-content">
+                                    <div class="page-link-list-item-content-title">
+                                        商品晒单
+                                    </div>
+                                    <div class="page-link-list-item-content-arrow">
+                                        <i class="iconfont icon-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+                <ul id="footer-menu">
+                    <li id="footer-menu-buy">
+                        <a href="./cart.html">
+                            立即购买
+                        </a>
+                    </li>
+                    <li id="footer-menu-add">
+                        <a href="">
+                            加入购物车
+                        </a>
+                    </li>
+                    <li id="footer-menu-cart">
+                        <a href="./cart.html">
+                            <i class="iconfont icon-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

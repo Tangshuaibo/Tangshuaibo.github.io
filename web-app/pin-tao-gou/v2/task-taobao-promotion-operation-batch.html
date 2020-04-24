@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">批量提交</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="main-form-3">
+            <div class="form-input">
+                <label for="input-order-id">
+                    订单ID
+                </label>
+                <input id="input-order-id" type="text" value="1234567890/12313213/31321312" placeholder="请输入订单ID" disabled>
+            </div>
+            <div class="form-input">
+                <label for="input-account-taobao">
+                    淘宝账号
+                </label>
+                <input id="input-account-taobao" type="number" placeholder="请输入淘宝账号">
+            </div>
+            <div class="form-img-list">
+                <div class="form-img-title">
+                    选择地址图片
+                </div>
+                <div class="form-img-container narrow">
+                    <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                    <div class="form-img"></div>
+                    <div class="form-img-text mdui-text-color-theme-accent">
+                        地址图片
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="form-img-list">
+                <div class="form-img-title">
+                    选择验号图片
+                </div>
+                <div class="form-img-container narrow">
+                    <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                    <div class="form-img"></div>
+                    <div class="form-img-text mdui-text-color-theme-accent">
+                        验号图片
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="form-img-list">
+                <div class="form-img-title">
+                    选择账单图片
+                </div>
+                <div class="form-img-container narrow">
+                    <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                    <div class="form-img"></div>
+                    <div class="form-img-text mdui-text-color-theme-accent">
+                        账单图片
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+        </div>
+        <div class="mdui-p-a-2">
+            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

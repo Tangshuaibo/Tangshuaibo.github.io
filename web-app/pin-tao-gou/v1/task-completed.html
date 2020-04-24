@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">已完成</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>商品名称</th>
+                    <th>任务类型</th>
+                    <th class="mdui-table-col-numeric">获得金豆（个）</th>
+                    <th>任务获取时间</th>
+                    <th>任务完成时间</th>
+                    <th>查看任务详情</th>
+                    <th>任务相关操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>快乐消除器</td>
+                    <td>淘宝精刷任务</td>
+                    <td class="mdui-table-col-numeric">100</td>
+                    <td>2010-09-13 10:09:12</td>
+                    <td>2087-09-32 09:12:43</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                            查看详情
+                        </a>
+                    </td>
+                    <td>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="./complaint-initiate.html">
+                            发起申诉
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>痛苦增强器</td>
+                    <td>京东精刷任务</td>
+                    <td class="mdui-table-col-numeric">100</td>
+                    <td>2007-01-01 18:10:09</td>
+                    <td>2098-19-01 03:12:11</td>
+                    <td>
+                        <a class="mdui-text-color-theme-accent" href="./task-unfinished-logistics.html">
+                            查看详情
+                        </a>
+                    </td>
+                    <td>
+                        <a class="mdui-btn mdui-btn-block mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                           href="./complaint-initiate.html">
+                            发起申诉
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

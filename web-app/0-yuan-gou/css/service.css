@@ -1,0 +1,24 @@
+html{
+    background-color: white;
+}
+.part-qr-code{
+    margin: 40px 0;
+    font-size: 16px;
+    text-align: center;
+}
+.qr-code-text{
+    margin: 24px 0;
+    color: rgb(252, 51, 87);;
+}
+.qr-code-container>img{
+    width: 160px;
+    height: 160px;
+}
+.part-tips{
+    padding: 0 16px;
+}
+.part-tips p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: darkorange;
+}

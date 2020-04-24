@@ -1,0 +1,59 @@
+.list-item-publisher>.list-item-avatar{
+    margin: 8px 16px 8px 0;
+}
+.list-item-user>.list-item-avatar{
+    margin: 8px 0 8px 16px;
+}
+.list-item-avatar{
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+.list-item-avatar>.list-item-avatar-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.list-item-avatar>.list-item-avatar-name{
+    margin-top: 8px;
+    word-break: break-all;
+}
+.conversation-content>.conversation-content-text{
+    display: inline-block;
+    max-width: 100%;
+    text-align: left;
+    word-break: break-all;
+}
+.conversation-content>img{
+    margin-top: 8px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+.list-item-user.proto{
+    display: none;
+}
+.list-item-user .conversation-content{
+    text-align: right;
+}
+#main-dialogue{
+    padding-bottom: 60px;
+}
+#complaint-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+    background-color: white;
+}
+#complaint-footer>*{
+    display: inline-block;
+    vertical-align: bottom;
+}
+#footer-textarea {
+    padding: 8px 0;
+    width: calc(100% - 72px);
+}
+#btn-footer-image, #btn-footer-send{
+    margin: 8px 0;
+}

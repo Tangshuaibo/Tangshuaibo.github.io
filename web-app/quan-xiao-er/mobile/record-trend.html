@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开奖趋势</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/record-trend.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./dep/echarts-4.2.0-rc.2/echarts.min.js"></script>
+    <script src="./dep/echarts-4.2.0-rc.2/customed-theme.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/record-trend.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">开奖趋势</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <!-- 趋势图 -->
+                <div id="trend-chart-container">
+                    <div id="trend-chart"></div>
+                    <div id="trend-chart-tip">
+                        <div class="trend-chart-tip-item">
+                            <span class="title">商品期数：</span>
+                            <span class="content">指该商品的每期期数</span>
+                        </div>
+                        <div class="trend-chart-tip-item">
+                            <span class="title">参与人次：</span>
+                            <span class="content">表示中奖用户在该期商品所获得的人次总数</span>
+                        </div>
+                        <div id="trend-chart-tip-label">
+                            注：趋势图仅供娱乐，不对开奖结果造成任何影响
+                        </div>
+                    </div>
+                </div>
+                <!-- 中奖者列表 -->
+                <div id="record-winner-container">
+                    <div id="record-winner">
+                        <div id="record-winner-header">
+                            <span class="phase">期数</span>
+                            <span class="winner">中奖者</span>
+                            <span class="code">幸运号码</span>
+                            <span class="number">数量</span>
+                        </div>
+                        <ul id="record-winner-list">
+                            <li class="record-winner-list-item">
+                                <span class="phase">1514</span>
+                                <span class="winner">
+                                    <div class="winner-avatar">
+                                        <img src="./temp-img/record-trend/avatar_1.jpg" alt="用户头像">
+                                    </div>
+                                </span>
+                                <span class="code">10000152</span>
+                                <span class="number">76</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

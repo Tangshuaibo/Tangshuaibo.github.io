@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--页面头部-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">待操作</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <!--任务列表-->
+        <div class="mdui-list mdui-p-y-0 mdui-m-y-2">
+            <div class="mdui-divider mdui-m-y-0"></div>
+            <div class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="list-item-img">
+                    <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                </div>
+                <div class="mdui-list-item-content list-item-content">
+                    <div class="list-item-content-row">
+                        <span>接单账号：</span>
+                        <span>yy123456</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>任务ID：</span>
+                        <span>78778686</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>本金（元）：</span>
+                        <span>200</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>佣金（淘豆）：</span>
+                        <span>2</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>下单周期：</span>
+                        <span>当天</span>
+                    </div>
+                </div>
+                <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                   href="task-jingdong-fine-operation-detail.html">
+                    处理
+                </a>
+            </div>
+            <div class="mdui-divider mdui-m-y-0"></div>
+            <div class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="list-item-img">
+                    <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                </div>
+                <div class="mdui-list-item-content list-item-content">
+                    <div class="list-item-content-row">
+                        <span>接单账号：</span>
+                        <span>tt654321</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>任务ID：</span>
+                        <span>13143414</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>本金（元）：</span>
+                        <span>400</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>佣金（淘豆）：</span>
+                        <span>1</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>下单周期：</span>
+                        <span>当天</span>
+                    </div>
+                </div>
+                <!--处理-->
+                <a class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple"
+                   href="task-jingdong-fine-operation-detail.html">
+                    处理
+                </a>
+            </div>
+            <div class="mdui-divider mdui-m-y-0"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

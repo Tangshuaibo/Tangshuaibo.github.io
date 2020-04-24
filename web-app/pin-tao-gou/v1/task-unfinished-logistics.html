@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/task-unfinished.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">任务详情</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-home">
+                <i class="mdui-icon material-icons"></i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="mdui-tab mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="#main-tab1" class="mdui-ripple">任务信息</a>
+            <a href="#main-tab2" class="mdui-ripple">我的提交</a>
+            <a href="#main-tab3" class="mdui-ripple">物流信息</a>
+        </div>
+        <!--任务信息-->
+        <div id="main-tab1">
+            <div class="mdui-list">
+                <div class="mdui-list-item mdui-color-white">
+                    <i class="mdui-list-item-avatar mdui-color-white">
+                        <img src="./img/common/taobao.png">
+                    </i>
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">人类馅月饼</div>
+                        <div class="mdui-list-item-text">
+                            任务赏金：<span class="mdui-text-color-theme-accent">25</span>金豆
+                        </div>
+                        <div class="mdui-list-item-text">
+                            任务类型：<span>淘宝精刷任务</span>
+                        </div>
+                        <div class="mdui-list-item-text">发布人：废过山</div>
+                        <div class="mdui-list-item-text">发布时间：2019-21-21</div>
+                    </div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons"></i>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-list-item mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-text-center mdui-text-color-theme-accent mdui-m-b-1">
+                            商品基本信息
+                        </div>
+                        <div class="mdui-m-b-1">
+                            商品链接：
+                            <a class="mdui-text-color-theme-accent"
+                               href="http://www.hbhuitu.net">www.hbhuitu.net</a>
+                        </div>
+                        <div>
+                            商品主图：
+                            <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-y-1"
+                                 src="./temp-img/task/goods.jpg" alt="商品主图">
+                        </div>
+                        <div class="mdui-m-b-1">
+                            手机搜索页面展示价格：<span>￥99.8</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            单品实际成交价格：<span>￥99.8</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            买手每单拍：<span>100</span>件
+                        </div>
+                        <div class="mdui-m-b-1">
+                            商品是否包邮：<span>是</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-list-item mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-text-center mdui-text-color-theme-accent mdui-m-b-1">
+                            如何找到商品
+                        </div>
+                        <div class="mdui-m-b-1">
+                            定位目标商品排序方式：<span>销量</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            商品现有收货人数或付款人数约：<span>20</span>人
+                        </div>
+                        <div class="mdui-m-b-1">
+                            价格区间：<span>500000-2000000000</span>元
+                        </div>
+                        <div class="mdui-m-b-1">
+                            商品所在地：<span>月球</span>
+                        </div>
+                        <div>
+                            买家必填留言内容：<span>感谢旧日支配者赏赐骨头</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-list-item mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-text-center mdui-text-color-theme-accent mdui-m-b-1">
+                            任务类型和单数
+                        </div>
+                        <div class="mdui-m-b-1">
+                            任务类型：<span>文字好评任务</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            关键词1：<span>奴隶制</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            垫付：<span>5</span>单
+                        </div>
+                        <div class="mdui-m-b-1">
+                            买家必填文字好评内容：<span>感谢旧日支配者赏赐骨头</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            关键词2：<span>人体改造</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            垫付：<span>100</span>单
+                        </div>
+                        <div>
+                            买家必填文字好评内容：<span>感谢旧日支配者把我改造成章鱼</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-list-item mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-text-center mdui-text-color-theme-accent mdui-m-b-1">
+                            任务获取限制
+                        </div>
+                        <div class="mdui-m-b-1">
+                            空包任务：<span>是</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            不可接任务区域：<span>辽宁省、吉林省、黑龙江省</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            年龄限制：<span>0-18</span>岁
+                        </div>
+                        <div class="mdui-m-b-1">
+                            性别限制：<span>男</span>
+                        </div>
+                        <div class="mdui-m-b-1">
+                            仅限钻级别的买号：<span>是</span>
+                        </div>
+                        <div>
+                            限制买号类目：<span>手机数码</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-divider"></div>
+                <div class="mdui-list-item mdui-color-white">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-text-center mdui-text-color-theme-accent">
+                            商家附加要求
+                        </div>
+                        <div class="additional-requirement-container">
+                            <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-t-1"
+                                 src="./temp-img/common/requirement1.jpg" alt="附加要求">
+                            <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-t-1"
+                                 src="./temp-img/common/requirement2.jpg" alt="附加要求">
+                            <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-t-1"
+                                 src="./temp-img/common/requirement3.jpg" alt="附加要求">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--我的提交-->
+    <div id="main-tab2">
+        <ul class="mdui-list">
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        任务提交时间
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        2016-01-03 05:12:29
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        执行任务的账号名
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        隔壁的王老二
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-float-left">
+                        执行任务的手机号
+                    </div>
+                    <div class="mdui-float-right mdui-text-color-black-secondary">
+                        12312345678
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-m-b-1">
+                        执行任务的收货地址
+                    </div>
+                    <div class="mdui-text-color-black-secondary">
+                        半人马座alpha星比邻星第九惑星13区
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple mdui-color-white">
+                <div class="mdui-list-item-content">
+                    <div>
+                        提交的任务截图
+                    </div>
+                    <div>
+                        <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-t-1"
+                             src="./temp-img/task/screenshot1.jpg" alt="提交的截图">
+                        <img class="mdui-img-fluid mdui-img-rounded mdui-center mdui-m-t-1"
+                             src="./temp-img/task/screenshot2.jpg" alt="提交的截图">
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+        </ul>
+    </div>
+    <!--物流信息-->
+    <div id="main-tab3">
+        <ul class="mdui-list">
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">location_on</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        【发货】卖家已发货
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-07 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">my_location</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        哼哼市桃城区人民西路揽件，准备发往海北省修仙市鲨鱼区
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-08 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-p-r-1 mdui-text-color-theme-accent">local_shipping</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        快件已从哼哼市邮件处理中心发出，准备发往哈哈市邮区中心局处理中心
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-09 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-p-r-1 mdui-text-color-theme-accent">local_shipping</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        快件已到达哼哼市邮件处理中心
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-10 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-p-r-1 mdui-text-color-theme-accent">local_shipping</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        快件已从仓库发出
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-11 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-p-r-1 mdui-text-color-theme-accent">local_shipping</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        快件已到达海北省修仙市鲨鱼区
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-12 11:20:11
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-list-item mdui-color-white">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-p-r-1 mdui-text-color-theme-accent">check</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">
+                        快件已签收，签收人：王老二
+                    </div>
+                    <div class="mdui-list-item-text">
+                        2019-09-13 11:20:11
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-commission.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a class="mdui-btn mdui-btn-icon" id="header-btn-back" href="javascript:;">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">佣金收益</span>
+            <a class="mdui-btn mdui-btn-icon" href="./center-commission-withdrawal.html">
+                <i class="mdui-icon material-icons">monetization_on</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--主体头部-->
+        <div class="mdui-color-theme main-header">
+            <div class="main-header-box">
+                <div class="main-header-box-title">
+                    金豆数量（个）
+                </div>
+                <div class="main-header-box-number">
+                    50000
+                </div>
+            </div>
+            <div class="main-header-box">
+                <div class="main-header-box-title">
+                    换算金额（元）
+                </div>
+                <div class="main-header-box-number">
+                    5000
+                </div>
+            </div>
+        </div>
+        <!--记录列表-->
+        <div class="mdui-container-fluid mdui-p-y-1 main-list">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table mdui-table-hoverable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>商品名称</th>
+                            <th class="mdui-table-col-numeric">获得金豆（个）</th>
+                            <th>换算金额（元）</th>
+                            <th>任务完成类型</th>
+                            <th>佣金获得时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>MegaHouse 宇智波佐助 手办</td>
+                            <td class="mdui-table-col-numeric">10</td>
+                            <td class="mdui-table-col-numeric">1</td>
+                            <td>淘宝浏览任务</td>
+                            <td>2030-12-05 11:00:09</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>正品 万代 Q版 SD BB 367 Kshatriya NZ666 刹帝利 高达 带坦克</td>
+                            <td class="mdui-table-col-numeric">100</td>
+                            <td class="mdui-table-col-numeric">10</td>
+                            <td>京东精刷任务</td>
+                            <td>3120-09-12 10:30:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

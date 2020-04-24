@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0元购</title>
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/icon-font-custom/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/complaint-detail.css">
+    <script src="vendor/jquery-3.3.1/jquery-3.3.1.min.html"></script>
+    <script src="js/common.html"></script>
+    <script src="js/complaint-detail.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-item" id="header-back">
+                <span class="iconfont icon-back_light"></span>
+            </span>
+            <span class="header-item" id="header-close">
+                <span class="iconfont icon-close"></span>
+            </span>
+        </div>
+        <div class="header-center">
+            <span id="header-title">
+                申诉详情
+            </span>
+        </div>
+        <div class="header-right">
+            <span class="header-item" id="header-service">
+                <span class="iconfont icon-service"></span>
+            </span>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="goods-detail">
+            <div class="image"
+                style="background-image: url(temp-img/complaint/goods_01.jpg)"
+            ></div>
+            <div class="content">
+                <div class="info">
+                    <div class="title">
+                        Delicate little devil, easy to expand（50包邮）
+                    </div>
+                    <div class="row">
+                        <label>订单编号</label>
+                        <span>12343211234</span>
+                    </div>
+                    <div class="row">
+                        <label>发货礼品</label>
+                        <span>抽纸1包</span>
+                    </div>
+                    <div class="row">
+                        <label>礼品值</label>
+                        <span>￥0.10</span>
+                    </div>
+                    <div class="row">
+                        <label>返款金额</label>
+                        <span>￥0.05</span>
+                    </div>
+                </div>
+                <div class="action">
+                    <span class="btn" id="btn-summon-platform">
+                        申请平台介入
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-box-container" id="chat-box-container">
+            <ul class="chat-box-list">
+                <!--店铺对话项-->
+                <li class="chat-box-item store">
+                    <div class="chat-box-item-avatar"
+                        style="background-image: url(temp-img/complaint-detail/avatar1.jpg)"
+                    ></div>
+                    <div class="chat-box-item-content">
+                        <div class="name">
+                            <span>赵家人(店铺)</span>
+                        </div>
+                        <div class="bubble">
+                            <span class="bubble-box">
+                                何不食肉糜？
+                            </span>
+                        </div>
+                        <div class="time">
+                            <span>2012-06-04 12:09:05</span>
+                        </div>
+                    </div>
+                </li>
+                <!--用户对话项-->
+                <li class="chat-box-item user">
+                    <div class="chat-box-item-content">
+                        <div class="name">
+                            <span>低种姓(用户)</span>
+                        </div>
+                        <div class="bubble">
+                            <span class="bubble-box">
+                                <img src="../../5b0988e595225.cdn.sohucs.com/images/20180730/f863276206694ec186cdc3a533f88dff.jpg" alt="img">
+                            </span>
+                        </div>
+                        <div class="time">
+                            <span>2012-06-04 12:11:56</span>
+                        </div>
+                    </div>
+                    <div class="chat-box-item-avatar"
+                         style="background-image: url(temp-img/complaint-detail/avatar2.jpg)"
+                    ></div>
+                </li>
+                <!--平台对话项-->
+                <li class="chat-box-item platform">
+                    <div class="chat-box-item-avatar"
+                         style="background-image: url(temp-img/complaint-detail/avatar3.jpg)"
+                    ></div>
+                    <div class="chat-box-item-content">
+                        <div class="name">
+                            <span>苟利苟利(平台)</span>
+                        </div>
+                        <div class="bubble">
+                            <span class="bubble-box">
+                                都别哔哔
+                            </span>
+                        </div>
+                        <div class="time">
+                            <span>2012-06-04 12:30:25</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="footer chat-box-input" id="chat-box-input">
+        <div class="btn-item btn-img">
+            <input type="file" accept="image/png, image/jpg, image/jpeg">
+            <i class="iconfont icon-image"></i>
+        </div>
+        <div class="textarea" contenteditable="true" data-placeholder="请输入回复内容"></div>
+        <div class="btn-item btn-send">
+            <i class="iconfont icon-send"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>

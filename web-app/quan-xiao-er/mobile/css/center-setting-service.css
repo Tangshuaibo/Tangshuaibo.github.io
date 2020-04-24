@@ -1,0 +1,190 @@
+/* 页面头部 */
+#header-back-sub{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 页面上部 */
+#page-top{
+    padding: 0.8rem 0.4rem;
+    background-image: url('../img/center-setting-service/service_background.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+#page-top-card{
+    position: relative;
+    margin-top: 0.7rem;
+    padding: 0.9rem 0.2rem 0.4rem;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+#page-top-card-img{
+    position: absolute;
+    top: -0.7rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+#page-top-card-img>span{
+    display: block;
+    height: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border: 0.1rem solid white;
+    border-radius: 50%;
+}
+.page-top-card-info-row:not(:last-of-type){
+    margin-bottom: 0.2rem;
+}
+.page-top-card-info-row{
+    font-size: 0;
+}
+.page-top-card-info-row>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+}
+.page-top-card-info-row>span.title{
+    color: #f00582;
+}
+.page-top-card-info-row>span.btn{
+    display: block;
+    float: right;
+    width: 2rem;
+    font-size: 0.24rem;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border-radius: 0.24rem;
+}
+.page-top-card-info-row>span.btn>i.fa{
+    font-size: 0.28rem;
+}
+.page-top-card-info-row:first-of-type{
+    margin-bottom: 0.1rem;
+}
+.page-top-card-info-row>span.title-1{
+    vertical-align: top;
+    width: 1.2rem;
+    line-height: 1.2;
+}
+.page-top-card-info-row>span.detail-1{
+    vertical-align: top;
+    width: calc(100% - 1.2rem);
+    line-height: 1.2;
+}
+#page-top-card-info-row-btn-qq{
+    background-color: #15b5e9;
+}
+#page-top-card-info-row-btn-wechat{
+    background-color: #439057;
+}
+/* 页面内容 */
+#page-content li{
+    display: block;
+}
+.page-content-list-item{
+    position: relative;
+    font-size: 0;
+}
+.page-content-list-item>*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.32rem;
+}
+.page-content-list-item-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0.6rem;
+    width: 30%;
+    text-align: center;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-content-list-item-title>i.fa{
+    font-size: 0.48rem;
+    color: #999;
+}
+.page-content-list-item-list{
+    margin-left: 30%;
+    width: 70%;
+    border-left: 0.02rem solid #ddd;
+}
+.page-content-list-item-list-item{
+    font-size: 0.32rem;
+    padding: 0.32rem 0.4rem;
+}
+.page-content-list-item-list-item{
+    border-bottom: 0.02rem solid #ddd;
+}
+/* 内容详情 */
+#page-content-detail{
+    padding: 0.4rem;
+    height: calc(100vh - 0.8rem);
+    background-image: url(../img/common/yungou_background.png);
+    background-size: 100% auto;
+    overflow-y: auto;
+}
+#page-content-detail-card{
+    padding: 0.4rem;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+#page-content-detail-card>*{
+    max-height: 100%;
+}
+#page-content-detail-card-title{
+    font-size: 0.32rem;
+    margin-bottom: 0.2rem;
+}
+#page-content-detail-card-detail{
+    font-size: 0.28rem;
+    line-height: 1.5;
+    color: #999;
+}
+#page-content-detail-card-detail>span{
+    color: #f00582;
+}
+/* 二维码层 */
+#page-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#page-layer-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    text-align: center;
+    color: white;
+}
+#page-layer-close>i.fa{
+    font-size: 0.8rem;
+}
+#page-layer-code{
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+}
+#page-layer-code>img{
+    width: 100%;
+    height: 100%;
+}

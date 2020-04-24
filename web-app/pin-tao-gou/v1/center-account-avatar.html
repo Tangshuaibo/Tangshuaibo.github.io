@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./deps/cropperjs-1.4.3/cropper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account-avatar.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./deps/cropperjs-1.4.3/cropper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/center-account-avatar.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">修改头像</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <input type="file" accept="image/png, image/jpeg" id="input-avatar" style="display: none;">
+        <div class="mdui-card mdui-m-a-2 mdui-p-a-4">
+            <div class="mdui-center mdui-img-rounded" id="avatar-container">
+                <img src="./img/center/avatar.png" alt="用户头像">
+            </div>
+            <div class="mdui-m-t-4" id="btn-group">
+                <div id="btn-group-select">
+                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple"
+                            id="btn-select">
+                        选择图片
+                    </button>
+                </div>
+                <div id="btn-group-operate" style="display: none;">
+                    <button class="mdui-btn mdui-btn-block mdui-color-pink-accent mdui-ripple"
+                            id="btn-reselect">
+                        重新选择
+                    </button>
+                    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple mdui-m-t-2"
+                            id="btn-submit">
+                        提交已选
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

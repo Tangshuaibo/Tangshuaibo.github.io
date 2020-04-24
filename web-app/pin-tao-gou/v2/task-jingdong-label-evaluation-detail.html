@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">提交评价</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--任务列表-->
+        <ul class="mdui-list mdui-color-white mdui-p-y-0 mdui-m-y-2">
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="list-item-img">
+                    <img src="temp-img/task/goods-mango.png" alt="商品缩略图">
+                </div>
+                <div class="mdui-list-item-content list-item-content">
+                    <div class="list-item-content-row">
+                        <span>接单账号：</span>
+                        <span>y11111</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>搜索展示价格（元）：</span>
+                        <span>1000</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>下单价格（元）：</span>
+                        <span>200</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>拍下数量（件）：</span>
+                        <span>40</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>收货人数（人）：</span>
+                        <span>10</span>
+                    </div>
+                    <div class="list-item-content-row">
+                        <span>返款金额（淘豆）：</span>
+                        <span>1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="mdui-divider mdui-m-y-0"></li>
+        </ul>
+        <!--评价细节-->
+        <div class="mdui-m-y-2 main-form-3">
+            <!--商家指定好评-->
+            <div class="mdui-m-a-2 mdui-text-color-red">
+                要求：如果商家有指定评语图片视频请按指定信息提交，如无指定信息请5字以上好评。
+            </div>
+            <div class="form-input">
+                <label>商家指定好评</label>
+                <div class="mdui-text-color-theme-accent">
+                    啦啦啦，哈哈哈，咕咕咕
+                </div>
+            </div>
+            <div class="mdui-p-a-2 mdui-color-white">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">复制好评语</button>
+            </div>
+            <div class="mdui-divider"></div>
+            <!--商家指定图片-->
+            <div class="form-img-list">
+                <div class="form-img-title">
+                    商家指定图片
+                </div>
+                <div class="form-img-container narrow">
+                    <div class="form-img" style="background-image: url('temp-img/task/screenshot1.jpg')"></div>
+                </div>
+                <div class="form-img-container narrow">
+                    <div class="form-img" style="background-image: url('temp-img/task/screenshot2.jpg')"></div>
+                </div>
+                <div class="form-img-container narrow">
+                    <div class="form-img" style="background-image: url('temp-img/task/screenshot3.jpg')"></div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-p-a-2 mdui-color-white">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">下载指定图片</button>
+            </div>
+            <div class="mdui-divider"></div>
+            <!--商家指定视频-->
+            <div class="form-video-list">
+                <div class="form-video-title">
+                    商家指定视频
+                </div>
+                <div class="form-video-container">
+                    <video controls>
+                        <source src="temp-video/movie.mp4" type="video/mp4">
+                        <source src="temp-video/movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-p-a-2 mdui-color-white">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">下载指定视频</button>
+            </div>
+            <div class="mdui-divider"></div>
+        </div>
+        <!--评价提交-->
+        <div class="mdui-m-y-2 main-form-3">
+            <!--选择评价图片-->
+            <div class="mdui-divider"></div>
+            <div class="form-img-list">
+                <div class="form-img-title">
+                    选择评价图片
+                </div>
+                <div class="form-img-container narrow">
+                    <input class="form-input-img" type="file" accept="image/png, image/jpeg">
+                    <div class="form-img"></div>
+                </div>
+            </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-p-a-2 mdui-color-white">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+            <div class="mdui-divider"></div>
+        </div>
+        <!--查看大图模态框-->
+        <div class="mdui-dialog mdui-valign mdui-p-a-1" id="image-viewer">
+            <img class="mdui-img-fluid mdui-center" src="img/common/favicon.png" alt="大图模式">
+        </div>
+    </div>
+</div>
+</body>
+</html>

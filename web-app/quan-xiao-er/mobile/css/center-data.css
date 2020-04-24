@@ -1,0 +1,143 @@
+/* 页面列表项 */
+.page-link-item{
+    display: block;
+    position: relative;
+    line-height: 1rem;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-link-item>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.32rem;
+    color: #666;
+}
+.page-link-item-icon{
+    margin: 0 0.3rem;
+    padding: 0.1rem;
+    border-radius: 0.1rem;
+}
+.page-link-item-icon>i.iconfont{
+    font-size: 0.4rem;
+    color: white;
+}
+.page-link-item-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 1rem;
+    text-align: center;
+}
+.page-link-item-arrow>i.iconfont{
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #999;
+}
+.page-link-item-detail{
+    position: absolute;
+    top: 0;
+    right: 0.6rem;
+    width: calc(100% - 3.2rem);
+    height: 1rem;
+    font-size: 0.28rem !important;
+    line-height: 1rem;
+    text-align: right;
+    color: #999 !important;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#page-link-item-icon-avatar{
+    background-color: #33CB9A;
+}
+#page-link-item-icon-nickname{
+    background-color: #67d2f8;
+}
+#page-link-item-icon-number{
+    background-color: #FC9700;
+}
+#page-link-item-icon-signature{
+    background-color: #96e462;
+}
+#page-link-item-icon-password{
+    background-color: #FF6665;
+}
+.page-link-item-avatar{
+    position: absolute;
+    top: 0.1rem;
+    right: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.page-link-item-avatar>img{
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #ddd;
+    border-radius: 50%;
+}
+/* 页面模态框 */
+#page-modal-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 ,0 , 0.3);
+}
+.page-modal{
+    margin: 50vh auto 0 auto;
+    width: 5.6rem;
+    font-size: 0.36rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.2rem;
+    transform: translateY(-50%);
+}
+.page-modal-header{
+    padding: 0.4rem 0;
+}
+.page-modal-input{
+    margin-bottom: 0.6rem;
+}
+.page-modal-input>input{
+    padding: 0 0.2rem;
+    width: 80%;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    border: 0.02rem solid #ddd;
+    border-radius: 0.1rem;
+    outline: none;
+}
+.page-modal-btn{
+    font-size: 0;
+    color: #2af;
+    border-top: 0.02rem solid #ddd;
+}
+.page-modal-btn>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 0.8rem;
+    font-size: 0.36rem;
+    line-height: 0.8rem;
+}
+.page-modal-btn>span:first-of-type{
+    border-right: 0.02rem solid #ddd;
+}
+/* 页面提示框 */
+.page-snackbar{
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    right: 0;
+    margin: 0 auto;
+    width: 2.1rem;
+    font-size: 0.28rem;
+    line-height: 2;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.1rem;
+}

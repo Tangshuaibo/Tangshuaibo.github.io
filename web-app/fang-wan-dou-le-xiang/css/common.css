@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* 轮播 */
+.carousel-item>* {
+    display: block;
+    max-width: 100%;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(255, 51, 102);
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.carousel-btn.prev {
+    left: 10px;
+}
+.carousel-btn.next {
+    right: 10px;
+}
+.carousel-btn>.icon {
+    font-size: 20px;
+    line-height: 40px;
+}
+.carousel-btn:focus {
+    outline: none;
+}
+/* 页面主体 */
+.main {
+    min-height: 100vh;
+}
+/* 页面头部 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 4px;
+    width: 100%;
+    color: white;
+    background-color: rgb(255, 51, 102);
+    z-index: 100;
+}
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.header-item {
+    position: relative;
+    width: 32px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 20;
+}
+.header-item>*{
+    line-height: 32px;
+}
+.header-item.left {
+    float: left;
+}
+.header-item.right {
+    float: right;
+}
+.header-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 10;
+}
+.header-center>* {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -1px 0 0 #ccc;
+}
+/* tab选项卡 */
+.tab-selector {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    background-color: white;
+}
+.tab-selector-item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 2px 0 0 #ddd;
+}
+.tab-selector-item.active{
+    color: rgb(255, 51, 102);
+    box-shadow: 0 2px 0 0 rgb(255, 51, 102);
+}
+.tab-item{
+    display: none;
+}
+.tab-item.active{
+    display: block;
+}
+/* 可扩展面板 */
+.panel-collapse {
+    height: 34px;
+    transition: height 0.5s linear;
+    overflow: hidden;
+}
+.panel-collapse-header {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 34px;
+}
+.panel-collapse-header>*+*{
+    margin-left: 10px;
+}
+.panel-collapse-header-item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.panel-collapse-header-item.right {
+    text-align: right;
+}
+.panel-collapse-header>.arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #999;
+}
+.panel-collapse-header-item+.arrow {
+    position: relative;
+    top: unset;
+    right: unset;
+}
+.panel-collapse-body {
+    padding: 10px;
+    background-color: rgba(255, 51, 102, 0.15);
+}
+/*表单*/
+.form-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 14px;
+    background-color: white;
+}
+.form-row+.form-row {
+    border-top: 1px solid #ddd;
+}
+.form-row>label {
+    font-size: 14px;
+    line-height: 40px;
+    min-width: 56px;
+}
+.form-row>input {
+    width: 100%;
+    padding: 0 8px;
+    border: none;
+    outline: none;
+}
+.form-row>.content {
+    display: block;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: normal;
+    word-break: break-all;
+}
+/*按钮*/
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 51, 102);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-block {
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 51, 102);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*数字加减*/
+.spinner {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    min-width: 106px;
+}
+.spinner>* {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.spinner>*+* {
+    margin-left: 4px;
+}
+.spinner-btn {
+    width: 24px;
+    text-align: center;
+    color: rgb(255, 51, 102);
+    border: 1px solid rgb(255, 51, 102);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.spinner-btn>.icon {
+    font-size: 16px;
+    line-height: 22px;
+}
+.spinner-btn.disable {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.spinner-input {
+    width: 50px;
+    padding: 0 4px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    outline: none;
+}

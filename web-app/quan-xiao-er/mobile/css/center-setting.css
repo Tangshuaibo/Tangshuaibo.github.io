@@ -1,0 +1,74 @@
+/* 页面列表项 */
+.page-link-item{
+    display: block;
+    position: relative;
+    line-height: 1rem;
+    font-size: 0;
+    border-bottom: 0.02rem solid #ddd;
+}
+.page-link-item>div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.32rem;
+    color: #666;
+}
+.page-link-item-icon{
+    margin: 0 0.3rem;
+    padding: 0.1rem;
+    border-radius: 0.1rem;
+}
+.page-link-item-icon>i.iconfont{
+    font-size: 0.4rem;
+    color: white;
+}
+.page-link-item-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.8rem;
+    height: 1rem;
+    text-align: center;
+}
+.page-link-item-arrow>i.iconfont{
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #999;
+}
+.page-link-item-detail{
+    position: absolute;
+    top: 0;
+    right: 0.6rem;
+    width: calc(100% - 3.2rem);
+    height: 1rem;
+    line-height: 1rem;
+    text-align: right;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#page-link-item-icon-service{
+    background-color: #f1c40f;
+}
+#page-link-item-icon-feedback{
+    background-color: #3498db;
+}
+#page-link-item-icon-cache{
+    background-color: #2ecc71;
+}
+#page-link-item-icon-about{
+    background-color: #7658f8;
+}
+#page-btn{
+    padding: 0.4rem;
+}
+#page-btn-logout{
+    display: block;
+    height: 0.8rem;
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+    border-radius: 0.1rem;
+}

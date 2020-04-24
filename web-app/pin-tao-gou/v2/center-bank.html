@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="deps/mobileselectjs-2018.2.1/css/mobileSelect.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="deps/mobileselectjs-2018.2.1/js/mobileSelect.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/center-bank.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-red mdui-theme-accent-red mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">银行卡号绑定</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div class="main-bank-add">
+            <!--注意事项-->
+            <div class="mdui-panel mdui-m-t-1" mdui-panel="">
+                <div class="mdui-panel-item mdui-panel-item-open">
+                    <div class="mdui-panel-item-header">
+                        <div class="mdui-panel-item-title">
+                            <i class="mdui-icon material-icons">warning</i>
+                            <span>注意事项</span>
+                        </div>
+                        <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mdui-panel-item-body">
+                        请注意：<br>
+                        1.姓名必须和身份证中填写的一致，请不要使用信用卡绑定；<br>
+                        2.<span class="mdui-text-color-red">不支持拼淘购上没有显示的银行</span>，如果绑定错误，请联系专属客服
+                    </div>
+                </div>
+            </div>
+            <!--提交部分-->
+            <div class="main-form-3">
+                <div class="mdui-p-a-2">请填写持卡人本人的银行卡信息</div>
+                <div class="form-input">
+                    <label for="input-account-name">
+                        开户姓名
+                    </label>
+                    <input id="input-account-name" type="text" value="隔壁老王" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="input-bank-number">开户行号</label>
+                    <input id="input-bank-number" type="text" maxlength="30" placeholder="请输入开户行号">
+                </div>
+                <div class="mdui-p-a-2">开户行号可致电该银行官方客服电话获取</div>
+                <div class="form-input" id="input-bank-name-selector">
+                    <label for="input-bank-name">银行名称</label>
+                    <input id="input-bank-name" type="text" placeholder="请选择银行名称" readonly>
+                </div>
+                <div class="form-input">
+                    <label for="input-bank-account">银行账号</label>
+                    <input id="input-bank-account" type="text" placeholder="请输入银行账号">
+                </div>
+                <div class="form-input">
+                    <label for="input-alipay-account">支付宝账号</label>
+                    <input id="input-alipay-account" type="text" placeholder="请输入支付宝账号">
+                </div>
+            </div>
+            <div class="mdui-p-a-2">
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/complaint-initiate.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">发起申诉</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--任务简介卡片-->
+        <div class="mdui-card mdui-m-a-1" id="task-card" style="display: none;">
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="./img/common/taobao.png" alt="商品来源">
+                <div class="mdui-card-header-title">
+                    月球人月饼 比月球更持久的月饼
+                </div>
+                <div class="mdui-card-header-subtitle">
+                    <a class="mdui-text-color-theme-accent" href="http://www.huituhb.net">点击查看商品链接</a>
+                </div>
+            </div>
+            <div class="mdui-card-media">
+                <img src="./temp-img/task/goods.jpg" alt="商品主图">
+            </div>
+            <div class="mdui-card-content">
+                <div class="mdui-clearfix">
+                    <div class="mdui-float-left">发布人</div>
+                    <div class="mdui-text-color-black-secondary mdui-float-right">飞过山</div>
+                </div>
+                <div class="mdui-clearfix">
+                    <div class="mdui-float-left">任务类型</div>
+                    <div class="mdui-text-color-black-secondary mdui-float-right">淘宝精刷任务</div>
+                </div>
+                <div class="mdui-clearfix">
+                    <div class="mdui-float-left">发布时间</div>
+                    <div class="mdui-text-color-black-secondary mdui-float-right">2014-08-06 12:14:13</div>
+                </div>
+            </div>
+            <div class="mdui-card-actions mdui-card-actions-stacked mdui-p-t-0">
+                <a class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-theme-accent mdui-ripple"
+                   href="./task-unfinished-logistics.html">
+                    查看任务详情
+                </a>
+                <button class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-pink mdui-ripple"
+                        id="btn-hide-task-card">
+                    隐藏任务卡片
+                </button>
+            </div>
+        </div>
+        <!--任务卡片显示按钮-->
+        <div class="mdui-card mdui-m-a-1" id="trigger-card">
+            <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-pink mdui-ripple"
+                        id="btn-show-task-card">
+                    显示任务卡片
+                </button>
+            </div>
+        </div>
+        <!--提交申诉内容-->
+        <div class="mdui-card mdui-m-a-1 mdui-p-x-1 mdui-p-b-1">
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label class="mdui-textfield-label">请输入申诉内容</label>
+                <textarea class="mdui-textfield-input" maxlength="500"></textarea>
+            </div>
+            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交申诉</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

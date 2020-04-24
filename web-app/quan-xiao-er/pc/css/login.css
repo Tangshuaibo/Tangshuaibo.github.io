@@ -1,0 +1,305 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 微软雅黑, Arial;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+a img{
+    border: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+#header-content, #main-content, #footer-content{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 页面头部 */
+#header{
+    border-bottom: 4px solid #2a142b;
+    overflow: hidden;
+}
+#header-logo{
+    float: left;
+    height: 80px;
+}
+#header-logo a{
+    margin-left: 20px;
+    width: 380px;
+    line-height: 80px;
+    font-size: 40px;
+    color: #f00582;
+}
+#header-slogan{
+    float: right;
+}
+#header-slogan img{
+    width: 280px;
+    height: 75px;
+}
+/* 页面主体 */
+#main-content{
+    margin-top: 40px;
+    padding: 40px 60px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+#main-content-img-link{
+    float: left;
+}
+#main-content-cards{
+    float: right;
+}
+.login-card, .register-card, .reset-card{
+    padding: 20px 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+}
+.register-card, .reset-card{
+    display: none;
+}
+/* 登录卡片 */
+.login-card-title{
+    font-size: 18px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.login-card-content{
+    color: #5E5E5E;
+}
+.login-card-content form>div{
+    margin-top: 20px;
+}
+.login-card-content form>div>span{
+    font-size: 14px;
+}
+.login-card-content form>div>input{
+    width: 250px;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #c6c6c6;
+    outline: none;
+    box-sizing: border-box;
+}
+.login-card-content form>div>input:focus{
+    border: 1px solid #ff3366;
+}
+.login-card-content-link{
+    font-size: 12px;
+    overflow: hidden;
+}
+.login-card-content-remember{
+    float: left;
+    line-height: 16px;
+}
+.login-card-content-remember>input{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+.login-card-content-remember>span{
+    vertical-align: middle;
+}
+.login-card-content-forget-pwd{
+    float: right;
+    line-height: 16px;
+    color: #f00582;
+    cursor: pointer;
+}
+.login-card-content-button-login button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #f00582;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.login-card-content-button-login button:hover{
+    background-color: #ff3366;
+}
+.login-card-content-register-link{
+    text-align: center;
+}
+.login-card-content-register-link span{
+    color: #f00582;
+    cursor: pointer;
+}
+/* 注册卡片 */
+.register-card-title{
+    font-size: 18px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+}
+.register-card-title-back{
+    float: right;
+    color: #f00582;
+    cursor: pointer;
+}
+.register-card-content{
+    color: #5E5E5E;
+}
+.register-card-content form>div{
+    margin-top: 20px;
+}
+.register-card-content form>div>span{
+    font-size: 14px;
+}
+.register-card-content form>div>input{
+    width: 250px;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #c6c6c6;
+    outline: none;
+    box-sizing: border-box;
+}
+.register-card-content form>div>input:focus{
+    border: 1px solid #ff3366;
+}
+.register-card-content-code>input{
+    width: 180px !important;
+}
+.register-card-content-code>span{
+    display: block;
+    float: right;
+    width: calc(100% - 180px);
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+}
+.register-card-content-code>span:hover{
+    background-color: #ff3366;
+    cursor: pointer;
+}
+.register-card-content-agree>input{
+    width: 12px !important;
+    height: 12px;
+    vertical-align: middle;
+}
+.register-card-content-agree>span{
+    font-size: 12px !important;
+    vertical-align: middle;
+}
+.register-card-content-agree>span>a{
+    color: #f00582;
+}
+.register-card-content-button-register button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #f00582;
+    border: none;
+    outline: none;
+}
+.register-card-content-button-register button:hover{
+    background-color: #ff3366;
+    cursor: pointer;
+}
+/* 改密卡片 */
+.reset-card-title{
+    font-size: 18px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+}
+.reset-card-title-back{
+    float: right;
+    color: #f00582;
+    cursor: pointer;
+}
+.reset-card-content{
+    color: #5E5E5E;
+}
+.reset-card-content form>div{
+    margin-top: 20px;
+}
+.reset-card-content form>div>span{
+    font-size: 14px;
+}
+.reset-card-content form>div>input{
+    width: 250px;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #c6c6c6;
+    outline: none;
+    box-sizing: border-box;
+}
+.reset-card-content form>div>input:focus{
+    border: 1px solid #ff3366;
+}
+.reset-card-content-code>input{
+    width: 180px !important;
+}
+.reset-card-content-code>span{
+    display: block;
+    float: right;
+    width: calc(100% - 180px);
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    background-color: #f00582;
+}
+.reset-card-content-code>span:hover{
+    background-color: #ff3366;
+    cursor: pointer;
+}
+.reset-card-content-button-reset button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #f00582;
+    border: none;
+    outline: none;
+}
+.reset-card-content-button-reset button:hover{
+    background-color: #ff3366;
+    cursor: pointer;
+}
+/* 密码眼 */
+.password-eye-container{
+    position: relative;
+}
+.password-eye{
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+/* 页面脚部 */
+#footer-copyright{
+    margin: 40px auto;
+    font-size: 12px;
+    color: #5E5E5E;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/center-account.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">账户信息</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="mdui-m-y-1 main">
+        <div class="mdui-list mdui-list-dense main-list">
+            <a class="mdui-list-item mdui-ripple" href="./center-account-avatar.html">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">camera_alt</i>
+                <div class="mdui-list-item-content">修改头像</div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-phone.html">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">smartphone</i>
+                <div class="mdui-list-item-content">修改手机号</div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-password.html">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">lock</i>
+                <div class="mdui-list-item-content">修改密码</div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="javascript: void(0);">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">account_box</i>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">拼淘购ID</span>
+                    <span class="mdui-float-right mdui-text-color-black-secondary">123456</span>
+                </div>
+            </a>
+        </div>
+        <div class="mdui-list mdui-list-dense main-list">
+            <a class="mdui-list-item mdui-ripple" href="./center-account-id.html">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">perm_identity</i>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">身份证</span>
+                    <span class="mdui-float-left mdui-text-color-theme">（必填）</span>
+                    <span class="mdui-float-right mdui-text-color-theme">未绑定</span>
+                </div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-bank.html">
+                <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-accent">credit_card</i>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">银行卡</span>
+                    <span class="mdui-float-left mdui-text-color-theme">（必填）</span>
+                    <span class="mdui-float-right mdui-text-color-theme">未绑定</span>
+                </div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+        </div>
+        <div class="mdui-list mdui-list-dense main-list">
+            <a class="mdui-list-item mdui-ripple" href="./center-account-taobao.html">
+                <div class="mdui-list-item-avatar mdui-color-white main-list-icon">
+                    <img src="./img/common/taobao.png" alt="淘宝">
+                </div>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">淘宝账号</span>
+                    <span class="mdui-float-left mdui-text-color-theme">（必填）</span>
+                    <span class="mdui-float-right mdui-text-color-theme">未绑定</span>
+                </div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-jingdong.html">
+                <div class="mdui-list-item-avatar mdui-color-white main-list-icon">
+                    <img src="./img/common/jingdong.png" alt="京东">
+                </div>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">京东账号</span>
+                    <span class="mdui-float-right mdui-text-color-theme">未绑定</span>
+                </div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+            <a class="mdui-list-item mdui-ripple" href="./center-account-pinduoduo.html">
+                <div class="mdui-list-item-avatar mdui-color-white main-list-icon">
+                    <img src="./img/common/pinduoduo.png" alt="拼多多">
+                </div>
+                <div class="mdui-list-item-content">
+                    <span class="mdui-float-left">拼多多账号</span>
+                    <span class="mdui-float-right mdui-text-color-theme">未绑定</span>
+                </div>
+                <i class="mdui-icon material-icons">chevron_right</i>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

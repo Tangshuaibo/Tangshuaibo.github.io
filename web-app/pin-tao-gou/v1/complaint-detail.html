@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/complaint-detail.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/complaint-detail.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-bottom-nav-fixed mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme" id="app-header">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center" id="header-text">申诉详情</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-invisible" id="header-btn-home">
+                <i class="mdui-icon material-icons">home</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <div id="main-tab-info">
+            <div class="mdui-card mdui-m-a-1" id="task-card">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="./img/common/taobao.png" alt="商品来源">
+                    <div class="mdui-card-header-title">
+                        月球人月饼 比月球更持久的月饼
+                    </div>
+                    <div class="mdui-card-header-subtitle">
+                        <a class="mdui-text-color-theme-accent" href="http://www.huituhb.net">点击查看商品链接</a>
+                    </div>
+                </div>
+                <div class="mdui-card-media">
+                    <img src="./temp-img/task/goods.jpg" alt="商品主图">
+                </div>
+                <div class="mdui-card-content">
+                    <div class="mdui-clearfix">
+                        <div class="mdui-float-left">发布人</div>
+                        <div class="mdui-text-color-black-secondary mdui-float-right">飞过山</div>
+                    </div>
+                    <div class="mdui-clearfix">
+                        <div class="mdui-float-left">任务类型</div>
+                        <div class="mdui-text-color-black-secondary mdui-float-right">淘宝精刷任务</div>
+                    </div>
+                    <div class="mdui-clearfix">
+                        <div class="mdui-float-left">发布时间</div>
+                        <div class="mdui-text-color-black-secondary mdui-float-right">2014-08-06 12:14:13</div>
+                    </div>
+                </div>
+                <div class="mdui-card-actions mdui-card-actions-stacked mdui-p-t-0">
+                    <a class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-theme-accent mdui-ripple"
+                       href="./task-unfinished-logistics.html">
+                        查看任务详情
+                    </a>
+                    <button class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-pink mdui-ripple"
+                            id="btn-hide-task-card">
+                        隐藏任务卡片
+                    </button>
+                </div>
+            </div>
+            <div class="mdui-card mdui-m-a-1" id="trigger-card" style="display: none;">
+                <div class="mdui-card-actions">
+                    <button class="mdui-btn mdui-btn-dense mdui-btn-block mdui-color-pink mdui-ripple"
+                            id="btn-show-task-card">
+                        显示任务卡片
+                    </button>
+                </div>
+            </div>
+            <div class="main-dialogue">
+                <ul class="mdui-list mdui-list-dense main-dialogue-list">
+                    <!--发布人内容-->
+                    <li class="mdui-list-item mdui-ripple list-item-publisher">
+                        <div class="mdui-list-item-avatar">
+                            <img src="./temp-img/complaint/avatar-publisher.jpg" alt="发布人内容">
+                        </div>
+                        <div class="mdui-list-item-content">
+                            <div>
+                            <span class="mdui-text-color-pink publisher-name">
+                                许小解：
+                            </span>
+                                <span class="publisher-text">
+                                你多做了10单，我们只要求做5单。所以这个金豆不能给你。
+                            </span>
+                            </div>
+                            <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                                2019-10-11 10:23:34
+                            </div>
+                        </div>
+                    </li>
+                    <!--刷单员内容-->
+                    <li class="mdui-list-item mdui-ripple list-item-user">
+                        <div class="mdui-list-item-content">
+                            <div>
+                            <span class="mdui-text-color-pink publisher-name">
+                                王老二：
+                            </span>
+                                <span class="publisher-text">
+                                正是因为不想要这金豆了，所以才多做了10单。
+                            </span>
+                            </div>
+                            <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                                2019-10-11 13:24:05
+                            </div>
+                        </div>
+                        <div class="mdui-list-item-avatar">
+                            <img src="./temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        </div>
+                    </li>
+                    <!--发布人内容-->
+                    <li class="mdui-list-item mdui-ripple list-item-publisher">
+                        <div class="mdui-list-item-avatar">
+                            <img src="./temp-img/complaint/avatar-publisher.jpg" alt="发布人内容">
+                        </div>
+                        <div class="mdui-list-item-content">
+                            <div>
+                            <span class="mdui-text-color-pink publisher-name">
+                                许小解：
+                            </span>
+                                <span class="publisher-text">
+                                合作愉快
+                            </span>
+                            </div>
+                            <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                                2019-10-11 13:30:17
+                            </div>
+                        </div>
+                    </li>
+                    <!--刷单员内容-->
+                    <li class="mdui-list-item mdui-ripple list-item-user">
+                        <div class="mdui-list-item-content">
+                            <div>
+                            <span class="mdui-text-color-pink user-name">
+                                王老二：
+                            </span>
+                                <span class="user-text">
+                                合作愉快
+                            </span>
+                            </div>
+                            <div class="mdui-text-right mdui-m-t-1 mdui-text-color-black-secondary">
+                                2019-10-11 13:32:10
+                            </div>
+                        </div>
+                        <div class="mdui-list-item-avatar">
+                            <img src="./temp-img/complaint/avatar-user.png" alt="刷单员头像">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mdui-p-a-1" id="main-tab-reply" style="display: none;">
+            <div class="mdui-m-b-1">
+                <textarea id="textarea-reply" maxlength="500" placeholder="请输入要回复的内容，不超过500字"></textarea>
+            </div>
+            <div class="mdui-text-right mdui-m-b-1">
+                <span id="textarea-reply-length">0</span>
+                <span>/</span>
+                <span>500</span>
+            </div>
+            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple"
+                    id="btn-complete-filling">
+                填写完成
+            </button>
+        </div>
+    </div>
+    <!--底部输入框-->
+    <div class="mdui-shadow-24" id="complaint-footer">
+        <div class="mdui-textfield" id="footer-textarea">
+            <textarea class="mdui-textfield-input" type="text" placeholder="请输入要回复的内容"></textarea>
+        </div>
+        <button class="mdui-btn mdui-btn-icon mdui-ripple" id="btn-footer-send">
+            <i class="mdui-icon material-icons">send</i>
+        </button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拼淘购</title>
+    <link rel="stylesheet" href="./deps/mdui-0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./deps/mdui-0.4.2/js/mdui.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-amber mdui-theme-accent-blue mdui-color-grey-100">
+<div id="app">
+    <!--应用栏-->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-theme">
+        <div class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="header-btn-back">
+                <i class="mdui-icon material-icons">chevron_left</i>
+            </a>
+            <span class="mdui-typo-title mdui-center">重置密码</span>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#modal-wechat-qrcode'}">
+                <i class="mdui-icon material-icons">tag_faces</i>
+            </a>
+        </div>
+    </div>
+    <!--页面主体-->
+    <div class="main">
+        <!--注册表单-->
+        <div class="main-form mdui-m-t-2">
+            <div class="form-input">
+                <label class="mdui-text-color-theme-accent" for="reset-input-phone">手机号码</label>
+                <input id="reset-input-phone" type="number" maxlength="30" placeholder="请输入手机号码">
+            </div>
+            <div class="form-input">
+                <label class="mdui-text-color-theme-accent" for="reset-input-code-img">图片验证</label>
+                <input id="reset-input-code-img" type="text" maxlength="30" placeholder="请输入图片验证码">
+                <div class="mdui-float-right mdui-text-right mdui-text-color-theme code-img-container" id="reset-btn-code-img">
+                    <img src="./img/login/img-code.png" alt="图片验证码">
+                </div>
+            </div>
+            <div class="form-input">
+                <label class="mdui-text-color-theme-accent" for="reset-input-code">短信验证</label>
+                <input id="reset-input-code" type="text" maxlength="30" placeholder="请输入验证码">
+                <div class="mdui-float-right mdui-text-right mdui-text-color-theme" id="reset-btn-code">
+                    <span>获取验证码</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-form mdui-m-t-2">
+            <div class="form-input">
+                <label class="mdui-text-color-theme-accent" for="reset-input-password">密码</label>
+                <input id="reset-input-password" type="password" maxlength="30" placeholder="请输入密码（6-16位）">
+            </div>
+            <div class="form-input">
+                <label class="mdui-text-color-theme-accent" for="reset-input-password-confirm">确认密码</label>
+                <input id="reset-input-password-confirm" type="password" maxlength="30" placeholder="请再次输入密码">
+            </div>
+        </div>
+        <div class="mdui-m-a-2 main-btn-group">
+            <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" id="btn-reset">提交</button>
+        </div>
+    </div>
+    <!--模态层-->
+    <div class="modal-layer">
+        <!--客服微信二维码-->
+        <div class="mdui-dialog mdui-p-a-3 mdui-text-center" id="modal-wechat-qrcode">
+            <div id="modal-wechat-qrcode-img">
+                <img src="./img/login/QR-Code.png" alt="微信二维码">
+            </div>
+            <div class="mdui-typo-subheading mdui-m-t-2" id="modal-wechat-qrcode-text">
+                请保存图片后打开微信扫一扫
+                <br>
+                添加客服微信
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>晒单管理</title>
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-record-bought.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-record-bought.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">晒单管理</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-menu">
+                    <ul id="page-menu-list">
+                        <li class="active" data-target="unboxed">
+                            <span>已晒单</span>
+                        </li>
+                        <li data-target="no-unbox">
+                            <span>未晒单</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-tabs">
+                    <div class="page-tab-loading" style="display: none;">
+                        <span class="page-tab-loading-img">
+                            <img src="./img/common/loading.gif" alt="加载中图片">
+                        </span>
+                        <span>正在加载</span>
+                    </div>
+                    <div class="page-tab" data-id="unboxed">
+                        <div class="page-tab-nothing">
+                            <div class="page-tab-nothing-img">
+                                <img src="./img/common/exclamation.png" alt="感叹号">
+                            </div>
+                            最近三个月无记录
+                        </div>
+                    </div>
+                    <div class="page-tab" data-id="no-unbox" style="display: none;">
+                        <div class="page-tab-nothing">
+                            <div class="page-tab-nothing-img">
+                                <img src="./img/common/exclamation.png" alt="感叹号">
+                            </div>
+                            最近三个月无记录
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

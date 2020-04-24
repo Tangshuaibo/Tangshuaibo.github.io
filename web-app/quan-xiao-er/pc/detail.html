@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>券小二-网购省钱神器,每天千款优惠券秒杀，一折限时疯抢！_神特惠</title>
+    <meta name="keywords" content="券小二,优惠券,优惠券折扣,9块9包邮,限时特卖,优品折扣,券小二"/>
+    <meta name="description" content="券小二-优惠券折扣直播第一站！每天更新千款，纯人工筛选验货，限时限量特卖，全场1折起！"/>
+    <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./dep/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="./dep/jquery-3.3.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/detail.js"></script>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div id="header">
+        <!-- 固定显示部分 -->
+        <div id="header-shown">
+            <div id="header-bar">
+                <span id="header-bar-slogan">
+                    为您精选超值低价好货，领券下单更优惠哟！
+                </span>
+                <ul>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="">用户中心</a></li>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="./help.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <div id="header-search">
+                <div id="header-search-title">
+                    <a>券小二</a>
+                </div>
+                <div id="header-search-form">
+                    <form action="">
+                        <input type="text" maxlength="40" placeholder="爆款口红">
+                        <button type="submit">搜&ensp;索</button>
+                    </form>
+                    <ul>
+                        <li><div id="header-search-form-img-1"></li>
+                        <li><div id="header-search-form-img-2"></li>
+                        <li><div id="header-search-form-img-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-menu">
+                <ul>
+                    <li id="header-menu-item-latest">
+                        <a href="">
+                            <span class="glyphicon glyphicon-list"></span>
+                            今日上新
+                        </a>
+                    </li>
+                    <li><a href="">最新揭晓</a></li>
+                    <li id="header-menu-item-share">
+                        <a href="">
+                            晒单分享
+                            <div id="header-menu-item-share-img"></div>
+                        </a>
+                    </li>
+                    <li><a href="">查优惠券</a></li>
+                    <li><a href="">新手指南</a></li>
+                    <li id="header-menu-item-app-download">
+                        <a href="">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            APP下载
+                        </a>
+                        <div id="header-menu-item-app-qr-code">
+                            <div id="header-menu-item-app-qr-code-triangle"></div>
+                            <div id="header-menu-item-app-qr-code-content">
+                                <div id="header-menu-item-app-qr-code-content-ios">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_ios.png" alt="ios版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载ios版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                iOS APP
+                                                <span>(邻家小惠)</span>
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                <span>激活码：STH888</span>
+                                                <br>
+                                                首次启动APP请使用以上激活码激活
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="header-menu-item-app-qr-code-content-android">
+                                    <a class="header-menu-item-app-qr-code-content-link" href="">
+                                        <div class="qr-code-content-left">
+                                            <img src="./img/common/QR_code_android.png" alt="安卓版二维码">
+                                            <div class="qr-code-content-left-title">
+                                                扫码下载安卓版
+                                            </div>
+                                        </div>
+                                        <div class="qr-code-content-right">
+                                            <div class="qr-code-content-right-title">
+                                                安卓版APP
+                                            </div>
+                                            <div class="qr-code-content-right-content">
+                                                移动端专享更多特色栏目内容和福利
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="header-menu-item-cart">
+                        <a href="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            购物车
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 滚动显示部分 -->
+        <div id="header-hidden">
+            <div id="header-hidden-menu">
+                <ul>
+                    <li class="active"><a href="">最新揭晓</a></li>
+                    <li><a href="">居家日用</a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">数码家电</a></li>
+                    <li><a href="">文娱车品</a></li>
+                    <li><a href="">内衣</a></li>
+                    <li><a href="">家装家纺</a></li>
+                    <li><a href="">鞋品</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">配饰</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">箱包</a></li>
+                </ul>
+            </div>
+            <div id="header-hidden-search">
+                <form action="">
+                    <input type="text" maxlength="40" placeholder="爆款口红">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 页面主体 -->
+    <div id="main">
+        <div id="main-content">
+            <!-- 面包屑导航 -->
+            <div class="page-breadcrumb" id="breadcrumb">
+                当前位置：
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li>所有商品</li>
+                    <li>商品详情</li>
+                </ul>
+            </div>
+            <!-- 分期详情 -->
+            <div id="stage-detail">
+                <ul class="stage-list-menu">
+                    <li class="active">
+                        <a href="">第<span>20</span>期进行中</a>
+                    </li>
+                    <li><a href="">第<span>19</span>期</a></li>
+                    <li><a href="">第<span>18</span>期</a></li>
+                    <li><a href="">第<span>17</span>期</a></li>
+                    <li><a href="">第<span>16</span>期</a></li>
+                    <li><a href="">第<span>15</span>期</a></li>
+                    <li><a href="">第<span>14</span>期</a></li>
+                    <li><a href="">第<span>13</span>期</a></li>
+                    <li><a href="">第<span>12</span>期</a></li>
+                    <li><a href="">第<span>11</span>期</a></li>
+                </ul>
+            </div>
+            <!-- 推荐详情 -->
+            <div id="recommend-detail">
+                <div class="recommond-card" id="recommond-card-0">
+                    <div class="recommond-card-left">
+                        <div class="recommond-card-left-img" id="recommond-card-0-left-img">
+                            <img src="./temp-img/detail/clothes_0.jpg" alt="商品大图">
+                        </div>
+                        <div class="recommond-card-left-img-list" id="recommond-card-0-left-img-list">
+                            <ul>
+                                <li class="active"><img src="./temp-img/detail/clothes_0.jpg" alt="推荐商品小图"></li>
+                                <li><img src="./temp-img/detail/clothes_1.jpg" alt="推荐商品小图"></li>
+                                <li><img src="./temp-img/detail/clothes_2.jpg" alt="推荐商品小图"></li>
+                                <li><img src="./temp-img/detail/clothes_3.jpg" alt="推荐商品小图"></li>
+                                <li><img src="./temp-img/detail/clothes_4.jpg" alt="推荐商品小图"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recommond-card-right">
+                        <div class="recommond-card-right-title">
+                            <img src="./img/common/taobao_tiny.png" alt="taobao.png">
+                            香蕉芭那那秋季格子衬衫加+针织马甲背心+铅笔小脚裤三件套装女
+                        </div>
+                        <div class="recommond-card-right-detail">
+                            <div class="recommond-card-right-detail-price">
+                                优惠券
+                                <span>￥</span>
+                                <span>5.00</span>
+                            </div>
+                            <div class="recommond-card-right-detail-number">
+                                <span class="recommond-card-right-detail-number-total">
+                                    总数：&nbsp;<span>100000</span>&ensp;张
+                                </span>
+                                <span class="recommond-card-right-detail-number-remain">
+                                    剩余：&nbsp;<span>80000</span>&ensp;张
+                                </span>
+                            </div>
+                        </div>
+                        <div class="recommond-card-right-buy">
+                            我要购买&ensp;
+                            <span class="recommond-card-right-buy-counter">
+                                <button class="recommond-card-right-buy-counter-minus">-</button>
+                                <input class="recommond-card-right-buy-counter-input" type="text" maxlength="20" value="1">
+                                <button class="recommond-card-right-buy-counter-add">+</button>
+                            </span>
+                            <span class="recommond-card-right-buy-num-list">
+                                <ul>
+                                    <li>10</li>
+                                    <li>50</li>
+                                    <li>100</li>
+                                    <li>200</li>
+                                </ul>
+                            </span>
+                            &ensp;张
+                        </div>
+                        <div class="recommond-card-right-status">
+                            <div class="recommond-card-right-status-title">
+                                <div class="recommond-card-right-status-title-background"></div>
+                                <div class="recommond-card-right-status-title-img"></div>
+                                <div class="recommond-card-right-status-title-desc">
+                                    此商品正在参加【送抽奖】活动，购买优惠卷赠送以下商品抽奖资格
+                                </div>
+                            </div>
+                            <div class="recommond-card-right-status-content">
+                                <div class="recommond-card-right-status-content-new-price">
+                                    券后价
+                                    <span>￥</span>
+                                    <span>45.00</span>
+                                </div>
+                                <div class="recommond-card-right-status-content-old-price">
+                                    原价
+                                    <span>￥</span>
+                                    <span>50.00</span>
+                                </div>
+                                <div class="recommond-card-right-status-content-sales-volum">
+                                    销量
+                                    <span>20000</span>
+                                </div>
+                            </div>
+                            <div class="recommond-card-right-status-slogan">
+                                <span class="recommond-card-right-status-slogan-left">
+                                    疯抢中，手慢无！
+                                </span>
+                                <span class="recommond-card-right-status-slogan-right">
+                                    已有
+                                    <span>20000</span>
+                                    人购买
+                                </span>
+                            </div>
+                        </div>
+                        <div class="recommond-card-right-button-list">
+                            <span class="recommond-card-right-button-list-buy-now">立即购买</span>
+                            <span class="recommond-card-right-button-list-add-to-cart">加入购物车</span>
+                        </div>
+                        <div class="recommond-card-right-img-list" id="recommond-card-0-right-img-list">
+                            <ul>
+                                <li><img src="./temp-img/detail/notebook_1.jpg" alt="商品小图"></li>
+                                <li><img src="./temp-img/detail/notebook_2.jpg" alt="商品小图"></li>
+                                <li><img src="./temp-img/detail/notebook_3.jpg" alt="商品小图"></li>
+                                <li><img src="./temp-img/detail/notebook_4.jpg" alt="商品小图"></li>
+                                <li><img src="./temp-img/detail/notebook_5.jpg" alt="商品小图"></li>
+                                <li><img src="./temp-img/detail/notebook_6.jpg" alt="商品小图"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品相关信息详情 -->
+            <div id="goods-info-detail">
+                <div class="goods-info-tab">
+                    <div class="goods-info-tab-menu">
+                        <ul>
+                            <li class="active">商品详情</li>
+                            <li>晒单记录</li>
+                        </ul>
+                    </div>
+                    <div class="goods-info-tab-content">
+                        <div class="goods-detail">
+                            <div class="goods-detail-img">
+                                <img src="./temp-img/detail/notebook_detail.jpg" alt="商品详情图">
+                            </div>
+                        </div>
+                        <div class="goods-unboxing-record">
+                            <div class="goods-no-unboxing-record-container">
+                                <div class="goods-no-unboxing-record">
+                                    <div class="goods-no-unboxing-record-img"></div>
+                                    <div class="goods-no-unboxing-record-title">
+                                        暂无晒单记录哦！
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面脚部 -->
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-title">
+                “感谢有你，我们的坚持才更有意义”
+            </div>
+            <div id="footer-author">
+                by 券小二
+            </div>
+            <div id="footer-copyright">
+                © CopyRight 2018
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                http://www.quanxiaoer.com
+                <a href="http://www.quanxiaoer.com">券小二</a>
+                <a target="_blank" title="帮助中心" href="">
+                    ^_^亲遇到问题，联系我帮你处理哈
+                </a>
+            </div>
+            <div id="footer-about-contact">
+                <a target="_blank" href="">关于我们</a>
+                <a target="_blank" href="">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="back-to-top"></div>
+</body>
+</html>

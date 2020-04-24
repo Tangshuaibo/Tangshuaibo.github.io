@@ -1,0 +1,181 @@
+/* 首页横幅 */
+#page-banner{
+    overflow: hidden;
+}
+#page-banner-goods-list{
+    float: left;
+    width: 230px;
+    height: 300px;
+    background-color: #fbeaf4;
+}
+#page-banner-goods-list ul{
+    width: 100%;
+    overflow: hidden;
+}
+#page-banner-goods-list ul li{
+    float: left;
+    width: 50%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+}
+#page-banner-goods-list ul li i{
+    vertical-align: middle;
+    margin: 0 5px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff69b4;
+}
+#page-banner-goods-list ul li a{
+    vertical-align: middle;
+}
+#page-banner-goods-list ul li:hover{
+    background-color: #efdfe4;
+}
+#page-banner-carousel{
+    float: left;
+    width: 720px;
+}
+#page-banner-share{
+    float: left;
+    width: 250px;
+    height: 300px;
+    background-image: url('../img/index/index-banner-share-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 首页主要内容 */
+/* 首页主要内容公告 */
+#page-content-announcement{
+    margin: 10px 0;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    color: #9c9c9c;
+    background-color: #FDFCE7;
+    border: 1px solid #ffd6d6;
+    border-radius: 2px;
+}
+/* 首页主要内容商品卡片 */
+#page-content-goods-cards ul{
+    font-size: 12px;
+    overflow: hidden;
+}
+#page-content-goods-cards ul li{
+    display: none;
+    float: left;
+}
+.goods-card{
+    width: 285px;
+    height: 400px;
+    background: white;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.goods-card:hover{
+    border: 1px solid #ff3e80;
+    box-shadow: 0 0 10px 0 rgba(170,170,170,.63);
+}
+.goods-card-img{
+    display: block;
+    position: relative;
+    width: 285px;
+    height: 285px;
+    line-height: 285px;
+    text-align: center;
+}
+.goods-card-img-new{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/common/dataoke_2.png) 1px -78px no-repeat;
+    overflow: hidden;
+}
+.goods-card-img>img{
+    max-width: 285px;
+    max-height: 285px;
+    line-height: 285px;
+    vertical-align: middle;
+    border: none;
+}
+.goods-card-detail{
+    position: relative;
+    padding: 20px 10px;
+    width: 285px;
+    height: 116px;
+    font-size: 12px;
+}
+.goods-card-detail-price{
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: #ff0060;
+    overflow: hidden;
+}
+.goods-card-detail-price i{
+    margin-right: -4px;
+    font-style: normal;
+    font-weight: bold;
+}
+.goods-card-detail-price-new>span:first-of-type{
+    font-size: 30px;
+    font-weight: bold;
+}
+.goods-card-detail-price-coupon{
+    float: right;
+    margin: 0;
+    padding: 0 8px;
+    background: #fff7fa;
+    color: #ff0060;
+    height: 26px;
+    line-height: 24px;
+    border: 1px dotted #ff0060;
+}
+.goods-card-detail-price-coupon>span:last-of-type{
+    font-weight: bold;
+}
+.goods-card-detail-title{
+    height: 14px;
+    line-height: 14px;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.goods-card-detail-number{
+    height: 16px;
+    line-height: 16px;
+    color: #787878;
+}
+.goods-card-detail-number span{
+    margin-left: 4px;
+    font-weight: 400;
+    color: #fc903d;
+}
+.goods-card-detail-type{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-size: 0;
+}
+.goods-card-detail-type>div{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+.goods-card-detail-type .tmall{
+    background: url(../img/common/dataoke_2.png) -78px 0 no-repeat;
+}
+.goods-card-detail-type .seckill{
+    background: url(../img/common/dataoke_2.png) 0 0 no-repeat;
+}
+.goods-card-detail-type .insurance{
+    background: url(../img/common/dataoke_2.png) -104px 0 no-repeat;
+}
+/* 首页主要内容商品卡片容器分页 */
+#page-content-pagination{
+    text-align: center;
+}

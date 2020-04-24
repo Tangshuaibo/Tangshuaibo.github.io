@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>更换头像</title>
+    <link rel="stylesheet" href="./dep/cropperjs-4.0.0/cropper.min.css">
+    <link rel="stylesheet" href="./dep/icon-others-1/iconfont.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/center-data-avatar.css">
+    <script src="./dep/zeptio-1.2.0/zepto.min.js"></script>
+    <script src="./dep/cropperjs-4.0.0/cropper.min.js"></script>
+    <script src="./js/common2.js"></script>
+    <script src="./js/center-data-avatar.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-back">
+                    <i class="iconfont icon-left"></i>
+                </div>
+                <span id="header-text">更换头像</span>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main">
+                <div id="page-content">
+                    <div id="page-content-img-container">
+                        <img id="page-content-img" src="" alt="预览图" style="display: none;">
+                    </div>
+                    <input type="file" id="page-content-input" accept="image/*">
+                    <div id="page-content-btn">
+                        <span id="page-content-btn-select">选择图片</span>
+                        <span id="page-content-btn-reset" style="display: none;">重置选择</span>
+                        <span id="page-content-btn-submit" style="display: none;">确认已选</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

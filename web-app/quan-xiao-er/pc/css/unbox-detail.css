@@ -1,0 +1,369 @@
+#unbox-content{
+    font-size: 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#unbox-content>div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+/* 获得者信息 */
+#unbox-content-user{
+    width: 20%;
+    padding: 20px 15px;
+    border-right: 1px solid #ddd;
+}
+#unbox-content-user-info{
+    color: #999;
+}
+#unbox-content-user-info>div{
+    font-size: 0;
+}
+#unbox-content-user-info>div>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    word-break: break-all;
+}
+#unbox-content-user-info>div>div.left{
+    text-align: right;
+}
+#unbox-content-user-info>div>div.right>span.colored{
+    color: #f00582;
+}
+#unbox-content-user-info-avatar{
+    text-align: center;
+}
+#unbox-content-user-info-avatar>a{
+    display: block;
+}
+#unbox-content-user-info-avatar>a>img{
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+#unbox-content-user-info-avatar>a>span{
+    display: block;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    word-break: break-all;
+    color: #2af;
+}
+#unbox-content-user-info-avatar>a>span:hover{
+    text-decoration: underline;
+}
+#unbox-content-user-info-time>div.right{
+    word-break: normal;
+}
+#unbox-content-user-prize{
+    position: relative;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+#unbox-content-user-prize-wrapper{
+    padding: 20px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px #ddd;
+}
+#unbox-content-user-prize-img>a>img{
+    width: 100%;
+}
+#unbox-content-user-prize-title{
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#unbox-content-user-prize-title>a{
+    color: #666;
+}
+#unbox-content-user-prize-title>a:hover{
+    color: #f00582;
+}
+#unbox-content-user-prize-price{
+    color: #999;
+}
+#unbox-content-user-prize-decoration{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+#unbox-content-user-unbox-title{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+#unbox-content-user-unbox-content>ul>li{
+    margin: 10px 0;
+}
+.unbox-content-user-unbox-item>a{
+    display: block;
+}
+.unbox-content-user-unbox-item-header{
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.unbox-content-user-unbox-item-header:hover{
+    color: #f00582;
+}
+.unbox-content-user-unbox-item-header>span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.unbox-content-user-unbox-item-header>span.unbox-icon{
+    width: 23px;
+    height: 16px;
+    background-image: url(../img/common/yungouos_2.gif);
+    background-repeat: no-repeat;
+}
+.unbox-content-user-unbox-item-desc{
+    display: -webkit-box;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #999;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.unbox-content-user-unbox-item-img{
+    font-size: 0;
+}
+.unbox-content-user-unbox-item-img>img{
+    width: 65px;
+    height: 65px;
+    margin-right: calc((100% - 195px) / 2);
+}
+.unbox-content-user-unbox-item-img>img:last-of-type{
+    margin-right: 0;
+}
+/* 获得者文章 */
+#unbox-content-article{
+    margin: 0 -1px;
+    padding: 20px 40px;
+    width: 60%;
+    background-color: white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+#unbox-content-article-title{
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333;
+    border-bottom: 1px solid #efefef;
+}
+#unbox-content-article-title>span{
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#unbox-content-article-title>span.reward-container{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+#unbox-content-article-title>span.reward-container>span{
+    width: 73px;
+    height: 73px;
+}
+#unbox-content-article-title>span.reward-container>span.score{
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 73px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #f60;
+}
+#unbox-content-article-info{
+    margin: 10px 0 20px 0;
+    font-size: 0;
+    color: #999;
+}
+#unbox-content-article-info>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 12px;
+}
+#unbox-content-article-content{
+    font-size: 14px;
+    color: #666;
+}
+#unbox-content-article-content p{
+    text-indent: 2em;
+}
+#unbox-content-article-content img{
+    display: block;
+    max-width: 100%;
+    margin:  10px auto;
+}
+#unbox-content-article-btn{
+    float: right;
+}
+#unbox-content-article-btn>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+#unbox-content-article-btn-like{
+    cursor: default;
+}
+#unbox-content-article-btn-like>i.fa{
+    cursor: pointer;
+}
+#unbox-content-article-btn-like>span.number{
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#unbox-content-article-btn-like>span.trangle-container{
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    right: -5px;
+    margin-left: -6px;
+    width: 6px;
+    height: 12px;
+    border-right: 6px solid #ddd;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+#unbox-content-article-btn-like>span.trangle-container>span.trangle{
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 6px;
+    height: 12px;
+    border-right: 6px solid white;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+#unbox-content-article-btn-share{
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* 其他信息 */
+#unbox-content-others{
+    padding: 20px 15px;
+    width: 20%;
+    border-left: 1px solid #ddd;
+}
+#unbox-content-others-winner-title{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+#unbox-content-others-winner-list>ul>li{
+    padding: 10px 0;
+}
+.winner-info{
+    font-size: 0;
+}
+.winner-info>img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.winner-info>a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    max-width: 170px;
+    font-size: 14px;
+    color: #2af;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.winner-info>a:hover{
+    color: #f00582;
+}
+#unbox-content-others-unbox-title{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+#unbox-content-others-unbox-list>ul>li{
+    margin: 10px 0;
+}
+.unbox-content-others-unbox-item>a{
+    display: block;
+}
+.unbox-content-others-unbox-item-header{
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.unbox-content-others-unbox-item-header:hover{
+    color: #f00582;
+}
+.unbox-content-others-unbox-item-header>span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.unbox-content-others-unbox-item-header>span.unbox-icon{
+    width: 23px;
+    height: 16px;
+    background-image: url(../img/common/yungouos_2.gif);
+    background-repeat: no-repeat;
+}
+.unbox-content-others-unbox-item-desc{
+    display: -webkit-box;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #999;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.unbox-content-others-unbox-item-img{
+    font-size: 0;
+}
+.unbox-content-others-unbox-item-img>img{
+    width: 65px;
+    height: 65px;
+    margin-right: calc((100% - 195px) / 2);
+}
+.unbox-content-others-unbox-item-img>img:last-of-type{
+    margin-right: 0;
+}
