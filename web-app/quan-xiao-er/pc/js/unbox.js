@@ -20,10 +20,10 @@ function showUnboxCards() {
     for (var i = 0; i < 20; i++) {
         unboxCardList.append(unboxCard.clone());
         var thisUnboxCard = $('#unbox-content-cards-list>li:last-of-type');
-        thisUnboxCard.find('.unbox-card-top-img>a').attr('href', '');
+        thisUnboxCard.find('.unbox-card-top-img>a').attr('href', './unbox-detail.html');
         thisUnboxCard.find('.unbox-card-top-img>a>img').attr('src', './temp-img/unbox/unbox2.jpg');
         thisUnboxCard.find('.unbox-card-top-title>a')
-            .text('oppo手机中到啦').attr('href', '');
+            .text('oppo手机中到啦').attr('href', './unbox-detail.html');
         thisUnboxCard.find('.unbox-card-top-brief>span').text('没想到我真的中了，太开心了。物流很快，服务很好。');
         thisUnboxCard.find('.unbox-card-top-time>span').text('3月22日 09:26');
         thisUnboxCard.find('.unbox-card-bottom-user-avatar>img').attr('src', './temp-img/unbox/avatar2.jpg');

@@ -7,7 +7,7 @@ function setGoodsCardShown() {
     for (var i = 0; i < 40; i++) {
         goodsCardsContainer.append(goodsCardHtml);
         var thisGoodsCard = $('#page-content-goods-cards-list>li:last-of-type');
-        thisGoodsCard.find('.goods-card-img').attr('href', '');
+        thisGoodsCard.find('.goods-card-img').attr('href', './detail.html');
         thisGoodsCard.find('.goods-card-img>img').attr('src', './temp-img/index/cosmetic.jpg');
         thisGoodsCard.find('.goods-card-detail-price-new>span.price').text('42');
         thisGoodsCard.find('.goods-card-detail-price-coupon>span.price').text('65');

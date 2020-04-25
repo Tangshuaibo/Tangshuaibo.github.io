@@ -15,10 +15,10 @@ function showGoodsCards () {
         thisGoodsCard.find('.goods-card-right-user-info-code>span').text('10002228');
         thisGoodsCard.find('.goods-card-right-user-info-num>span').text('50');
         thisGoodsCard.find('.goods-card-right-goods-title>a')
-            .text('(第2512期)苏泊尔（SUPOR）玻璃电水壶热水壶高硼硅玻璃电热水壶 ').attr('href', '');
+            .text('(第2512期)苏泊尔（SUPOR）玻璃电水壶热水壶高硼硅玻璃电热水壶 ').attr('href', './reveal-detail.html');
         thisGoodsCard.find('.goods-card-right-goods-price>span.price').text('109.00');
         thisGoodsCard.find('.goods-card-right-goods-time>span').text('04');
-        thisGoodsCard.find('.goods-card-right-button-detail').attr('href', '');
+        thisGoodsCard.find('.goods-card-right-button-detail').attr('href', './reveal-detail.html');
         thisGoodsCard.css('display', 'inline-block');
     }
 }
